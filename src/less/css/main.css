@@ -1,0 +1,103 @@
+body {
+  font-family: Trebuchet MS;
+}
+.header {
+  background-color: #2A2A2A;
+  height: 82px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.header .header__wrapper {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__wrapper .header__logo-image {
+  margin-right: 3%;
+}
+.header .header__wrapper .header__logo-image img {
+  width: 100%;
+}
+.header .header__wrapper .header__find-game {
+  width: 30%;
+  margin-right: 6%;
+  position: relative;
+}
+.header .header__wrapper .header__find-game input[type="text"] {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-size: 12px;
+  color: #929292;
+  padding-left: 10px;
+}
+.header .header__wrapper .header__find-game input[type="text"],
+.header .header__wrapper .header__find-game input[type="text"]:focus,
+.header .header__wrapper .header__find-game input[type="text"]:active {
+  outline: none;
+}
+.header .header__wrapper .header__find-game .header__aicon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0.875rem;
+  width: 1rem;
+  cursor: pointer;
+  color: #bdbdbd;
+  transition: color 0.15s ease-in-out;
+}
+.header .header__wrapper .header__telephone {
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+.header .header__wrapper .header__telephone p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header .header__wrapper .header__profile-cart svg:first-child {
+  margin-right: 10px;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  height: 52px;
+}
+.navigation .navigation__wrapper {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation .navigation__wrapper .navigation__burger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navigation .navigation__wrapper .navigation__burger svg {
+  margin-right: 15px;
+}
+.navigation .navigation__wrapper .navigation__list {
+  padding: 0 5%;
+}
+.navigation .navigation__wrapper .navigation__list ul {
+  list-style: none;
+  display: flex;
+}
+.navigation .navigation__wrapper .navigation__list ul li {
+  margin: 0 1rem;
+}
+.navigation .navigation__wrapper .navigation__list ul li a {
+  color: black;
+}
+.navigation .navigation__wrapper a {
+  text-decoration: none;
+}
