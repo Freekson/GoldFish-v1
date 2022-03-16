@@ -9,6 +9,9 @@ body {
 }
 .slider .slider__wrapper .slider__items {
   display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
 }
 .slider .slider__wrapper .slider__items .slider__item {
   margin: 0 2.5px;

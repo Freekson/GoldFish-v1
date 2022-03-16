@@ -34,7 +34,8 @@ const lessFiles = [
     './src/less/_mobile.less'
 ]
 const jsFiles = [
-    './src/scripts/main.js'
+    './src/scripts/main.js',
+    './src/scripts/slider.js'
     //space for yours js files
 ]
 const paths = {
@@ -108,7 +109,7 @@ function watch() {
     //watch css files
     gulp.watch('./src/less/**/*.less', gulp.series(convert, styles))
         //watch js files
-    gulp.watch('./src/js/**/*.js', scripts)
+    gulp.watch('./src/js/*.js', scripts)
         //start sync when html is changed
     gulp.watch("./*.html").on('change', browserSync.reload);
 }
