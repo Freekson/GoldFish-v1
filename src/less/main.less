@@ -36,8 +36,50 @@ body{
             transition: all ease 1s;
             .slider__item{
                 margin: 0 2.5px;
+                position: relative;
                 img{
                     height: 320px;
+                }
+                .slider__item_text{
+                    position: absolute;
+                    bottom: 34px;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 90%;
+                    margin: 0 5%;
+                    .block{
+                        color: white;
+                        font-size: 0.875rem;
+                        p{
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .block_header{
+                            font-size: 1.75rem;
+                        }
+                    }
+                    .slider__item_button{
+                        width: 6.5rem;
+                        height: 32px;
+                        border-radius: 10px;
+                        a{
+                            display: block;
+                            box-sizing: border-box;
+                            width: 100%;
+                            height: 32px;
+                            text-decoration: none;
+                            background: @gradient;
+                            border-radius: 10px;
+                            text-align: center;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 0.875rem;
+                            padding:  7.5px 0;
+                        }
+                    }
                 }
             }
             .slider__item:first-child{
