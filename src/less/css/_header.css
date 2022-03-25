@@ -68,6 +68,7 @@
   justify-content: center;
   font-weight: bold;
   height: 52px;
+  background-color: #E5E5E5;
 }
 .navigation .navigation__wrapper {
   width: 85%;

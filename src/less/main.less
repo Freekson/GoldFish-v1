@@ -27,6 +27,7 @@ body{
 
 //slider
 .slider{
+    background-color: @background-color;
     .slider__wrapper{
         overflow: hidden;
         .slider__items{
@@ -65,6 +66,7 @@ body{
                         width: 6.5rem;
                         height: 32px;
                         border-radius: 10px;
+                        transition: all 0.2s;
                         a{
                             display: block;
                             box-sizing: border-box;
@@ -77,8 +79,13 @@ body{
                             color: white;
                             font-weight: bold;
                             font-size: 0.875rem;
-                            padding:  7.5px 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                         }
+                    }
+                    .slider__item_button:hover{
+                        box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
                     }
                 }
             }
@@ -132,6 +139,7 @@ body{
 
 //main content
 .main{
+    background-color: @background-color;
     .main__wrapper{
         display: flex;
         flex-direction: column;
@@ -201,6 +209,94 @@ body{
                 .image-text{
                     color: @active-color;
                 }
+            }
+        }
+        .hurry-up{
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            .hurry-up__item{
+                height: 409px;
+                width: 22%;   
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+                position: relative;
+                padding-top: 20px;
+                img{
+                    height: 145px;
+                }
+                .hurry-up__text{
+                    padding: 0 10%;
+                    text-align: center;
+                    width: 80%;
+                    height: 150px;
+                    .other-info{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin-top: 10px;
+                        .people{
+                            display: flex;
+                            align-items: center;
+                            svg{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    .description{
+                        font-weight: bold;
+                        margin: 0;
+                    }
+                }
+                .hurry-up__buttons-block{
+                    position: absolute;
+                    bottom: 20px;
+                    width: 80%;
+                    a{
+                        display: block;
+                        width: 100%;
+                        margin: 0 auto;
+                        text-align: center;
+                        text-decoration: none;
+                        height: 34px;
+                        border-radius: 10px;
+                        box-sizing: border-box;
+                        transition: all 0.2s;
+                    }
+                    .cart{
+                        background: @gradient;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .buy{
+                        color: @active-color;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 2px @active-color solid;
+                        margin-top: 10px;
+                    }
+                    .cart:hover{
+                        box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+                    }
+                    .buy:hover{
+                        box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+                    }
+                }
+
+            }
+            .price{
+                font-weight: bold;
+                font-size: 1.3125rem;
+                margin: 20px 10px 10px 10px;
+                position: absolute;
+                bottom: 100px;
             }
         }
     }
