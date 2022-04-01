@@ -17,6 +17,8 @@
 }
 .header .header__wrapper .header__logo-image img {
   width: 100%;
+  user-select: none;
+  pointer-events: none;
 }
 .header .header__wrapper .header__find-game {
   width: 30%;
