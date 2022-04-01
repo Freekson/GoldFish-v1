@@ -28,6 +28,7 @@ body{
 //slider
 .slider{
     background-color: @background-color;
+    position: relative;
     .slider__wrapper{
         overflow: hidden;
         .slider__items{
@@ -71,6 +72,7 @@ body{
                         border-radius: 10px;
                         transition: all 0.2s;
                         user-select: none;
+                        pointer-events: all;
                         a{
                             display: block;
                             box-sizing: border-box;
@@ -100,7 +102,7 @@ body{
     }
     .slider__control {
         position: absolute;
-        top: 39%;
+        top: 45%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -150,7 +152,7 @@ body{
         justify-content: center;
         align-items: center;
         //catalog
-        .catalog{
+        .main__catalog{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -219,6 +221,7 @@ body{
                 }
             }
         }
+        //slider hurry up and special offer
         .main__slider{
             width: 75%;
             display: flex;
@@ -326,6 +329,70 @@ body{
             }
             .new-price{
                 right: 30px;
+            }
+        }
+        //events
+        .main__events{
+            width: 75%;
+            .events__wrapper{
+                display: flex;
+                justify-content: space-between;
+                .events__item{
+                    position: relative;
+                    img{
+                        border-radius: 10px;
+                        width: 100%;
+                    }
+                    .events__text{
+                        position: absolute;
+                        bottom: 2px;
+                        width: 100%;
+                        background-color: @main-color; 
+                        opacity: .8;  
+                        border-radius:  0 0 10px 10px;
+                        height: 120px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        p{
+                            color: white;
+                        }
+                        .game-name{
+                            color: @active-color;
+                            font-weight: bold;
+                            width: 90%;
+                        }
+                        .date{
+                            position: absolute;
+                            right: 20px;
+                        }
+                        .description{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            .show-more{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 4%;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: @gradient;
+                    width: 25%;
+                    height: 71px;
+                    text-decoration:  none;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 10px;
+                    transition: all 0.2s;
+                }
+                a:hover{
+                    box-shadow: @active-box-shadow;
+                }
             }
         }
     }
