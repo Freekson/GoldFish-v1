@@ -302,21 +302,22 @@ body {
 .main .main__wrapper .main__slider .new-price {
   right: 30px;
 }
-.main .main__wrapper .main__events {
+.main .main__wrapper .main__img-block {
   width: 75%;
 }
-.main .main__wrapper .main__events .events__wrapper {
+.main .main__wrapper .main__img-block .img-block__wrapper {
   display: flex;
   justify-content: space-between;
 }
-.main .main__wrapper .main__events .events__wrapper .events__item {
+.main .main__wrapper .main__img-block .img-block__wrapper .img-block__item {
   position: relative;
+  width: 48%;
 }
-.main .main__wrapper .main__events .events__wrapper .events__item img {
+.main .main__wrapper .main__img-block .img-block__wrapper .img-block__item img {
   border-radius: 10px;
   width: 100%;
 }
-.main .main__wrapper .main__events .events__wrapper .events__item .events__text {
+.main .main__wrapper .main__img-block .img-block__wrapper .img-block__item .img-block__text {
   position: absolute;
   bottom: 2px;
   width: 100%;
@@ -328,28 +329,28 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.main .main__wrapper .main__events .events__wrapper .events__item .events__text p {
+.main .main__wrapper .main__img-block .img-block__wrapper .img-block__item .img-block__text p {
   color: white;
 }
-.main .main__wrapper .main__events .events__wrapper .events__item .events__text .game-name {
+.main .main__wrapper .main__img-block .img-block__wrapper .img-block__item .img-block__text .game-name {
   color: #F9A43F;
   font-weight: bold;
   width: 90%;
 }
-.main .main__wrapper .main__events .events__wrapper .events__item .events__text .date {
+.main .main__wrapper .main__img-block .img-block__wrapper .img-block__item .img-block__text .date {
   position: absolute;
   right: 20px;
 }
-.main .main__wrapper .main__events .events__wrapper .events__item .events__text .description {
+.main .main__wrapper .main__img-block .img-block__wrapper .img-block__item .img-block__text .description {
   width: 90%;
 }
-.main .main__wrapper .main__events .show-more {
+.main .main__wrapper .main__img-block .more-btn {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 4%;
 }
-.main .main__wrapper .main__events .show-more a {
+.main .main__wrapper .main__img-block .more-btn a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,10 +361,33 @@ body {
   color: white;
   font-weight: bold;
   border-radius: 10px;
+  font-size: 1.4375rem;
   transition: all 0.2s;
 }
-.main .main__wrapper .main__events .show-more a:hover {
+.main .main__wrapper .main__img-block .more-btn a:hover {
   box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+}
+.main .main__wrapper .more-info .img-block__wrapper .img-block__item {
+  width: 30%;
+}
+.main .main__wrapper .more-info .img-block__wrapper .img-block__item .img-block__text {
+  bottom: 4px;
+  justify-content: center;
+}
+.main .main__wrapper .more-info .img-block__wrapper .img-block__item .img-block__text p {
+  margin: 0;
+  padding: 2% 0;
+}
+.main .main__wrapper .more-info .img-block__wrapper .img-block__item .img-block__text .game-name {
+  color: white;
+  font-style: 1.2rem;
+  font-weight: bold;
+}
+.main .main__wrapper .more-info .more-btn a {
+  background: #E5E5E5;
+  border: 3px solid #F9A43F;
+  box-sizing: border-box;
+  color: #2A2A2A;
 }
 .main .section-header {
   font-size: 2rem;

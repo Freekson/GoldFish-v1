@@ -332,18 +332,19 @@ body{
             }
         }
         //events
-        .main__events{
+        .main__img-block{
             width: 75%;
-            .events__wrapper{
+            .img-block__wrapper{
                 display: flex;
                 justify-content: space-between;
-                .events__item{
+                .img-block__item{
                     position: relative;
+                    width: 48%;
                     img{
                         border-radius: 10px;
                         width: 100%;
                     }
-                    .events__text{
+                    .img-block__text{
                         position: absolute;
                         bottom: 2px;
                         width: 100%;
@@ -372,7 +373,7 @@ body{
                     }
                 }
             }
-            .show-more{
+            .more-btn{
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -388,10 +389,39 @@ body{
                     color: white;
                     font-weight: bold;
                     border-radius: 10px;
+                    font-size: 1.4375rem;
                     transition: all 0.2s;
                 }
                 a:hover{
                     box-shadow: @active-box-shadow;
+                }
+            }
+        }
+        .more-info{
+            .img-block__wrapper{
+                .img-block__item{
+                    width: 30%;
+                    .img-block__text{
+                        bottom: 4px;
+                        justify-content: center;
+                        p{
+                            margin: 0;
+                            padding:  2% 0;
+                        }
+                        .game-name{
+                            color: white;
+                            font-style: 1.2rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .more-btn{
+                a{
+                    background: @background-color;
+                    border: 3px solid @active-color;
+                    box-sizing: border-box;
+                    color: @main-color;
                 }
             }
         }
