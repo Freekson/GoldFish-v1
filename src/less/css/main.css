@@ -405,6 +405,54 @@ body {
 }
 .main .main__wrapper .game-center .img-block__wrapper .img-block__item p {
   margin: 0.5rem;
+  margin-left: 0;
+}
+.main .main__wrapper .main__info {
+  margin-top: 5%;
+  width: 75%;
+}
+.main .main__wrapper .main__info .info__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main__wrapper .main__info .info__wrapper .info__item {
+  color: #2A2A2A;
+  width: 48%;
+  text-align: left;
+}
+.main .main__wrapper .main__info .info__wrapper .info__item .bold-text {
+  font-weight: bold;
+  font-size: 1.375rem;
+}
+.main .main__wrapper .main__info .info__wrapper .info__item .header-text {
+  font-size: 2rem;
+  margin-bottom: 3%;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts {
+  width: 45%;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .telephon,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .email,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .address,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .time {
+  display: flex;
+  align-items: center;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .telephon p,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .email p,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .address p,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .time p {
+  margin: 0.7rem 0;
+  margin-left: 5%;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .telephon p span,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .email p span,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .address p span,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .time p span {
+  font-weight: bold;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts img {
+  width: 100%;
 }
 .main .section-header {
   font-size: 2rem;

@@ -397,6 +397,7 @@ body{
                 }
             }
         }
+        //more info
         .more-info{
             .img-block__wrapper{
                 .img-block__item{
@@ -425,6 +426,7 @@ body{
                 }
             }
         }
+        //game center
         .game-center{
             margin-top: 5%;
             color: @main-color;
@@ -440,6 +442,51 @@ body{
                     justify-content: center;
                     p{
                         margin: 0.5rem;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        //contacts and map
+        .main__info{
+            margin-top: 5%;
+            width: 75%;
+            .info__wrapper{
+                display: flex;
+                justify-content: space-between;
+                .info__item{
+                    color: @main-color;
+                    width: 48%;
+                    text-align: left;
+                    .bold-text{
+                        font-weight: bold;
+                        font-size: 1.375rem;
+                    }
+                    .header-text{
+                        font-size: 2rem;
+                        margin-bottom: 3%;
+                    }
+                }
+                .info__contacts{
+                    width: 45%;
+                    .media-block{
+                        .telephon, .email, .address, .time{
+                            display: flex;
+                            align-items: center;
+                            p{
+                                margin: 0.7rem 0;
+                                margin-left: 5%;
+                                span{
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+                //!! delete
+                .info__contacts{
+                    img{
+                        width: 100%;
                     }
                 }
             }
