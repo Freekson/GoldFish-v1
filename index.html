@@ -658,19 +658,29 @@
                             Do you have any questions?
                         </p>
                         <form action="/handling-form-page" method="post">
-                            <label for="name">Your name:</label> <br>
-                            <input type="text" id="name" name="user_name" />
-                            <label for="mail">Telephon:</label> <br>
-                            <input type="tel" id="telephone" name="user_telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+                            <fieldset>
+                                <label for="name">Your name:</label> <br>
+                                <input type="text" id="name" name="user_name" placeholder="Name" required/>
+                            </fieldset>
+                            <fieldset>
+                                <label for="mail">Telephone:</label> <br>
+                                <input type="tel" id="telephone" name="user_telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+48 ___ _______" required/>
+                            </fieldset>
+                            <fieldset>
+                                <label for="mail">Your comment:</label> <br>
+                                <textarea id="comment" name="user_comment" rows="4" cols="50" placeholder="Comment"></textarea>
+                            </fieldset>
+                            <input class="btn" type="submit" value="Request a call" formmethod="post" />
                         </form>
+                        <div class="agreement">
+                            <p>By clicking on the "Request a call" button, <u>I agree to processing of personal data.</u></p>
+                        </div>
                     </div>
 
-
                     <div class="info__item info__map">
-                        <div class="img-block__item info__contacts">
-                            <!--!! delete -->
-                            <img src="./build/img/test.png" alt="">
-                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.524744163564!2d-73.86733757629845!3d40.67926782826824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25dbff4901773%3A0x3063cbdf26b8e9b2!2sGameStop!5e0!3m2!1sru!2spl!4v1649446619219!5m2!1sru!2spl"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </section>

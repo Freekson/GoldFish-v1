@@ -89,9 +89,9 @@ body{
                             align-items: center;
                             justify-content: center;
                         }
-                    }
-                    .slider__item_button:hover{
-                        box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+                        &:hover{
+                            box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+                        }
                     }
                 }
             }
@@ -110,37 +110,34 @@ body{
         height: 40px;
         background: @main-color;
         border-radius: 50%;
+        &[data-slide='prev'] {
+            left: 1.5rem;
+        } 
+        &[data-slide='next'] {
+            right: 1.5rem;
+        }
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            outline: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: transparent no-repeat center center;
+            background-size: 100% 100%;
+        }
+        &[data-slide='prev']::before {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+        &[data-slide='next']::before {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        }
     }  
-    .slider__control[data-slide='prev'] {
-        left: 1.5rem;
-    } 
-    .slider__control[data-slide='next'] {
-        right: 1.5rem;
-    }
-  
-    .slider__control:hover,
-    .slider__control:focus {
-        color: #fff;
-        text-decoration: none;
-        outline: 0;
-        background: rgba(0, 0, 0, 0.3);
-    }
-  
-    .slider__control::before {
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: transparent no-repeat center center;
-        background-size: 100% 100%;
-    }
-    .slider__control[data-slide='prev']::before {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-    }
-  
-    .slider__control[data-slide='next']::before {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-    }
 }
 
 //main content
@@ -214,10 +211,10 @@ body{
                     height: 2.875rem;
                     transition: 0.1s ease-in;
                 }
-            }
-            .image-block:hover{
-                .image-text{
-                    color: @active-color;
+                &:hover{
+                    .image-text{
+                        color: @active-color;
+                    }
                 }
             }
         }
@@ -298,6 +295,9 @@ body{
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        &:hover{
+                            box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+                        }
                     }
                     .buy{
                         color: @active-color;
@@ -306,12 +306,9 @@ body{
                         justify-content: center;
                         border: 2px @active-color solid;
                         margin-top: 10px;
-                    }
-                    .cart:hover{
-                        box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
-                    }
-                    .buy:hover{
-                        box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+                        &:hover{
+                            box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+                        }
                     }
                 }
 
@@ -391,9 +388,9 @@ body{
                     border-radius: 10px;
                     font-size: 1.4375rem;
                     transition: all 0.2s;
-                }
-                a:hover{
-                    box-shadow: @active-box-shadow;
+                    &:hover{
+                        box-shadow: @active-box-shadow;
+                    }
                 }
             }
         }
@@ -449,7 +446,7 @@ body{
         }
         //contacts and map
         .main__info{
-            margin-top: 5%;
+            margin: 5% 0;
             width: 75%;
             .info__wrapper{
                 display: flex;
@@ -468,11 +465,16 @@ body{
                     }
                 }
                 .info__contacts{
-                    width: 45%;
+                    width: 40%;
                     .media-block{
                         .telephon, .email, .address, .time{
                             display: flex;
                             align-items: center;
+                            .img-block{
+                                img{
+                                    width: 30px;
+                                }
+                            }
                             p{
                                 margin: 0.7rem 0;
                                 margin-left: 5%;
@@ -482,11 +484,65 @@ body{
                             }
                         }
                     }
+                    form{
+                        fieldset{
+                            border: none;
+                            padding: 0;
+                            input{
+                                width: 100%;
+                                height: 45px;
+                                font-size: 0.9rem;
+                                color: @main-color;
+                                border-radius: 10px;
+                                padding: 0 10px;
+                                margin: 2% 0 4% 0;
+                                border: 1px @main-color solid;
+                                box-shadow: @main-box-shadow;
+                                box-sizing: border-box;
+                                &:active, &:hover, &:focus {
+                                    outline: 0;
+                                    outline-offset: 0;
+                                }
+                            }
+                            textarea{
+                                width: 100%;
+                                font-size: 0.9rem;
+                                color: @main-color;
+                                border-radius: 10px;
+                                padding: 10px 10px;
+                                margin: 2% 0 4% 0;
+                                resize: none;
+                                height: 100px;
+                                border: 1px @main-color solid;
+                                box-shadow: @main-box-shadow;
+                                box-sizing: border-box;
+                                &:active, &:hover, &:focus {
+                                    outline: 0;
+                                    outline-offset: 0;
+                                }
+                            }
+                        }
+                        .btn{
+                            width: 100%;
+                            color: white;
+                            height: 46px;
+                            background: @gradient;
+                            font-weight: bold;
+                            border: none;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            transition: all 0.2s;
+                            &:hover{
+                                box-shadow: @active-box-shadow;
+                            }
+                        }
+                    }
                 }
-                //!! delete
-                .info__contacts{
-                    img{
-                        width: 100%;
+                .info__map{
+                    iframe{
+                        border-radius: 10px;
+                        box-shadow: @main-box-shadow;
+                        height: 100%;
                     }
                 }
             }

@@ -274,6 +274,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.main .main__wrapper .main__slider .slider__item .slider__buttons-block .cart:hover {
+  box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+}
 .main .main__wrapper .main__slider .slider__item .slider__buttons-block .buy {
   color: #F9A43F;
   display: flex;
@@ -281,9 +284,6 @@ body {
   justify-content: center;
   border: 2px #F9A43F solid;
   margin-top: 10px;
-}
-.main .main__wrapper .main__slider .slider__item .slider__buttons-block .cart:hover {
-  box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
 }
 .main .main__wrapper .main__slider .slider__item .slider__buttons-block .buy:hover {
   box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
@@ -408,7 +408,7 @@ body {
   margin-left: 0;
 }
 .main .main__wrapper .main__info {
-  margin-top: 5%;
+  margin: 5% 0;
   width: 75%;
 }
 .main .main__wrapper .main__info .info__wrapper {
@@ -429,7 +429,7 @@ body {
   margin-bottom: 3%;
 }
 .main .main__wrapper .main__info .info__wrapper .info__contacts {
-  width: 45%;
+  width: 40%;
 }
 .main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .telephon,
 .main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .email,
@@ -437,6 +437,12 @@ body {
 .main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .time {
   display: flex;
   align-items: center;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .telephon .img-block img,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .email .img-block img,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .address .img-block img,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .time .img-block img {
+  width: 30px;
 }
 .main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .telephon p,
 .main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .email p,
@@ -451,8 +457,65 @@ body {
 .main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .time p span {
   font-weight: bold;
 }
-.main .main__wrapper .main__info .info__wrapper .info__contacts img {
+.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset {
+  border: none;
+  padding: 0;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset input {
   width: 100%;
+  height: 45px;
+  font-size: 0.9rem;
+  color: #2A2A2A;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 2% 0 4% 0;
+  border: 1px #2A2A2A solid;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  box-sizing: border-box;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset input:active,
+.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset input:hover,
+.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset textarea {
+  width: 100%;
+  font-size: 0.9rem;
+  color: #2A2A2A;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 2% 0 4% 0;
+  resize: none;
+  height: 100px;
+  border: 1px #2A2A2A solid;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  box-sizing: border-box;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset textarea:active,
+.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset textarea:hover,
+.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset textarea:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts form .btn {
+  width: 100%;
+  color: white;
+  height: 46px;
+  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.main .main__wrapper .main__info .info__wrapper .info__contacts form .btn:hover {
+  box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+}
+.main .main__wrapper .main__info .info__wrapper .info__map iframe {
+  border-radius: 10px;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  height: 100%;
 }
 .main .section-header {
   font-size: 2rem;
