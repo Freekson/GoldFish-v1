@@ -389,6 +389,23 @@ body {
   box-sizing: border-box;
   color: #2A2A2A;
 }
+.main .main__wrapper .game-center {
+  margin-top: 5%;
+  color: #2A2A2A;
+}
+.main .main__wrapper .game-center .block-header {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0;
+}
+.main .main__wrapper .game-center .img-block__wrapper .img-block__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .main__wrapper .game-center .img-block__wrapper .img-block__item p {
+  margin: 0.5rem;
+}
 .main .section-header {
   font-size: 2rem;
   font-weight: bold;
