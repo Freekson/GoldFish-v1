@@ -68,9 +68,9 @@ The site of a large online store, with all the relevant features. The project wi
 
 
 ## Style and script directory structure:
->./src/styles/\*\*/\*.less
->./src/scripts/\*\*/\*.js
->./src/img/\*\*/\*.png/.jpg/.jpeg
+>./src/styles/\*\*/\*.less  
+>./src/scripts/\*\*/\*.js  
+>./src/img/\*\*/\*.png/.jpg/.jpeg  
 
 <!-- ROADMAP -->
 ## Roadmap
