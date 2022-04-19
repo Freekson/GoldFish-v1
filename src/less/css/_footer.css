@@ -52,8 +52,8 @@ footer .footer__wrapper .footer__section .section__column:last-child .first-item
 footer .footer__wrapper hr {
   width: 99.8%;
   height: 0.5px;
-  background-color: rgba(255, 255, 255, 0.44);
-  border: 1px solid rgba(255, 255, 255, 0.44);
+  background-color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.45);
 }
 footer .footer__wrapper .footer__bottom {
   display: flex;
@@ -68,7 +68,7 @@ footer .footer__wrapper .footer__bottom .section__column .last {
   text-align: right;
 }
 footer .footer__wrapper .footer__bottom .section__column p {
-  color: rgba(255, 255, 255, 0.44);
+  color: rgba(255, 255, 255, 0.45);
   margin: 0;
   text-decoration: underline;
 }

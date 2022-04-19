@@ -58,19 +58,34 @@ The site of a large online store, with all the relevant features. The project wi
    gulp
    ```
 4. Other gulp command
+<<<<<<< HEAD
    > gulp clean - dist directory
     gulp styles - convert LESS to CSS, minify it and merge it into one file (main.min.css)
     gulp scripts - convert JS to ES5 standard, minify and execute in one file (main.min.js)
     gulp img - image measurements size
     gulp watch - launches automatic execution of styles and scripts when they are changed
     gulp build is a default job
+=======
+   > gulp clean - dist directory  
+    gulp styles - convert LESS to CSS, minify it and merge it into one file (main.min.css)  
+    gulp scripts - convert JS to ES5 standard, minify and execute in one file (main.min.js)  
+    gulp img - image measurements size  
+    gulp watch - launches automatic execution of styles and scripts when they are changed  
+    gulp build is a default job  
+>>>>>>> 2ceb3150e7311c522a91102e78af3bd249957d3e
 
 
 
 ## Style and script directory structure:
+<<<<<<< HEAD
 >./src/styles/\*\*/\*.less
 >./src/scripts/\*\*/\*.js
 >./src/img/\*\*/\*.png/.jpg/.jpeg
+=======
+>./src/styles/\*\*/\*.less  
+>./src/scripts/\*\*/\*.js  
+>./src/img/\*\*/\*.png/.jpg/.jpeg  
+>>>>>>> 2ceb3150e7311c522a91102e78af3bd249957d3e
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -93,22 +108,40 @@ The site of a large online store, with all the relevant features. The project wi
 - [ ] Add js to all pages
 - [ ] Soon.. 
 
+<<<<<<< HEAD
 See the [open issues](https://github.com/Freekson/GoldFish/issues) for a full list of proposed features (and known issues).
 Check the [releases](https://github.com/Freekson/GoldFish/releases) to see completed items 
+=======
+See the [open issues](https://github.com/Freekson/GoldFish/issues) for a full list of proposed features (and known issues).  
+Check the [releases](https://github.com/Freekson/GoldFish/releases) to see completed items   
+>>>>>>> 2ceb3150e7311c522a91102e78af3bd249957d3e
 
 
 <!-- LICENSE -->
 ## License
 
+<<<<<<< HEAD
 Distributed under the MIT License. See `LICENSE.txt` for more information.
+=======
+Distributed under the MIT License.   
+See `LICENSE.txt` for more information.  
+>>>>>>> 2ceb3150e7311c522a91102e78af3bd249957d3e
 
 
 <!-- CONTACT -->
 ## Contact
 
 Yehor Dreval 
+<<<<<<< HEAD
 - [instagram](https://www.instagram.com/freeksons)
 - [telegram](https://t.me/freekson)
 
 Project Link: [Gold Fish](https://github.com/Freekson/GoldFish)
 <p align="right">(<a href="#top">back to top</a>)</p>
+=======
+- [instagram](https://www.instagram.com/freeksons)  
+- [telegram](https://t.me/freekson)  
+
+Project Link: [Gold Fish](https://github.com/Freekson/GoldFish)
+<p align="right">(<a href="#top">back to top</a>)</p>
+>>>>>>> 2ceb3150e7311c522a91102e78af3bd249957d3e
