@@ -1,3 +1,95 @@
+//variables
+
+//colors
+@background-color:  #E5E5E5;
+@main-color: #2A2A2A;
+@active-color: #F9A43F;
+@shadow-background: #C4C4C4;
+//gradients
+@gradient: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+@black-blue: linear-gradient(179.89deg, #434D5A 0.09%, #131416 99.91%);
+@black-red: linear-gradient(180deg, #4C141A 0%, #210709 100%);
+//shadows
+@main-box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+@active-box-shadow:5px 6px 15px rgba(251, 121, 27, 0.63);
+
 footer{
-    display: flex;
+    background-color: @main-color;
+    margin: 0 auto;
+    .footer__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .footer__section{
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+            margin: 5% 0;
+            .section__column{
+                p{
+                    color: white;
+                    margin: 16px;
+                }
+                .bold{
+                    font-weight: bold;
+                }
+                .order-btn{
+                    width: 200px;
+                    a{
+                        display: block;
+                        box-sizing: border-box;
+                        width: 100%;
+                        padding: 8%;
+                        text-align: center;
+                        color: @active-color;
+                        text-decoration: none;
+                        border: 2px @active-color solid;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .section__column:first-child{
+                p{
+                    margin-left: 0;
+                }
+            }
+            .section__column:last-child{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                p{
+                    margin-right: 0;    
+                }
+                .first-item{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        hr{
+            width: 99.8%;
+            height: 0.5px;
+            background-color: rgba(255, 255, 255, 0.44);
+            border: 1px solid rgba(255, 255, 255, 0.44);
+        }
+        .footer__bottom{
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+            margin: 2% 0;
+            .section__column{
+                .first{
+                    text-align: left;
+                }
+                .last{
+                    text-align: right;
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.44);
+                    margin: 0;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }

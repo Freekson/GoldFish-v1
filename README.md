@@ -1,37 +1,114 @@
-# Сборка Gulp
+<div id="top"></div>
 
-## Структура каталогов стилей и скриптов:
->./src/styles/\*\*/\*.less  
->./src/scripts/\*\*/\*.js   
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+
+<h3 align="center">Gold Fish</h3>
+
+  <p align="center">
+    <a href="https://freekson.github.io/GoldFish/">View Demo</a>
+    ·
+    <a href="https://github.com/Freekson/GoldFish/issues">Report Bug</a>
+
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>   
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+![project screen](build/img/chrome_qqGQdaHVXp.png)
+
+The site of a large online store, with all the relevant features. The project will be created gradually, over a long period of time. Releases will appear at key points in the creation of the project.
+
+
+<!-- GETTING STARTED -->
+
+## Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Freekson/GoldFish.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run gulp command
+    ```sh
+   gulp
+   ```
+4. Other gulp command
+   > gulp clean - dist directory
+    gulp styles - convert LESS to CSS, minify it and merge it into one file (main.min.css)
+    gulp scripts - convert JS to ES5 standard, minify and execute in one file (main.min.js)
+    gulp img - image measurements size
+    gulp watch - launches automatic execution of styles and scripts when they are changed
+    gulp build is a default job
+
+
+
+## Style and script directory structure:
+>./src/styles/\*\*/\*.less
+>./src/scripts/\*\*/\*.js
 >./src/img/\*\*/\*.png/.jpg/.jpeg
 
-## Инструкция
-1. Скачать файлы в любую директоию
-2. Ввести в терминале команду: npm i (должен быть установлен node.js)
-3. Выполнить команду gulp
-4. Писать свой код
+<!-- ROADMAP -->
+## Roadmap
 
-## Дополнительные таски 
-gulp clean - удаляет дерикторию dist  
-gulp styles - конвертирует LESS в CSS, минифицирует его и обьединяет в один файл (main.min.css)  
-gulp scripts - конвертирует JS в стандарт ES5, минифицирует и объединяет в один файл (main.min.js)  
-gulp img - уменьшает размер картинок  
-gulp watch - запуск автоматического выполнения styles и scripts при изменениях в них  
-gulp build - является дефортным таском   
+- [ ] Create main page
+- [ ] Add js to main page
+- [ ] Create side pages
+    - [ ] Catalog
+    - [ ] Product page
+    - [ ] Basket
+    - [ ] Forms
+    - [ ] Checkout
+    - [ ] About us
+    - [ ] Personal account
+    - [ ] Blog 
+    - [ ] Article
+    - [ ] Event page
+    - [ ] Order
+- [ ] Add adaptive to all pages
+- [ ] Add js to all pages
+- [ ] Soon.. 
 
-## Установленные NPM пакеты
-[gulp](https://www.npmjs.com/package/gulp) - Сборщик Gulp  
-[gulp-less](https://www.npmjs.com/package/gulp-less) - Компиляция LESS файлов в CSS    
-[gulp-babel](https://www.npmjs.com/package/gulp-babel) - Компиляция новых стандартов JS в более старые    
-[@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) - Файл для работы babel  
-[@babel/core](https://www.npmjs.com/package/@babel/core) - Файл для работы babel  
-[gulp-concat](https://www.npmjs.com/package/gulp-concat) - Обединение нескольких файлов в один    
-[gulp-terser](https://www.npmjs.com/package/gulp-terser) - Сжатие и оптимизация JS кода    
-[gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css) - минификация и оптимизация CSS файлов    
-[del](https://www.npmjs.com/package/del) - Удаление каталогов и файлов  
-[gulp-sourcemaps](https://www.npmjs.com/search?q=gulp-sourcemaps) - Создаёт sourcemaos  
-[gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) - Добавляет префиксы для CSS свойств  
-[gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin) -  Уменьшает размер картинок  
-[gulp-size](https://www.npmjs.com/package/gulp-size) -  Выводит размер файлов  
-[browser-sync](https://www.npmjs.com/package/browser-sync) - Автообновление браузера  
-[gulp-newer](https://www.npmjs.com/package/gulp-newer) - Плагин для передачи только тех исходных файлов, которые новее соответствующих файлов назначения.  
+See the [open issues](https://github.com/Freekson/GoldFish/issues) for a full list of proposed features (and known issues).
+Check the [releases](https://github.com/Freekson/GoldFish/releases) to see completed items 
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+
+<!-- CONTACT -->
+## Contact
+
+Yehor Dreval 
+- [instagram](https://www.instagram.com/freeksons)
+- [telegram](https://t.me/freekson)
+
+Project Link: [Gold Fish](https://github.com/Freekson/GoldFish)
+<p align="right">(<a href="#top">back to top</a>)</p>
