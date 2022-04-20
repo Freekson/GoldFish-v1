@@ -14,17 +14,31 @@ footer .footer__wrapper .footer__section {
   width: 75%;
   margin: 5% 0;
 }
-footer .footer__wrapper .footer__section .section__column p {
+footer .footer__wrapper .footer__section .section__column a {
+  display: block;
   color: white;
   margin: 16px;
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__section .section__column a:hover {
+  text-decoration: underline;
+}
+footer .footer__wrapper .footer__section .section__column p {
+  color: white;
 }
 footer .footer__wrapper .footer__section .section__column .bold {
   font-weight: bold;
 }
-footer .footer__wrapper .footer__section .section__column .order-btn {
+footer .footer__wrapper .footer__section .section__column .social-block a {
+  display: inline;
+}
+footer .footer__wrapper .footer__section .section__column .social-block a:hover {
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__section .section__column .request-btn {
   width: 200px;
 }
-footer .footer__wrapper .footer__section .section__column .order-btn a {
+footer .footer__wrapper .footer__section .section__column .request-btn a {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -34,8 +48,14 @@ footer .footer__wrapper .footer__section .section__column .order-btn a {
   text-decoration: none;
   border: 2px #F9A43F solid;
   border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.1s;
 }
-footer .footer__wrapper .footer__section .section__column:first-child p {
+footer .footer__wrapper .footer__section .section__column .request-btn a:hover {
+  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+  color: white;
+}
+footer .footer__wrapper .footer__section .section__column:first-child a {
   margin-left: 0;
 }
 footer .footer__wrapper .footer__section .section__column:last-child {
@@ -43,7 +63,7 @@ footer .footer__wrapper .footer__section .section__column:last-child {
   flex-direction: column;
   align-items: flex-end;
 }
-footer .footer__wrapper .footer__section .section__column:last-child p {
+footer .footer__wrapper .footer__section .section__column:last-child a {
   margin-right: 0;
 }
 footer .footer__wrapper .footer__section .section__column:last-child .first-item {
@@ -67,8 +87,16 @@ footer .footer__wrapper .footer__bottom .section__column .first {
 footer .footer__wrapper .footer__bottom .section__column .last {
   text-align: right;
 }
-footer .footer__wrapper .footer__bottom .section__column p {
+footer .footer__wrapper .footer__bottom .section__column a {
+  display: block;
   color: rgba(255, 255, 255, 0.44);
   margin: 0;
   text-decoration: underline;
+}
+footer .footer__wrapper .footer__bottom .section__column a:hover {
+  text-decoration: none;
+}
+footer .footer__wrapper .footer__bottom .section__column:nth-child(2) a {
+  display: inline;
+  text-decoration: none;
 }

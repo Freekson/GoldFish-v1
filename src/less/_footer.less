@@ -27,14 +27,30 @@ footer{
             width: 75%;
             margin: 5% 0;
             .section__column{
-                p{
+                a{
+                    display: block;
                     color: white;
                     margin: 16px;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                p{
+                    color: white;
                 }
                 .bold{
                     font-weight: bold;
                 }
-                .order-btn{
+                .social-block{
+                    a{
+                        display: inline;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .request-btn{
                     width: 200px;
                     a{
                         display: block;
@@ -46,11 +62,17 @@ footer{
                         text-decoration: none;
                         border: 2px @active-color solid;
                         border-radius: 10px;
+                        font-weight: bold;
+                        transition: all .1s;
+                        &:hover{
+                            background: @gradient;
+                            color: white;
+                        }
                     }
                 }
             }
             .section__column:first-child{
-                p{
+                a{
                     margin-left: 0;
                 }
             }
@@ -58,7 +80,7 @@ footer{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
-                p{
+                a{
                     margin-right: 0;    
                 }
                 .first-item{
@@ -84,10 +106,20 @@ footer{
                 .last{
                     text-align: right;
                 }
-                p{
+                a{
+                    display: block;
                     color: rgba(255, 255, 255, 0.44);
                     margin: 0;
                     text-decoration: underline;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                &:nth-child(2){
+                    a{
+                        display: inline;
+                        text-decoration: none;
+                    }
                 }
             }
         }

@@ -157,6 +157,7 @@ body {
 .main .main__wrapper .main__catalog .catalog__big-block {
   flex-basis: 49%;
   height: 21.5rem;
+  transition: 0.1s ease-in;
 }
 .main .main__wrapper .main__catalog .catalog__big-block .image-block {
   pointer-events: none;
@@ -165,6 +166,9 @@ body {
 .main .main__wrapper .main__catalog .catalog__big-block .image-block img {
   width: 100%;
   height: 21.5rem;
+}
+.main .main__wrapper .main__catalog .catalog__big-block:hover .image-text {
+  color: #F9A43F;
 }
 .main .main__wrapper .main__catalog .image-block {
   border-radius: 10px;
@@ -210,9 +214,12 @@ body {
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
   position: relative;
   padding-top: 20px;
+  user-select: none;
+  transition: all 0.1s;
 }
 .main .main__wrapper .main__slider .slider__item img {
   height: 145px;
+  pointer-events: none;
 }
 .main .main__wrapper .main__slider .slider__item .offer {
   position: absolute;
@@ -233,6 +240,7 @@ body {
   text-align: center;
   width: 80%;
   height: 150px;
+  user-select: all;
 }
 .main .main__wrapper .main__slider .slider__item .slider__item_text .other-info {
   display: flex;
@@ -288,6 +296,11 @@ body {
 .main .main__wrapper .main__slider .slider__item .slider__buttons-block .buy:hover {
   box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
 }
+.main .main__wrapper .main__slider:hover .slider__item:hover {
+  position: relative;
+  top: -10px;
+  right: -10px;
+}
 .main .main__wrapper .main__slider .price {
   font-weight: bold;
   font-size: 1.3125rem;
@@ -312,10 +325,12 @@ body {
 .main .main__wrapper .main__img-block .img-block__wrapper .img-block__item {
   position: relative;
   width: 48%;
+  pointer-events: none;
 }
 .main .main__wrapper .main__img-block .img-block__wrapper .img-block__item img {
   border-radius: 10px;
   width: 100%;
+  user-select: none;
 }
 .main .main__wrapper .main__img-block .img-block__wrapper .img-block__item .img-block__text {
   position: absolute;
@@ -516,6 +531,7 @@ body {
   border-radius: 10px;
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
   height: 100%;
+  width: 100%;
 }
 .main .section-header {
   font-size: 2rem;
