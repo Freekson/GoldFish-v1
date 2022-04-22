@@ -78,7 +78,7 @@ The site of a large online store, with all the relevant features. The project wi
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Create main page
+- [x] Create main page
 - [ ] Add js to main page
 - [ ] Create side pages
     - [ ] Catalog
