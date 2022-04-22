@@ -49,10 +49,10 @@ footer .footer__wrapper .footer__section .section__column .request-btn a {
   border: 2px #F9A43F solid;
   border-radius: 10px;
   font-weight: bold;
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 footer .footer__wrapper .footer__section .section__column .request-btn a:hover {
-  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+  background: #F9A43F;
   color: white;
 }
 footer .footer__wrapper .footer__section .section__column:first-child a {
