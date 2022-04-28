@@ -73,7 +73,7 @@ footer .footer__wrapper hr {
   width: 99.8%;
   height: 0.5px;
   background-color: rgba(255, 255, 255, 0.44);
-  border: 1px solid rgba(255, 255, 255, 0.44);
+  border: none;
 }
 footer .footer__wrapper .footer__bottom {
   display: flex;

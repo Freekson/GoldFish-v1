@@ -3,10 +3,12 @@ html {
 }
 body {
   font-family: Trebuchet MS;
+  background-color: #E5E5E5;
 }
 .slider {
   background-color: #E5E5E5;
   position: relative;
+  margin-top: 7%;
 }
 .slider .slider__wrapper {
   overflow: hidden;
@@ -433,7 +435,7 @@ body {
 }
 .main .main__wrapper .game-center .img-block__wrapper .img-block__item p {
   margin: 0.5rem;
-  margin-left: 0;
+  padding: 0.5rem 1rem;
 }
 .main .main__wrapper .main__info {
   margin: 5% 0;
@@ -485,11 +487,11 @@ body {
 .main .main__wrapper .main__info .info__wrapper .info__contacts .media-block .time p span {
   font-weight: bold;
 }
-.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset {
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .info__fieldset {
   border: none;
   padding: 0;
 }
-.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset input {
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .info__fieldset .info__input {
   width: 100%;
   height: 45px;
   font-size: 0.9rem;
@@ -501,13 +503,13 @@ body {
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
   box-sizing: border-box;
 }
-.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset input:active,
-.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset input:hover,
-.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset input:focus {
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .info__fieldset .info__input:active,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .info__fieldset .info__input:hover,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .info__fieldset .info__input:focus {
   outline: 0;
   outline-offset: 0;
 }
-.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset textarea {
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .info__fieldset .info__texarea {
   width: 100%;
   font-size: 0.9rem;
   color: #2A2A2A;
@@ -520,13 +522,13 @@ body {
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
   box-sizing: border-box;
 }
-.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset textarea:active,
-.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset textarea:hover,
-.main .main__wrapper .main__info .info__wrapper .info__contacts form fieldset textarea:focus {
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .info__fieldset .info__texarea:active,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .info__fieldset .info__texarea:hover,
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .info__fieldset .info__texarea:focus {
   outline: 0;
   outline-offset: 0;
 }
-.main .main__wrapper .main__info .info__wrapper .info__contacts form .btn {
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .btn {
   width: 100%;
   color: white;
   height: 46px;
@@ -537,10 +539,10 @@ body {
   cursor: pointer;
   transition: all 0.2s;
 }
-.main .main__wrapper .main__info .info__wrapper .info__contacts form .btn:hover {
+.main .main__wrapper .main__info .info__wrapper .info__contacts .info__form .btn:hover {
   box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
 }
-.main .main__wrapper .main__info .info__wrapper .info__map iframe {
+.main .main__wrapper .main__info .info__wrapper .info__map .info__iframe {
   border-radius: 10px;
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
   height: 100%;

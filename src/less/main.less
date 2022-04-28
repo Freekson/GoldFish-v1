@@ -23,12 +23,14 @@ html{
 //body
 body{
     font-family: Trebuchet MS;
+    background-color: @background-color;
 }
 
 //slider
 .slider{
     background-color: @background-color;
     position: relative;
+    margin-top: 7%;
     .slider__wrapper{
         overflow: hidden;
         .slider__items{
@@ -468,7 +470,7 @@ body{
                     justify-content: center;
                     p{
                         margin: 0.5rem;
-                        margin-left: 0;
+                        padding: 0.5rem 1rem;
                     }
                 }
             }
@@ -513,11 +515,11 @@ body{
                             }
                         }
                     }
-                    form{
-                        fieldset{
+                    .info__form{
+                        .info__fieldset{
                             border: none;
                             padding: 0;
-                            input{
+                            .info__input{
                                 width: 100%;
                                 height: 45px;
                                 font-size: 0.9rem;
@@ -533,7 +535,7 @@ body{
                                     outline-offset: 0;
                                 }
                             }
-                            textarea{
+                            .info__texarea{
                                 width: 100%;
                                 font-size: 0.9rem;
                                 color: @main-color;
@@ -568,7 +570,7 @@ body{
                     }
                 }
                 .info__map{
-                    iframe{
+                    .info__iframe{
                         border-radius: 10px;
                         box-shadow: @main-box-shadow;
                         height: 100%;

@@ -1,7 +1,6 @@
 let offset = 0;
 const slider = document.querySelector('.slider__items');
 const width = slider.offsetWidth;
-console.log(width);
 
 document.querySelector('#prev').addEventListener('click', function() {
     offset += 300;
