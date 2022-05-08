@@ -46,9 +46,9 @@
             </div>
         </div>
     </header>
-    <nav class="navigation">
+    <nav class="navigation" id="nav">
         <div class="navigation__wrapper">
-            <div class="navigation__burger">
+            <div class="navigation__burger" id="open-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                     <rect width="16" height="2" fill="#2A2A2A"/>
                     <rect y="6" width="16" height="2" fill="#2A2A2A"/>
@@ -103,53 +103,53 @@
             </div>
         </div>
     </nav>
-    <nav class="open-navigation active">
+    <nav class="open-navigation" id="open-nav">
         <div class="navigation__wrapper">
             <div class="category-list">
-                <div class="all-category">
+                <div class="all-category" id="close-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                         <path d="M1.64016 0.27L6.50016 5.13L11.3402 0.29C11.425 0.199717 11.5272 0.127495 11.6406 0.0776621C11.754 0.0278297 11.8763 0.00141434 12.0002 0C12.2654 0 12.5197 0.105357 12.7073 0.292893C12.8948 0.48043 13.0002 0.734784 13.0002 1C13.0025 1.1226 12.9797 1.24439 12.9333 1.35788C12.8869 1.47138 12.8178 1.57419 12.7302 1.66L7.84016 6.5L12.7302 11.39C12.895 11.5512 12.9916 11.7696 13.0002 12C13.0002 12.2652 12.8948 12.5196 12.7073 12.7071C12.5197 12.8946 12.2654 13 12.0002 13C11.8727 13.0053 11.7456 12.984 11.6268 12.9375C11.508 12.8911 11.4002 12.8204 11.3102 12.73L6.50016 7.87L1.65016 12.72C1.56567 12.8073 1.46473 12.8769 1.35316 12.925C1.2416 12.9731 1.12163 12.9986 1.00016 13C0.734946 13 0.480592 12.8946 0.293056 12.7071C0.10552 12.5196 0.000162706 12.2652 0.000162706 12C-0.00216879 11.8774 0.0205782 11.7556 0.0670078 11.6421C0.113437 11.5286 0.18257 11.4258 0.270163 11.34L5.16016 6.5L0.270163 1.61C0.105348 1.44876 0.00870232 1.23041 0.000162706 1C0.000162706 0.734784 0.10552 0.48043 0.293056 0.292893C0.480592 0.105357 0.734946 0 1.00016 0C1.24016 0.003 1.47016 0.1 1.64016 0.27Z" fill="#2A2A2A"/>
                         </svg>
                     <p>All category</p>
                 </div>
                 <ul>
-                    <li onclick="show(1)">
+                    <li id="item-1">
                         <p>Board games</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
-                    <li onclick="show(2)">
+                    <li id="item-2">
                         <p>Warhammer 40000</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
-                    <li onclick="show(3)">
+                    <li id="item-3">
                         <p>Magic: the Gathering</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
-                    <li onclick="show(4)">
+                    <li id="item-4">
                         <p>Game accessories</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
-                    <li onclick="show(5)">
+                    <li id="item-5">
                         <p>Paints</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
-                    <li onclick="show(6)">
+                    <li id="item-6">
                         <p>Goods for children</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
-                    <li onclick="show(7)">
+                    <li id="item-7">
                         <p>Accessories for modeling</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
@@ -157,7 +157,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="aside-content">
+
+            <div class="aside-content" id="content">
 
             </div>
         </div>
