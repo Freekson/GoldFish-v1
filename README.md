@@ -81,7 +81,7 @@ The site of a large online store, with all the relevant features. The project wi
 - [x] Create main page
 - [ ] Add js to main page
     - [x] Add js to navigation
-    - [ ] Add js to slider
+    - [x] Add js to slider
 - [ ] Create side pages
     - [ ] Catalog
     - [ ] Product page

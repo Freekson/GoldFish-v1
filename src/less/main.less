@@ -30,13 +30,14 @@ body{
 .slider{
     background-color: @background-color;
     position: relative;
-    margin-top: 7%;
+    margin-top: 135px;
     .slider__wrapper{
-        overflow: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
         .slider__items{
             display: flex;
             position: relative;
-            left: 0;
+            left: -400px;
             transition: all ease 1s;
             .slider__item{
                 margin: 0 2.5px;
@@ -101,6 +102,9 @@ body{
                 margin-left: -13%;
             }
         }
+        &::-webkit-scrollbar {
+            display: none;
+          }
     }
     .slider__control {
         position: absolute;
@@ -587,5 +591,8 @@ body{
         color: #363636;
         width: 75%;
         margin: 4rem 0 2rem 0;
+    }
+    .slider{
+        margin-top: 0;
     }
 }

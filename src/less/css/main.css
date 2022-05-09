@@ -8,15 +8,16 @@ body {
 .slider {
   background-color: #E5E5E5;
   position: relative;
-  margin-top: 7%;
+  margin-top: 135px;
 }
 .slider .slider__wrapper {
-  overflow: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .slider .slider__wrapper .slider__items {
   display: flex;
   position: relative;
-  left: 0;
+  left: -400px;
   transition: all ease 1s;
 }
 .slider .slider__wrapper .slider__items .slider__item {
@@ -80,6 +81,9 @@ body {
 }
 .slider .slider__wrapper .slider__items .slider__item:first-child {
   margin-left: -13%;
+}
+.slider .slider__wrapper::-webkit-scrollbar {
+  display: none;
 }
 .slider .slider__control {
   position: absolute;
@@ -554,4 +558,7 @@ body {
   color: #363636;
   width: 75%;
   margin: 4rem 0 2rem 0;
+}
+.main .slider {
+  margin-top: 0;
 }

@@ -35,7 +35,8 @@ const lessFiles = [
 ]
 const jsFiles = [
     './src/scripts/main.js',
-    './src/scripts/slider.js'
+    './src/scripts/slider.js',
+    './src/scripts/nav.js'
     //space for yours js files
 ]
 const paths = {
