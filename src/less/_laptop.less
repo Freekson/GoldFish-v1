@@ -1,5 +1,50 @@
 /* Portrait tablets and small desktops */
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    
+@media (max-width: 1200px){
+    .main .main__wrapper .main__slider{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .slider__item{
+            width: 35%;
+        }
+        .slider__item:nth-child(2){
+            margin-bottom: 50px;
+        }
+    }
+    .main .main__wrapper .game-center .img-block__wrapper{
+        flex-wrap: wrap;
+        justify-content: center;  
+        .img-block__item{
+            width: 80%;
+        }
+        .img-block__item:first-child{
+            margin-bottom: 50px;
+        }
+    }
+    .main .main__wrapper .main__info .info__wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        .info__item{
+            width: 80%;
+        }
+        .info__map{
+            height: 500px;
+            margin-top: 50px;
+        }
+    }
+    .main .main__wrapper .main__slider .slider__item img{
+        width: 80%;
+    }
+    .main .main__wrapper .events .img-block__wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        .img-block__item{
+            width: 60%;
+        }
+        .img-block__item:first-child{
+            margin-bottom: 50px;
+        }
+    }
+    .main .main__wrapper .main__slider .slider__item img{
+        width: 100%;
+    }
 }

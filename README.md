@@ -79,7 +79,8 @@ The site of a large online store, with all the relevant features. The project wi
 ## Roadmap
 
 - [x] Create main page
-- [ ] Add js to main page
+- [x] Add adaptive to main page
+- [x] Add js to main page
     - [x] Add js to navigation
     - [x] Add js to slider
 - [ ] Create side pages

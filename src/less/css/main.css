@@ -141,7 +141,7 @@ body {
 .main .main__wrapper .main__catalog .catalog__small-block {
   max-width: 510px;
   display: flex;
-  flex-basis: 50%;
+  width: 50%;
   justify-content: space-between;
 }
 .main .main__wrapper .main__catalog .catalog__small-block .catalog__first-block,
@@ -199,6 +199,7 @@ body {
   bottom: 0;
   left: 0;
   color: white;
+  white-space: nowrap;
   font-weight: 1.125rem;
   font-weight: bold;
   padding: 0 2rem;

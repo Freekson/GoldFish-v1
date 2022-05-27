@@ -12,12 +12,9 @@
 .header .header__wrapper {
   width: 85%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   z-index: 5;
-}
-.header .header__wrapper .header__logo-image {
-  margin-right: 3%;
 }
 .header .header__wrapper .header__logo-image img {
   width: 100%;
@@ -26,7 +23,6 @@
 }
 .header .header__wrapper .header__find-game {
   width: 30%;
-  margin-right: 6%;
   position: relative;
 }
 .header .header__wrapper .header__find-game input[type="text"] {
@@ -59,7 +55,6 @@
 .header .header__wrapper .header__telephone {
   display: flex;
   align-items: center;
-  margin-right: 3%;
 }
 .header .header__wrapper .header__telephone p {
   color: white;
@@ -85,7 +80,7 @@
   width: 85%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .navigation .navigation__wrapper .navigation__burger {
   display: flex;
@@ -95,12 +90,10 @@
 .navigation .navigation__wrapper .navigation__burger svg {
   margin-right: 15px;
 }
-.navigation .navigation__wrapper .navigation__list {
-  padding: 0 5%;
-}
 .navigation .navigation__wrapper .navigation__list ul {
   list-style: none;
   display: flex;
+  padding: 0;
 }
 .navigation .navigation__wrapper .navigation__list ul li {
   margin: 0 1rem;
@@ -127,7 +120,7 @@
 }
 .open-navigation .navigation__wrapper {
   position: relative;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   height: 50px;
   display: flex;
@@ -217,6 +210,7 @@
 }
 .open-navigation .navigation__wrapper .aside-content .aside-content__list ul {
   list-style-type: none;
+  padding: 0 2%;
 }
 .open-navigation .navigation__wrapper .aside-content .aside-content__list ul li {
   margin-bottom: 30px;

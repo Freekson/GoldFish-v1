@@ -1,9 +1,28 @@
 /* Large desktops and laptops */
 
-@media (min-width: 1200px) {
+@media (max-width: 1500px) {
+    .main .main__wrapper .main__catalog .catalog__small-block .image-block{
+        width: 90%;
+    }
+    .main .main__wrapper .main__catalog .catalog__big-block{
+        flex-basis: 48%;
+    }
 }
-/* Portrait tablets and medium desktops */
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
+@media (max-width: 1450px){
+    .main .main__wrapper .main__slider .price{
+        margin: 0;
+        
+    }
+    .main .main__wrapper .main__slider .old-price{
+        bottom: 110px;
+        left: auto;
+    }
+    .main .main__wrapper .main__slider .new-price{
+        bottom: 130px;
+        right: auto;    
+    }
+    .main .main__wrapper .main__slider .slider__item .slider__item_text{
+        height: auto;
+        margin-bottom: 10px;
+    }
 }
