@@ -415,7 +415,7 @@ body {
 }
 .main .main__wrapper .more-info .img-block__wrapper .img-block__item .img-block__text .game-name {
   color: white;
-  font-style: 1.2rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 .main .main__wrapper .more-info .more-btn a {
