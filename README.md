@@ -88,19 +88,23 @@ The site of a large online store, with all the relevant features. The project wi
       - [x] tablet
       - [x] mobile
 - [ ] Create side pages
-    - [ ] Catalog
     - [ ] Product page
     - [ ] Basket
     - [ ] Forms
-    - [ ] Checkout
     - [ ] About us
-    - [ ] Personal account
+    - [ ] Blog 
+    - [ ] Article
+    - [ ] Event page
+    - [x] Order
+- [ ] Add adaptive to all pages
+    - [ ] Product page
+    - [ ] Basket
+    - [ ] Forms
+    - [ ] About us
     - [ ] Blog 
     - [ ] Article
     - [ ] Event page
     - [ ] Order
-- [ ] Add adaptive to all pages
-- [ ] Add js to all pages
 - [ ] Soon.. 
 
 
