@@ -3,36 +3,36 @@
 
 //variables
 
-//colors
+//!colors
 @background-color:  #E5E5E5;
 @main-color: #2A2A2A;
 @active-color: #F9A43F;
 @shadow-background: #C4C4C4;
-//gradients
+//!gradients
 @gradient: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
 @black-blue: linear-gradient(179.89deg, #434D5A 0.09%, #131416 99.91%);
 @black-red: linear-gradient(180deg, #4C141A 0%, #210709 100%);
-//shadows
+//!shadows
 @main-box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
 @active-box-shadow:5px 6px 15px rgba(251, 121, 27, 0.63);
 
-//html
+//?html
 html{
     font-size: 16px;
 }
-//body
+//?body
 body{
     font-family: Trebuchet MS;
     background-color: @background-color;
 }
 
-//slider
+//?slider
 .slider{
     background-color: @background-color;
     position: relative;
     margin-top: 135px;
     .slider__wrapper{
-        overflow-x: scroll;
+        overflow: scroll;
         -webkit-overflow-scrolling: touch;
         .slider__items{
             display: flex;
@@ -146,7 +146,7 @@ body{
     }  
 }
 
-//main content
+//?main content
 .main{
     background-color: @background-color;
     .main__wrapper{
@@ -154,7 +154,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        //catalog
+        //*catalog
         .main__catalog{
             display: flex;
             justify-content: space-between;
@@ -235,7 +235,7 @@ body{
                 }
             }
         }
-        //slider hurry up and special offer
+        //*slider hurry up and special offer
         .main__slider{
             width: 75%;
             display: flex;
@@ -354,7 +354,7 @@ body{
                 right: 30px;
             }
         }
-        //events
+        //*events
         .main__img-block{
             width: 75%;
             .img-block__wrapper{
@@ -430,7 +430,7 @@ body{
                 }
             }
         }
-        //more info
+        //*more info
         .more-info{
             .img-block__wrapper{
                 .img-block__item{
@@ -459,7 +459,7 @@ body{
                 }
             }
         }
-        //game center
+        //*game center
         .game-center{
             margin-top: 5%;
             color: @main-color;
@@ -480,7 +480,7 @@ body{
                 }
             }
         }
-        //contacts and map
+        //* contacts and map
         .main__info{
             margin: 5% 0;
             width: 75%;
@@ -584,16 +584,113 @@ body{
                 }
             }
         }
+        //* form 
+        .main__form{
+            margin: 5% 0;
+            width: 75%;
+            margin-top: 0;
+            .form__wrapper{
+                display: flex;
+                justify-content: space-between;
+                .form__section{
+                    width: 68%;
+                    form{
+                        .outcome-section{
+                            display: flex;
+                            justify-content: end;
+                            .btn{
+                                width: 30%;
+                                color: white;
+                                height: 46px;
+                                background: @gradient;
+                                font-weight: bold;
+                                border: none;
+                                border-radius: 10px;
+                                cursor: pointer;
+                                transition: all 0.2s;
+                                &:hover{
+                                    box-shadow: @active-box-shadow;
+                                }
+                            }
+                        }
+                        .outcome{
+                            display: flex;
+                            justify-content: space-between;
+                            font-weight: bold;
+                            font-size: 1.05rem;
+                        }
+                        .outcome-sum{
+                            margin-top: 50px;
+                            align-items: center;
+                            .amount{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+                .cart-counter{
+                    width: 30%;
+                    background-color: white;
+                    box-shadow: @main-box-shadow;
+                    padding: 2rem;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    .counter__header{
+                        width: 100%;
+                        color: @active-color;
+                        font-size: 1.1875rem;
+                        font-weight: bold;
+                        margin-top: 0;
+                    }
+                    .counter__item  {
+                        margin: 10px 0;
+                        .price{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
     }
     //repeatable styles
     .section-header{
         font-size: 2rem;
         font-weight: bold;
-        color: #363636;
+        color: @main-color;
         width: 75%;
         margin: 4rem 0 2rem 0;
     }
+    .section-second-header{
+        font-size: 1.375rem;
+        font-weight: bold;
+        color: @main-color;
+        margin: 0;
+        width: 100%;
+    }
     .slider{
         margin-top: 0;
+    }
+}
+
+
+//?ordering page styles
+
+.ordering{
+    .main__wrapper{
+        .nav{
+            margin-top: 150px;
+            color: gray;
+            width: 75%;
+            a{
+                color: gray;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        .section-header{
+            margin-top: 0;
+        }
     }
 }

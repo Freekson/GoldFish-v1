@@ -11,7 +11,7 @@ body {
   margin-top: 135px;
 }
 .slider .slider__wrapper {
-  overflow-x: scroll;
+  overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 .slider .slider__wrapper .slider__items {
@@ -553,13 +553,99 @@ body {
   height: 100%;
   width: 100%;
 }
+.main .main__wrapper .main__form {
+  margin: 5% 0;
+  width: 75%;
+  margin-top: 0;
+}
+.main .main__wrapper .main__form .form__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section {
+  width: 68%;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-section {
+  display: flex;
+  justify-content: end;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-section .btn {
+  width: 30%;
+  color: white;
+  height: 46px;
+  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-section .btn:hover {
+  box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .outcome {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-sum {
+  margin-top: 50px;
+  align-items: center;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-sum .amount {
+  font-size: 2rem;
+}
+.main .main__wrapper .main__form .form__wrapper .cart-counter {
+  width: 30%;
+  background-color: white;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.main .main__wrapper .main__form .form__wrapper .cart-counter .counter__header {
+  width: 100%;
+  color: #F9A43F;
+  font-size: 1.1875rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+.main .main__wrapper .main__form .form__wrapper .cart-counter .counter__item {
+  margin: 10px 0;
+}
+.main .main__wrapper .main__form .form__wrapper .cart-counter .counter__item .price {
+  margin-left: 15px;
+}
 .main .section-header {
   font-size: 2rem;
   font-weight: bold;
-  color: #363636;
+  color: #2A2A2A;
   width: 75%;
   margin: 4rem 0 2rem 0;
 }
+.main .section-second-header {
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #2A2A2A;
+  margin: 0;
+  width: 100%;
+}
 .main .slider {
+  margin-top: 0;
+}
+.ordering .main__wrapper .nav {
+  margin-top: 150px;
+  color: gray;
+  width: 75%;
+}
+.ordering .main__wrapper .nav a {
+  color: gray;
+  text-decoration: none;
+}
+.ordering .main__wrapper .nav a:hover {
+  text-decoration: underline;
+}
+.ordering .main__wrapper .section-header {
   margin-top: 0;
 }

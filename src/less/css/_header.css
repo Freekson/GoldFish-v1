@@ -52,6 +52,10 @@
   color: #bdbdbd;
   transition: color 0.15s ease-in-out;
 }
+.header .header__wrapper .link-cart {
+  text-decoration: none;
+  position: relative;
+}
 .header .header__wrapper .header__telephone {
   display: flex;
   align-items: center;
@@ -63,6 +67,21 @@
 }
 .header .header__wrapper .header__profile-cart svg:first-child {
   margin-right: 10px;
+}
+.header .header__wrapper .header__profile-cart .counter {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 5px;
+  right: 0;
+  color: white;
+  background-color: #F9A43F;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: bold;
 }
 .navigation {
   display: flex;

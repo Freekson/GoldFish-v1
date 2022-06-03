@@ -69,6 +69,10 @@
                 transition: color 0.15s ease-in-out;
             }
         }
+        .link-cart{
+            text-decoration: none;
+            position: relative;
+        }
         .header__telephone{
             display: flex;
             align-items: center;
@@ -81,6 +85,21 @@
         .header__profile-cart{
             svg:first-child{
                 margin-right: 10px;
+            }
+            .counter{
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                bottom: 5px;
+                right: 0;
+                color: white;
+                background-color: @active-color;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.875rem;
+                font-weight: bold;
             }
         }
     }
