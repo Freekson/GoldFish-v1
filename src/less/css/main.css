@@ -596,7 +596,102 @@ body {
 .main .main__wrapper .main__form .form__wrapper .form__section form .outcome-sum .amount {
   font-size: 2rem;
 }
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset {
+  border: none;
+  margin-bottom: 5%;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row {
+  display: flex;
+  align-items: center;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row p {
+  font-weight: bold;
+  white-space: nowrap;
+  width: 15%;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row input {
+  width: 80%;
+  height: 54px;
+  border: 1px solid rgba(217, 217, 217, 0.39);
+  border-radius: 10px;
+  color: gray;
+  padding: 5px;
+  padding-left: 15px;
+  margin: 1% 0% 1% 5%;
+  outline: none;
+  box-sizing: border-box;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row input::-webkit-outer-spin-button,
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row input:focus {
+  border: 2px solid #F9A43F;
+  /* Рамка при получении фокуса */
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .under-text {
+  color: gray;
+  font-size: 0.95rem;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 3%;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item .text {
+  width: 70%;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item .text p {
+  margin: 5px 0 0 15px;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item .text b {
+  margin-left: 15px;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item svg {
+  width: 30px;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item input {
+  width: 21px;
+  height: 21px;
+  box-sizing: border-box;
+  border: 1px solid #2A2A2A;
+  border-radius: 7px;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .checkbox-item {
+  display: flex;
+  align-items: center;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .checkbox-item input {
+  width: 21px;
+  height: 21px;
+  box-sizing: border-box;
+  border: 1px solid #2A2A2A;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .gray-text {
+  color: gray;
+  margin: 0;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset p a {
+  color: #F9A43F;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .method,
+.main .main__wrapper .main__form .form__wrapper .form__section form .payment {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .main__wrapper .main__form .form__wrapper .form__section form .contact {
+  margin-bottom: 0;
+}
 .main .main__wrapper .main__form .form__wrapper .cart-counter {
+  height: 250px;
   width: 30%;
   background-color: white;
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);

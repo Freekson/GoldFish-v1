@@ -626,9 +626,104 @@ body{
                                 font-size: 2rem;
                             }
                         }
+                        .fieldset{
+                            border: none;
+                            margin-bottom: 5%;
+                            .input-row{
+                                display: flex;
+                                align-items: center;
+                                p{
+                                    font-weight: bold;
+                                    white-space: nowrap;
+                                    width: 15%;
+                                }
+                                input{
+                                    width: 80%;
+                                    height: 54px;
+                                    border: 1px solid rgba(217, 217, 217, 0.39);
+                                    border-radius: 10px;
+                                    color: gray;
+                                    padding: 5px;
+                                    padding-left: 15px;
+                                    margin: 1% 0% 1% 5%;
+                                    outline: none;
+                                    box-sizing: border-box;
+                                    &::-webkit-outer-spin-button,
+                                    &::-webkit-inner-spin-button {
+                                        display: none; 
+                                        -webkit-appearance: none;
+                                        margin: 0; 
+                                    }
+                                    &:focus {
+                                        border: 2px solid @active-color; /* Рамка при получении фокуса */
+                                    }
+                                }
+                            }
+                            .under-text{
+                                color: gray;
+                                font-size: 0.95rem;
+                            }
+                            .fieldset__item{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                width: 40%;
+                                margin-top: 3%;
+                                .text{
+                                    width: 70%;
+                                    p{
+                                        margin: 5px 0 0 15px;
+                                    }
+                                    b{
+                                        margin-left: 15px;
+                                    }
+                                }  
+                                svg{
+                                    width: 30px;
+                                }
+                                input{
+                                    width: 21px;
+                                    height: 21px;
+                                    box-sizing: border-box;
+                                    border: 1px solid #2A2A2A;
+                                    border-radius: 7px;
+                                } 
+                            }
+                            .checkbox-item{
+                                display: flex;
+                                align-items: center;
+                                input{
+                                    width: 21px;
+                                    height: 21px;
+                                    box-sizing: border-box;
+                                    border: 1px solid #2A2A2A;
+                                    border-radius: 7px;
+                                    margin-right: 20px;
+                                }
+                            }
+                            .gray-text{
+                                color: gray;
+                                margin: 0;
+                            }
+                            p{
+                                a{
+                                    color: @active-color    ;
+                                }
+                            }
+                        }
+                        .method, .payment{
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
+                        .contact{
+                            margin-bottom: 0;
+                        }
                     }
                 }
                 .cart-counter{
+                    height: 250px;
                     width: 30%;
                     background-color: white;
                     box-shadow: @main-box-shadow;
@@ -684,9 +779,9 @@ body{
             a{
                 color: gray;
                 text-decoration: none;
-            }
-            a:hover{
-                text-decoration: underline;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
         .section-header{
