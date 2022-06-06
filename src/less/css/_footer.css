@@ -8,37 +8,37 @@ footer .footer__wrapper {
   justify-content: center;
   align-items: center;
 }
-footer .footer__wrapper .footer__section {
+footer .footer__wrapper .footer__top {
   display: flex;
   justify-content: space-between;
   width: 75%;
   margin: 5% 0;
 }
-footer .footer__wrapper .footer__section .section__column a {
+footer .footer__wrapper .footer__top .section__column a {
   display: block;
   color: white;
   margin: 16px;
   text-decoration: none;
 }
-footer .footer__wrapper .footer__section .section__column a:hover {
+footer .footer__wrapper .footer__top .section__column a:hover {
   text-decoration: underline;
 }
-footer .footer__wrapper .footer__section .section__column p {
+footer .footer__wrapper .footer__top .section__column p {
   color: white;
 }
-footer .footer__wrapper .footer__section .section__column .bold {
+footer .footer__wrapper .footer__top .section__column .bold {
   font-weight: bold;
 }
-footer .footer__wrapper .footer__section .section__column .social-block a {
+footer .footer__wrapper .footer__top .section__column .social-block a {
   display: inline;
 }
-footer .footer__wrapper .footer__section .section__column .social-block a:hover {
+footer .footer__wrapper .footer__top .section__column .social-block a:hover {
   text-decoration: none;
 }
-footer .footer__wrapper .footer__section .section__column .request-btn {
+footer .footer__wrapper .footer__top .section__column .request-btn {
   width: 200px;
 }
-footer .footer__wrapper .footer__section .section__column .request-btn a {
+footer .footer__wrapper .footer__top .section__column .request-btn a {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -51,22 +51,22 @@ footer .footer__wrapper .footer__section .section__column .request-btn a {
   font-weight: bold;
   transition: all 0.2s;
 }
-footer .footer__wrapper .footer__section .section__column .request-btn a:hover {
+footer .footer__wrapper .footer__top .section__column .request-btn a:hover {
   background: #F9A43F;
   color: white;
 }
-footer .footer__wrapper .footer__section .section__column:first-child a {
+footer .footer__wrapper .footer__top .section__column:first-child a {
   margin-left: 0;
 }
-footer .footer__wrapper .footer__section .section__column:last-child {
+footer .footer__wrapper .footer__top .section__column:last-child {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-footer .footer__wrapper .footer__section .section__column:last-child a {
+footer .footer__wrapper .footer__top .section__column:last-child a {
   margin-right: 0;
 }
-footer .footer__wrapper .footer__section .section__column:last-child .first-item {
+footer .footer__wrapper .footer__top .section__column:last-child .first-item {
   margin-bottom: 0;
 }
 footer .footer__wrapper hr {

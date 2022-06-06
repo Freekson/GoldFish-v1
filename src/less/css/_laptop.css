@@ -47,4 +47,7 @@
   .main .main__wrapper .main__slider .slider__item img {
     width: 100%;
   }
+  .main .main__wrapper .main__form .form__wrapper .cart-counter {
+    height: 300px;
+  }
 }

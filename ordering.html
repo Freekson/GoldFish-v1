@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="build/css/style.css">
     <title>Project</title>
+
 </head>
 
 <body>
@@ -123,19 +124,19 @@
                         </svg>
                     </li>
                     <li id="item-2">
-                        <p>War&shyham&shymer 40000</p>
+                        <p>War&shy; ham&shy;mer 40000</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
                     <li id="item-3">
-                        <p>Magic: the Ga&shythe&shyring</p>
+                        <p>Magic: the Ga&shy;the&shy;ring</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
                     <li id="item-4">
-                        <p>Game acce&shysso&shyries</p>
+                        <p>Game acce&shy;sso&shy;ries</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
@@ -147,13 +148,13 @@
                         </svg>
                     </li>
                     <li id="item-6">
-                        <p>Goods for chil&shydren</p>
+                        <p>Goods for chil&shy;dren</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
                     <li id="item-7">
-                        <p>Acce&shyssories for mode&shyling</p>
+                        <p>Acce&shy;ssories for mode&shy;ling</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
@@ -172,7 +173,7 @@
             <section class="main__form form">
                 <div class="form__wrapper">
                     <section class="form__section">
-                        <form action="">
+                        <form action="index.php" autocomplete="on" method="post">
                             <h6 class="section-second-header">Delivery address</h6>
                             <fieldset class="fieldset address">
                                 <div class="input-row">
@@ -281,7 +282,7 @@
                             <fieldset class="fieldset">
                                 <div class="input-row">
                                     <p>Promo code</p>
-                                    <input type="text" id="promocode" placeholder="Promo" required>
+                                    <input type="text" id="promocode" placeholder="Promo">
                                 </div>
                             </fieldset>
                             <h6 class="section-second-header">Contact details</h6>
@@ -299,7 +300,7 @@
                                     <input type="text" id="email" placeholder="E-mail" required>
                                 </div>
                                 <div class="input-row">
-                                    <p>Name *</p>
+                                    <p>Phone *</p>
                                     <input class="info__input" type="tel" id="telephone" name="user_telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="___-___-____" required/>
                                 </div>
                                 <p class="under-text">* Mandatory fields</p>
@@ -325,9 +326,9 @@
                             <p class="outcome"><span class="price">Delivery price</span><span class="amount">22$</span></p>
                             <p class="outcome"><span class="price">Amount of discount</span><span class="amount">0$</span></p>
                             <p class="outcome outcome-sum"><span class="price">Amount to be paid</span><span class="amount">286$</span></p>
-                            <section class="outcome-section">
+                            <div class="outcome-section">
                                 <input class="btn" type="submit" value="Pay" formmethod="post" />
-                            </section>
+                            </div>
                         </form>
                     </section>
                     <aside class="cart-counter">
@@ -350,7 +351,7 @@
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
-            <section class="footer__section">
+            <div class="footer__top">
                 <div class="section__column">
                     <a href="#"><img src="./build/img/logo.png" alt="not found"></a>
                     <p>Moscow, metro station Taganskaya <br> Maly Drovyanoy Lane 6</p>
@@ -400,9 +401,9 @@
                         </a>
                     </div>
                 </div>
-            </section>
+            </div>
             <hr>
-            <section class="footer__bottom">
+            <div class="footer__bottom">
                 <div class="section__column">
                     <a href="#">© 2021 MagicGoldFish.ru</a>
                     <a href="#">Privacy Policy</a>
@@ -431,9 +432,11 @@
                     <a href="#" class="first">Content is not a public offer</a>
                     <a href="#" class="last">Terms of use</a>
                 </div>
-            </section>
+            </div>
         </div>
     </footer>
+    <span class="slider__items" id="prev"></span>
+    <span id="next"></span>
     <script src="build/js/script.js"></script>
 </body>
 

@@ -74,8 +74,10 @@ function styles() {
 //task convet less to css 
 function convert() {
     return gulp.src(lessFiles)
+        .pipe(sourcemaps.init()) //add sourcemap
         .pipe(less())
-        .pipe(gulp.dest('./src/less/css'));
+        .pipe(gulp.dest('./src/less/css'))
+        .pipe(sourcemaps.write('.')); //sourcemap file
 }
 
 //taks for js scripts
