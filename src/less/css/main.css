@@ -326,6 +326,11 @@ body {
   text-decoration: line-through;
 }
 .main .main__wrapper .main__slider .new-price {
+  font-weight: bold;
+  font-size: 1.3125rem;
+  margin: 20px 10px 10px 10px;
+  position: absolute;
+  bottom: 100px;
   right: 30px;
 }
 .main .main__wrapper .main__img-block {
