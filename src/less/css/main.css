@@ -299,6 +299,12 @@ body {
 .main .main__wrapper .main__slider .slider__item .slider__buttons-block .cart:hover {
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
 }
+.main .main__wrapper .main__slider .slider__item .slider__buttons-block .active-cart {
+  background: white;
+  border: 2px #F9A43F solid;
+  box-sizing: border-box;
+  color: #F9A43F;
+}
 .main .main__wrapper .main__slider .slider__item .slider__buttons-block .buy {
   color: #F9A43F;
   display: flex;

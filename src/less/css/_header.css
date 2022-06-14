@@ -83,6 +83,9 @@
   font-size: 0.875rem;
   font-weight: bold;
 }
+.header .header__wrapper .header__profile-cart .anactive {
+  display: none;
+}
 .navigation {
   display: flex;
   position: fixed;
