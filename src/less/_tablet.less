@@ -100,7 +100,7 @@
     .main .main__wrapper .main__form .form__wrapper {
         flex-wrap: wrap;
         justify-content: center;
-        .cart-counter{
+        .cart__counter{
             width: 45%;
             order: -1;
             margin-bottom: 50px;
@@ -194,7 +194,7 @@
     .main .main__wrapper .main__img-block .img-block__wrapper .img-block__item .img-block__text{
         height: 140px;
     }
-    .main .main__wrapper .main__form .form__wrapper .cart-counter{
+    .main .main__wrapper .main__form .form__wrapper .cart__counter{
         width: 60%;
     }
     .main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row{
@@ -208,5 +208,31 @@
     }
     .fieldset{
         padding: 0;
+    }
+    .main .main__wrapper .cart .cart__wrapper{
+        .cart__section .cart__item{
+            flex-direction: column;
+            .image-block{
+                width: 200px;
+                height: 200px;
+                img{
+                    height: 80%;
+                    width: 80%;
+                }
+            }
+            .name{
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .quantity{
+                margin-bottom: 15px;
+            }
+            svg{
+                margin-bottom: 50px;
+            }
+        }
+        .cart__counter{
+            width: 100%;
+        }
     }
 }

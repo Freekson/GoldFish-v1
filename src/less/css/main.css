@@ -701,7 +701,7 @@ body {
 .main .main__wrapper .main__form .form__wrapper .form__section form .contact {
   margin-bottom: 0;
 }
-.main .main__wrapper .main__form .form__wrapper .cart-counter {
+.main .main__wrapper .main__form .form__wrapper .cart__counter {
   height: 250px;
   width: 30%;
   background-color: white;
@@ -710,18 +710,138 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
 }
-.main .main__wrapper .main__form .form__wrapper .cart-counter .counter__header {
+.main .main__wrapper .main__form .form__wrapper .cart__counter .counter__header {
   width: 100%;
   color: #F9A43F;
   font-size: 1.1875rem;
   font-weight: bold;
   margin-top: 0;
 }
-.main .main__wrapper .main__form .form__wrapper .cart-counter .counter__item {
+.main .main__wrapper .main__form .form__wrapper .cart__counter .counter__item {
   margin: 10px 0;
 }
-.main .main__wrapper .main__form .form__wrapper .cart-counter .counter__item .price {
+.main .main__wrapper .main__form .form__wrapper .cart__counter .counter__item .price {
   margin-left: 15px;
+}
+.main .main__wrapper .cart {
+  margin: 5% 0;
+  width: 75%;
+  margin-top: 0;
+}
+.main .main__wrapper .cart .cart__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__section {
+  width: 65%;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.375rem;
+  margin: 3% 0;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .image-block {
+  width: 95px;
+  height: 95px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .name {
+  max-width: 30%;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity {
+  display: flex;
+  align-items: center;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity .amount {
+  margin: 0 15px;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity span {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter {
+  height: 250px;
+  width: 30%;
+  background-color: white;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__sum {
+  font-weight: bold;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__sum .sum {
+  font-weight: 1.185rem;
+  margin-right: 5%;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__sum .price {
+  font-size: 2rem;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset {
+  border: none;
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .input {
+  width: calc(100% - 39px);
+  height: 34px;
+  box-sizing: border-box;
+  border-radius: 9px;
+  border: 1px solid #cacaca;
+  outline: none;
+  font-size: 0.85rem;
+  padding-left: 10px;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .input::-webkit-outer-spin-button,
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .input:focus {
+  border: 2px solid #F9A43F;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  border: 1px solid #cacaca;
+  background-color: #cacaca;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .btn:hover {
+  cursor: pointer;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn a {
+  display: block;
+  background: linear-gradient(184.53deg, #f9a43f 5.27%, #fb791b 91.78%);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 34px;
+  text-decoration: none;
+  color: white;
+  height: 34px;
+  border-radius: 9px;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn a:hover {
+  box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
 }
 .main .section-header {
   font-size: 2rem;

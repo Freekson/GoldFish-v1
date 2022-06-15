@@ -82,14 +82,16 @@ The site of a large online store, with all the relevant features. The project wi
   - [x] Add js to main page
       - [x] Add js to navigation
       - [x] Add js to slider
+      - [x] Add json processing
+      - [x] Add js to cart
   - [x] Add adaptive to main page
-      - [x] desktop
-      - [x] laptop
-      - [x] tablet
-      - [x] mobile
+      - [x] Desktop
+      - [x] Laptop
+      - [x] Tablet
+      - [x] Mobile
 - [ ] Create side pages
     - [ ] Product page
-    - [ ] Basket
+    - [x] Cart
     - [ ] Forms
     - [ ] About us
     - [ ] Blog 
@@ -98,13 +100,13 @@ The site of a large online store, with all the relevant features. The project wi
     - [x] Order
 - [ ] Add adaptive to all pages
     - [ ] Product page
-    - [ ] Basket
+    - [x] Cart
     - [ ] Forms
     - [ ] About us
     - [ ] Blog 
     - [ ] Article
     - [ ] Event page
-    - [ ] Order
+    - [x] Order
 - [ ] Soon.. 
 
 

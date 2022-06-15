@@ -47,7 +47,18 @@
   .main .main__wrapper .main__slider .slider__item img {
     width: 100%;
   }
-  .main .main__wrapper .main__form .form__wrapper .cart-counter {
+  .main .main__wrapper .main__form .form__wrapper .cart__counter {
     height: 300px;
+  }
+  .main .main__wrapper .cart .cart__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .main__wrapper .cart .cart__wrapper .cart__section {
+    width: 100%;
+  }
+  .main .main__wrapper .cart .cart__wrapper .cart__counter {
+    width: 50%;
+    margin-top: 50px;
   }
 }
