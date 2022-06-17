@@ -737,8 +737,8 @@ body {
 }
 .main .main__wrapper .cart .cart__wrapper .cart__section .cart__item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   font-weight: bold;
   font-size: 1.375rem;
   margin: 3% 0;
@@ -752,8 +752,12 @@ body {
   align-items: center;
   border-radius: 9px;
 }
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .image-block img {
+  width: 90%;
+  height: 90%;
+}
 .main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .name {
-  max-width: 30%;
+  width: 30%;
 }
 .main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity {
   display: flex;
@@ -762,12 +766,16 @@ body {
 .main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity .amount {
   margin: 0 15px;
 }
-.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity span {
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity .plus,
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity .minus {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item_unactive {
+  display: none;
+}
 .main .main__wrapper .cart .cart__wrapper .cart__counter {
-  height: 250px;
+  height: 300px;
   width: 30%;
   background-color: white;
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
@@ -819,6 +827,10 @@ body {
 }
 .main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .btn:hover {
   cursor: pointer;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode_active .promo {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 .main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn {
   display: flex;

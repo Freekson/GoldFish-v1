@@ -770,8 +770,8 @@ body{
                     width: 65%;
                     .cart__item{
                         display: flex;
-                        justify-content: space-between;
                         align-items: center;
+                        justify-content: space-between;
                         font-weight: bold;
                         font-size: 1.375rem;
                         margin: 3% 0;
@@ -782,10 +782,14 @@ body{
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            border-radius: 9px;                     
+                            border-radius: 9px; 
+                            img{
+                                width: 90%;
+                                height: 90%;
+                            }                  
                         }
                         .name{
-                            max-width: 30%;
+                            width: 30%;
                         }
                         .quantity{
                             display: flex;
@@ -793,15 +797,18 @@ body{
                             .amount{
                                 margin: 0 15px;
                             }
-                            span{
+                            .plus, .minus{
                                 font-size: 1.5rem;
                                 cursor: pointer;
                             }
                         }
                     }
+                    .cart__item_unactive{
+                        display: none;
+                    }
                 }
                 .cart__counter{
-                    height: 250px;
+                    height: 300px;
                     width: 30%;
                     background-color: white;
                     box-shadow: @main-box-shadow;
@@ -853,6 +860,12 @@ body{
                                     cursor: pointer;
                                 }
                             }
+                        }
+                    }
+                    .cart__promocode_active{
+                        .promo{
+                            font-size: 1.1rem;
+                            font-weight: bold;
                         }
                     }
                     .order-btn{
