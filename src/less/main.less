@@ -280,13 +280,16 @@ body{
                     .other-info{
                         display: flex;
                         justify-content: space-between;
+                        align-items: center;
                         width: 100%;
                         margin-top: 10px;
-                        .people{
+                        .people, .time {
                             display: flex;
                             align-items: center;
-                            svg{
-                                margin-right: 5px;
+                            img{
+                                width: 18px;
+                                height: 18px;
+                                margin-right: 10px;
                             }
                         }
                     }
@@ -802,6 +805,9 @@ body{
                                 cursor: pointer;
                             }
                         }
+                        .clean{
+                            cursor: pointer;
+                        }
                     }
                     .cart__item_unactive{
                         display: none;
@@ -851,6 +857,7 @@ body{
                                 }
                             }
                             .btn{
+
                                 width: 34px;
                                 height: 34px;
                                 border-radius: 9px;

@@ -1,5 +1,12 @@
 "use strict";
 
+loadURL = function loadURL(url) {
+  var oRequest = new XMLHttpRequest();
+  oRequest.open('GET', url, false);
+  oRequest.send(null);
+  return oRequest.responseText;
+};
+
 function arraySum(array) {
   var sum = 0;
 
@@ -10,12 +17,7 @@ function arraySum(array) {
   return sum;
 }
 
-loadURL = function loadURL(url) {
-  var oRequest = new XMLHttpRequest();
-  oRequest.open('GET', url, false);
-  oRequest.send(null);
-  return oRequest.responseText;
-};
+;
 
 if (document.getElementsByClassName('cart') != null && document.getElementById('cart')) {
   var elements = document.getElementsByClassName('cart');
@@ -187,13 +189,23 @@ if (document.querySelector('.counter') != null) {
 }
 
 if (document.getElementsByClassName('cart__item') != null) {
+  var sum;
+
   (function () {
     var cartItem = document.getElementsByClassName('cart__item');
     var cartItemLenght = cartItem.length;
-    var sum = parseInt(document.getElementById('sum').innerHTML);
+
+    if (document.getElementById('sum') != null) {
+      sum = parseInt(document.getElementById('sum').innerHTML);
+    }
+
     var arr = [];
     var summary = arraySum(arr);
-    document.getElementById('sum').textContent = sum;
+
+    if (document.getElementById('sum') != null) {
+      document.getElementById('sum').textContent = sum;
+    }
+
     var cout = 0;
 
     var _loop = function _loop(i) {

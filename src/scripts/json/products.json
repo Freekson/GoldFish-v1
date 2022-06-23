@@ -1,0 +1,74 @@
+{
+    "product-1": {
+        "id": "1",
+        "name": "Warhammer 40,000: Craftworlds Farseer",
+        "price": "23$",
+        "people": "2-4",
+        "time": "20-60",
+        "age": "18+"
+    },
+    "product-2": {
+        "id": "2",
+        "name": "On Mars",
+        "price": "14$",
+        "people": "1-3",
+        "time": "20-60",
+        "age": "18+"
+    },
+    "product-3": {
+        "id": "3",
+        "name": "Broken Realms: Horrek's Dreadlance",
+        "price": "10$",
+        "people": "2-8",
+        "time": "40-120",
+        "age": "18+"
+    },
+    "product-4": {
+        "id": "4",
+        "name": "Gravity Falls: Save the Waddles",
+        "price": "18$",
+        "people": "1-4",
+        "time": "10-40",
+        "age": "6+"
+    },
+    "product-5": {
+        "id": "5",
+        "name": "star Wars outer ring",
+        "price": "25$",
+        "people": "2-6",
+        "time": "30-100",
+        "age": "16+"
+    },
+    "product-6": {
+        "id": "6",
+        "name": "Tavern Red Dragon",
+        "price": "20$",
+        "people": "1-3",
+        "time": "15-40",
+        "age": "12+"
+    },
+    "product-7": {
+        "id": "7",
+        "name": "Warhammer: Craftworlds Farseer ",
+        "price": "26$",
+        "people": "2-6",
+        "time": "20-60",
+        "age": "18+"
+    },
+    "product-8": {
+        "id": "8",
+        "name": "Munchkin",
+        "price": "28$",
+        "people": "1-4",
+        "time": "20-50",
+        "age": "12+"
+    },
+    "product-9": {
+        "id": "9",
+        "name": "Vampire Munchkin",
+        "price": "13$",
+        "people": "1-3",
+        "time": "10-30",
+        "age": "12+"
+    }
+}

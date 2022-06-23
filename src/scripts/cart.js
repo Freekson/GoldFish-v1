@@ -1,15 +1,16 @@
+loadURL = function(url) {
+    var oRequest = new XMLHttpRequest();
+    oRequest.open('GET', url, false);
+    oRequest.send(null);
+    return oRequest.responseText;
+};
+
 function arraySum(array) {
     var sum = 0;
     for (var i = 0; i < array.length; i++) {
         sum += array[i];
     }
     return sum
-}
-loadURL = function(url) {
-    var oRequest = new XMLHttpRequest();
-    oRequest.open('GET', url, false);
-    oRequest.send(null);
-    return oRequest.responseText;
 };
 
 
@@ -201,11 +202,15 @@ if (document.getElementsByClassName('cart__item') != null) {
     let cartItem = document.getElementsByClassName('cart__item');
     let cartItemLenght = cartItem.length;
 
-    let sum = parseInt(document.getElementById('sum').innerHTML);
+    if (document.getElementById('sum') != null) {
+        var sum = parseInt(document.getElementById('sum').innerHTML);
+    }
     let arr = [];
     let summary = arraySum(arr);
 
-    document.getElementById('sum').textContent = sum;
+    if (document.getElementById('sum') != null) {
+        document.getElementById('sum').textContent = sum;
+    }
 
     let cout = 0;
 

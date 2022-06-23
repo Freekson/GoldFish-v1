@@ -259,15 +259,20 @@ body {
 .main .main__wrapper .main__slider .slider__item .slider__item_text .other-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin-top: 10px;
 }
-.main .main__wrapper .main__slider .slider__item .slider__item_text .other-info .people {
+.main .main__wrapper .main__slider .slider__item .slider__item_text .other-info .people,
+.main .main__wrapper .main__slider .slider__item .slider__item_text .other-info .time {
   display: flex;
   align-items: center;
 }
-.main .main__wrapper .main__slider .slider__item .slider__item_text .other-info .people svg {
-  margin-right: 5px;
+.main .main__wrapper .main__slider .slider__item .slider__item_text .other-info .people img,
+.main .main__wrapper .main__slider .slider__item .slider__item_text .other-info .time img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
 }
 .main .main__wrapper .main__slider .slider__item .slider__item_text .description {
   font-weight: bold;
@@ -769,6 +774,9 @@ body {
 .main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity .plus,
 .main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .quantity .minus {
   font-size: 1.5rem;
+  cursor: pointer;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__section .cart__item .clean {
   cursor: pointer;
 }
 .main .main__wrapper .cart .cart__wrapper .cart__section .cart__item_unactive {
