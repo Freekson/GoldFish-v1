@@ -582,131 +582,6 @@ body {
 .main .main__wrapper .main__form .form__wrapper .form__section {
   width: 68%;
 }
-.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-section {
-  display: flex;
-  justify-content: end;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-section .btn {
-  width: 30%;
-  color: white;
-  height: 46px;
-  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
-  font-weight: bold;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-section .btn:hover {
-  box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .outcome {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  font-size: 1.05rem;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-sum {
-  margin-top: 50px;
-  align-items: center;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .outcome-sum .amount {
-  font-size: 2rem;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset {
-  border: none;
-  margin-bottom: 5%;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row {
-  display: flex;
-  align-items: center;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row p {
-  font-weight: bold;
-  white-space: nowrap;
-  width: 15%;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row input {
-  width: 80%;
-  height: 54px;
-  border: 1px solid rgba(217, 217, 217, 0.39);
-  border-radius: 10px;
-  color: gray;
-  padding: 5px;
-  padding-left: 15px;
-  margin: 1% 0% 1% 5%;
-  outline: none;
-  box-sizing: border-box;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row input::-webkit-outer-spin-button,
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row input::-webkit-inner-spin-button {
-  display: none;
-  -webkit-appearance: none;
-  margin: 0;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row input:focus {
-  border: 2px solid #F9A43F;
-  /* Рамка при получении фокуса */
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .under-text {
-  color: gray;
-  font-size: 0.95rem;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 40%;
-  margin-top: 3%;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item .text {
-  width: 70%;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item .text p {
-  margin: 5px 0 0 15px;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item .text b {
-  margin-left: 15px;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item svg {
-  width: 30px;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item input {
-  width: 21px;
-  height: 21px;
-  box-sizing: border-box;
-  border: 1px solid #2A2A2A;
-  border-radius: 7px;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .checkbox-item {
-  display: flex;
-  align-items: center;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .checkbox-item input {
-  width: 21px;
-  height: 21px;
-  box-sizing: border-box;
-  border: 1px solid #2A2A2A;
-  border-radius: 7px;
-  margin-right: 20px;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .gray-text {
-  color: gray;
-  margin: 0;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .fieldset p a {
-  color: #F9A43F;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .method,
-.main .main__wrapper .main__form .form__wrapper .form__section form .payment {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.main .main__wrapper .main__form .form__wrapper .form__section form .contact {
-  margin-bottom: 0;
-}
 .main .main__wrapper .main__form .form__wrapper .cart__counter {
   height: 250px;
   width: 30%;
@@ -728,6 +603,131 @@ body {
 }
 .main .main__wrapper .main__form .form__wrapper .cart__counter .counter__item .price {
   margin-left: 15px;
+}
+.main .main__wrapper form .outcome-section {
+  display: flex;
+  justify-content: end;
+}
+.main .main__wrapper form .outcome-section .btn {
+  width: 30%;
+  color: white;
+  height: 46px;
+  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.main .main__wrapper form .outcome-section .btn:hover {
+  box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+}
+.main .main__wrapper form .outcome {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+.main .main__wrapper form .outcome-sum {
+  margin-top: 50px;
+  align-items: center;
+}
+.main .main__wrapper form .outcome-sum .amount {
+  font-size: 2rem;
+}
+.main .main__wrapper form .fieldset {
+  border: none;
+  margin-bottom: 5%;
+}
+.main .main__wrapper form .fieldset .input-row {
+  display: flex;
+  align-items: center;
+}
+.main .main__wrapper form .fieldset .input-row p {
+  font-weight: bold;
+  white-space: nowrap;
+  width: 15%;
+}
+.main .main__wrapper form .fieldset .input-row input {
+  width: 80%;
+  height: 54px;
+  border: 1px solid rgba(217, 217, 217, 0.39);
+  border-radius: 10px;
+  color: gray;
+  padding: 5px;
+  padding-left: 15px;
+  margin: 1% 0% 1% 5%;
+  outline: none;
+  box-sizing: border-box;
+}
+.main .main__wrapper form .fieldset .input-row input::-webkit-outer-spin-button,
+.main .main__wrapper form .fieldset .input-row input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main .main__wrapper form .fieldset .input-row input:focus {
+  border: 2px solid #F9A43F;
+  /* Рамка при получении фокуса */
+}
+.main .main__wrapper form .fieldset .under-text {
+  color: gray;
+  font-size: 0.95rem;
+}
+.main .main__wrapper form .fieldset .fieldset__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 3%;
+}
+.main .main__wrapper form .fieldset .fieldset__item .text {
+  width: 70%;
+}
+.main .main__wrapper form .fieldset .fieldset__item .text p {
+  margin: 5px 0 0 15px;
+}
+.main .main__wrapper form .fieldset .fieldset__item .text b {
+  margin-left: 15px;
+}
+.main .main__wrapper form .fieldset .fieldset__item svg {
+  width: 30px;
+}
+.main .main__wrapper form .fieldset .fieldset__item input {
+  width: 21px;
+  height: 21px;
+  box-sizing: border-box;
+  border: 1px solid #2A2A2A;
+  border-radius: 7px;
+}
+.main .main__wrapper form .fieldset .checkbox-item {
+  display: flex;
+  align-items: center;
+}
+.main .main__wrapper form .fieldset .checkbox-item input {
+  width: 21px;
+  height: 21px;
+  box-sizing: border-box;
+  border: 1px solid #2A2A2A;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+.main .main__wrapper form .fieldset .gray-text {
+  color: gray;
+  margin: 0;
+}
+.main .main__wrapper form .fieldset p a {
+  color: #F9A43F;
+}
+.main .main__wrapper form .method,
+.main .main__wrapper form .payment {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .main__wrapper form .contact {
+  margin-bottom: 0;
 }
 .main .main__wrapper .cart {
   margin: 5% 0;
@@ -833,6 +833,7 @@ body {
   border-radius: 9px;
   border: 1px solid #cacaca;
   background-color: #cacaca;
+  transition: all 0.2s;
 }
 .main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .btn:hover {
   cursor: pointer;
@@ -847,22 +848,144 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn a {
-  display: block;
-  background: linear-gradient(184.53deg, #f9a43f 5.27%, #fb791b 91.78%);
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn summary {
+  list-style: none;
   line-height: 34px;
-  text-decoration: none;
-  color: white;
-  height: 34px;
+  background: linear-gradient(184.53deg, #f9a43f 5.27%, #fb791b 91.78%);
+  height: 49px;
   border-radius: 9px;
   transition: 0.2s;
   box-sizing: border-box;
 }
-.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn a:hover {
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn summary .details__modal-overlay {
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+  background: rgba(15, 23, 42, 0.8);
+  position: fixed;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn summary:focus {
+  outline: none;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn summary::-webkit-details-marker {
+  display: none;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn summary .button {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 34px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 9px;
+  transition: 0.2s ease-out;
+  user-select: none;
+  cursor: pointer;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn summary .button:hover {
   box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal {
+  background: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  max-width: 90%;
+  pointer-events: none;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 26.6875%;
+  text-align: left;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal .details__modal-title {
+  color: #111827;
+  padding: 10px 2em;
+  pointer-events: all;
+  position: relative;
+  width: calc(100% - 4.5em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal .details__modal-title h1 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal .details__modal-content {
+  padding: 1em;
+  padding-top: 0;
+  pointer-events: all;
+  overflow: auto;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal .details__modal-content .modal__enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal .details__modal-content .modal__enter .enter-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 2px solid rgba(42, 42, 42, 0.12);
+  padding: 7px;
+  cursor: pointer;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal .details__modal-content .modal__enter .active {
+  border-bottom: 3px solid #2A2A2A;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal form .submit-btn {
+  width: 80%;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal form .fieldset {
+  margin-bottom: 0;
+  width: 80%;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal form .fieldset .input-row {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal form .fieldset .input-row input {
+  margin: 0;
+  width: 100%;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal form .fieldset .forget-password-btn {
+  color: #2A2A2A;
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn .details__modal form .submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #F9A43F;
+  border: none;
+  border-radius: 9px;
+  height: 49px;
+  color: white;
+  font-weight: bold;
+}
+.main .main__wrapper .cart .cart__wrapper .cart__counter .order-btn[open] .details__modal-overlay {
+  pointer-events: all;
+  opacity: 0.5;
 }
 .main .section-header {
   font-size: 2rem;

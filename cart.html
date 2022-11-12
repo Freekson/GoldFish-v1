@@ -237,9 +237,39 @@
                         <div class="cart__promocode_active">
                             <p class="promo"></p>
                         </div>
-                        <div class="order-btn">
-                            <a href="ordering.html">Order</a>
-                        </div>
+                        <details class="order-btn">
+                            <summary>
+                              <div class="button">
+                                Checkout
+                              </div>
+                              <div class="details__modal-overlay"></div>
+                            </summary>
+                            <div class="details__modal">
+                              <div class="details__modal-title">
+                                <h1>Login or Register</h1>
+                              </div>
+                              <div class="details__modal-content">
+                                <div class="modal__enter">
+                                    <div class="enter-text active">Login</div>
+                                    <div class="enter-text">Register</div>
+                                </div>
+                                <form action="main.php" method="post">
+                                    <fieldset class="fieldset">
+                                        <div class="input-row">
+                                            <p>Login</p>
+                                            <input type="text" id="login" placeholder="Login" required>
+                                        </div>
+                                        <div class="input-row">
+                                            <p>Password</p>
+                                            <input type="password" id="password" placeholder="Password" required>
+                                        </div>
+                                        <div class="forget-password-btn">Forgot your password?</div>
+                                    </fieldset>
+                                    <input type="submit" value="Login" class="submit-btn">
+                                </form>
+                              </div>
+                            </div>
+                          </details>
                     </aside>
                 </div>
             </section>
