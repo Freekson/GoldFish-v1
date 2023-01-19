@@ -1061,158 +1061,328 @@ body{
                 }
                 .personal-account__section{
                     width: 78%;
-                    .user-section{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        .user{
-                            img{
-                                margin-right: 25px;
-                            }
-                            display: flex;
-                            align-items: center;
-                            .user-name{
-                                font-size: 1.185rem;
-                                font-weight: bold;
-                            }
-                        }
-                        .user-status{
-                            display: flex;
-                            align-items: center;
-                            svg{
-                                border: 1px solid @active-color;
-                                border-radius: 50%;
-                                width: 38px;
-                                height: 38px;
-                                padding: 5px;
-                                box-sizing: border-box;
-                                margin-right: 25px;
-                            }
-                            .status{
-                                font-size: 1.185rem;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                    .loyality-section{
-                        h6{
-                            font-size: 1.365rem;
-                            margin: 20px 0;
-                        }
-                        .loyality-block{
+                    .user-information{
+                        margin-bottom: 80px;
+                        .user-section{
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-                            .card{
-                                .second-layer{
-                                    width: 445px;
-                                    height: 252px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    background-color: @main-color;
-                                    border-radius: 17px;
-                                    box-shadow: @main-box-shadow;
-                                    .first-layer{
-                                        width: 431px;
-                                        height: 238px;
-                                        background: linear-gradient(287.51deg, #CD7F32 0.54%, #E2AB75 98.85%);
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        border-radius: 16px;
-                                        .card-inside{
-                                            width: 421px;
-                                            height: 228px;
-                                            background: linear-gradient(180deg, rgba(42, 42, 42, 0.78) 0%, #2A2A2A 100%);
-                                            border-radius: 15px;
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: center;
-                                            align-items: center;
-                                            .discount{
-                                                font-weight: bold;
-                                                font-size: 2.065rem;
-                                                color: transparent;
-                                                background-clip: text;
-                                                margin: 5px 0;
-                                                background-image: linear-gradient(288.23deg, #CD7F32 10.03%, #E2AB75 99.83%);;
-                                            }
-                                        }
-                                    }
+                            .user{
+                                img{
+                                    margin-right: 25px;
+                                }
+                                display: flex;
+                                align-items: center;
+                                .user-name{
+                                    font-size: 1.185rem;
+                                    font-weight: bold;
                                 }
                             }
-                            .achievements{
-                                width: 40%;
-                                &__item{
-                                    display: flex;
-                                    justify-content: space-between;
-                                    width: 100%;
-                                    margin: 12px 0;
+                            .user-status{
+                                display: flex;
+                                align-items: center;
+                                svg{
+                                    border: 1px solid @active-color;
+                                    border-radius: 50%;
+                                    width: 38px;
+                                    height: 38px;
+                                    padding: 5px;
+                                    box-sizing: border-box;
+                                    margin-right: 25px;
                                 }
-                                .closed{
-                                    opacity: .5;
-                                }
-                                &__section{
-                                    display: flex;
-                                    justify-content: center;
-                                    align-self: center;
-                                }
-                                &__img{
-                                    width: 65px;
-                                    height: 65px;
-                                    background-color: white;
-                                    box-shadow: @main-box-shadow;
-                                    border-radius: 9px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    margin-right: 30px;
-                                    img{
-                                        width: 80%;
-                                    }
-                                }
-                                &__text{
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    p{
-                                        margin: 0;
-                                    }
-                                    .title{
-                                        font-weight: bold;
-                                    }
-                                }
-                                &__score{
+                                .status{
+                                    font-size: 1.185rem;
                                     font-weight: bold;
                                 }
                             }
                         }
+                        .loyality-section{
+                            .loyality-block{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .card{
+                                    .second-layer{
+                                        width: 445px;
+                                        height: 252px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: @main-color;
+                                        border-radius: 17px;
+                                        box-shadow: @main-box-shadow;
+                                        .first-layer{
+                                            width: 431px;
+                                            height: 238px;
+                                            background: linear-gradient(287.51deg, #CD7F32 0.54%, #E2AB75 98.85%);
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            border-radius: 16px;
+                                            .card-inside{
+                                                width: 421px;
+                                                height: 228px;
+                                                background: linear-gradient(180deg, rgba(42, 42, 42, 0.78) 0%, #2A2A2A 100%);
+                                                border-radius: 15px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                align-items: center;
+                                                .discount{
+                                                    font-weight: bold;
+                                                    font-size: 2.065rem;
+                                                    color: transparent;
+                                                    background-clip: text;
+                                                    margin: 5px 0;
+                                                    background-image: linear-gradient(288.23deg, #CD7F32 10.03%, #E2AB75 99.83%);;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .achievements{
+                                    width: 40%;
+                                    &__item{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        width: 100%;
+                                        margin: 12px 0;
+                                    }
+                                    .closed{
+                                        opacity: .5;
+                                    }
+                                    &__section{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-self: center;
+                                    }
+                                    &__img{
+                                        width: 65px;
+                                        height: 65px;
+                                        background-color: white;
+                                        box-shadow: @main-box-shadow;
+                                        border-radius: 9px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-right: 30px;
+                                        img{
+                                            width: 80%;
+                                        }
+                                    }
+                                    &__text{
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        p{
+                                            margin: 0;
+                                        }
+                                        .title{
+                                            font-weight: bold;
+                                        }
+                                    }
+                                    &__score{
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                        .progress-bar{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 60px;
+                            progress{
+                                width: 80%;
+                                height: 17px;
+                                border-radius: 17px;
+                                box-shadow: @main-box-shadow;
+                                &::-webkit-progress-value {
+                                    background: @gradient;
+                                    border-radius: 17px;
+                                }
+                                &::-webkit-progress-bar{
+                                    background-color: white;
+                                    border-radius: 17px;
+                                }
+                            }
+                            label{
+                                margin-left: 5%;
+                                font-size: 1.365rem;
+                            }
+                        }
                     }
-                    .progress-bar{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin-top: 60px;
-                        progress{
-                            width: 80%;
-                            height: 17px;
-                            border-radius: 17px;
-                            box-shadow: @main-box-shadow;
-                            &::-webkit-progress-value {
-                                background: @gradient;
-                                border-radius: 17px;
+                    .user-events{
+                        margin-bottom: 80px;
+                        &__item{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            &:not(:last-child){
+                                margin-bottom: 32px;
                             }
-                            &::-webkit-progress-bar{
+                        }
+                        &__description{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                object-fit: cover;
+                                height: 65px;
+                                width: 65px;
+                                border-radius: 9px;
+                                margin-right: 30px;
+                            }
+                        }
+                        &__info{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            p{
+                                margin: 0;
+                                font-weight: bodl;
+                                &:last-child{
+                                    margin-top: 10px;
+                                }
+                            }
+                            .name{
+                                font-size: 1.375rem;
+                            }
+                        }
+                        &__more{
+                            a{
+                                display: block;
+                                height: 39px;
+                                width: 160px;
+                                border-radius: 9px;
+                                box-sizing: border-box;
+                                border: 2px solid @active-color;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-weight: bold;
+                                color: @active-color;
+                                text-decoration: none;
+                                transition: all ease .2s;
+                                &:hover{
+                                    background: @gradient;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    .user-recomended{
+                        .user__items{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            .slider__item{
+                                height: 409px;
+                                width: 30%;   
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
                                 background-color: white;
-                                border-radius: 17px;
+                                border-radius: 10px;
+                                box-shadow: @main-box-shadow;
+                                position: relative;
+                                padding-top: 20px;
+                                user-select: none;   
+                                transition: all .2s; 
+                                &:nth-child(-n+3){
+                                    margin-bottom: 20px;
+                                }
+                                img{
+                                    height: 145px;
+                                    pointer-events: none;
+                                }
+                                .slider__item_text{
+                                    padding: 0 10%;
+                                    text-align: center;
+                                    width: 80%;
+                                    height: 150px;
+                                    user-select: all;
+                                    .price{
+                                        font-weight: bold;
+                                        font-size: 1.375rem;
+                                    }
+                                    .other-info{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        width: 100%;
+                                        margin-top: 10px;
+                                        .people, .time {
+                                            display: flex;
+                                            align-items: center;
+                                            img{
+                                                width: 18px;
+                                                height: 18px;
+                                                margin-right: 10px;
+                                            }
+                                        }
+                                    }
+                                    .description{
+                                        font-weight: bold;
+                                        margin: 0;
+                                    }
+                                }
+                                .slider__buttons-block{
+                                    position: absolute;
+                                    bottom: 20px;
+                                    width: 80%;
+                                    a{
+                                        display: block;
+                                        width: 100%;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        height: 34px;
+                                        border-radius: 10px;
+                                        box-sizing: border-box;
+                                        transition: all 0.2s;
+                                    }
+                                    .cart{
+                                        background: @gradient;
+                                        color: white;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        &:hover{
+                                            box-shadow: @main-box-shadow;
+                                        }
+                                    }
+                                    .active-cart{
+                                        background: white;
+                                        border: 2px @active-color solid;
+                                        box-sizing: border-box;
+                                        color: @active-color;
+                                    }
+                                    .buy{
+                                        color: @active-color;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border: 2px @active-color solid;
+                                        margin-top: 10px;
+                                        &:hover{
+                                            box-shadow: @main-box-shadow;
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover{
+                                .slider__item:hover{
+                                    transform: translate3d(10px, -10px,0);
+                                    box-shadow: 10px 11px 16px rgba(42, 42, 42, 0.16);
+                                }
                             }
                         }
-                        label{
-                            margin-left: 5%;
-                            font-size: 1.365rem;
-                        }
+                    }
+                    h6{
+                        font-size: 1.365rem;
+                        margin: 20px 0;
                     }
                 }
             }
@@ -1256,7 +1426,7 @@ body{
             color: gray;
         }
     }
-    .section-header{
+    .header{
         margin-top: 0;
     }
 }
