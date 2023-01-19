@@ -821,7 +821,7 @@ body {
 .main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .input::-webkit-outer-spin-button,
 .main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .input::-webkit-inner-spin-button {
   display: none;
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 .main .main__wrapper .cart .cart__wrapper .cart__counter .cart__promocode .fieldset .input:focus {
@@ -987,6 +987,193 @@ body {
   pointer-events: all;
   opacity: 0.5;
 }
+.main .main__wrapper .main__personal-account {
+  margin: 5% 0;
+  width: 75%;
+  margin-top: 0;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__menu {
+  background-color: #E5E5E5;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  width: 20%;
+  height: 240px;
+  border-radius: 9px;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__menu ul {
+  padding: 0;
+  margin: 30px 0px 30px 39px;
+  list-style: none;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__menu ul li {
+  padding: 7px 0;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 25px;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__menu ul li .active-item {
+  font-size: 1.5rem;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section {
+  width: 78%;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .user-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .user-section .user {
+  display: flex;
+  align-items: center;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .user-section .user img {
+  margin-right: 25px;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .user-section .user .user-name {
+  font-size: 1.185rem;
+  font-weight: bold;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .user-section .user-status {
+  display: flex;
+  align-items: center;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .user-section .user-status svg {
+  border: 1px solid #F9A43F;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-right: 25px;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .user-section .user-status .status {
+  font-size: 1.185rem;
+  font-weight: bold;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section h6 {
+  font-size: 1.365rem;
+  margin: 20px 0;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .card .second-layer {
+  width: 445px;
+  height: 252px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2A2A2A;
+  border-radius: 17px;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .card .second-layer .first-layer {
+  width: 431px;
+  height: 238px;
+  background: linear-gradient(287.51deg, #CD7F32 0.54%, #E2AB75 98.85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .card .second-layer .first-layer .card-inside {
+  width: 421px;
+  height: 228px;
+  background: linear-gradient(180deg, rgba(42, 42, 42, 0.78) 0%, #2A2A2A 100%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .card .second-layer .first-layer .card-inside .discount {
+  font-weight: bold;
+  font-size: 2.065rem;
+  color: transparent;
+  background-clip: text;
+  margin: 5px 0;
+  background-image: linear-gradient(288.23deg, #CD7F32 10.03%, #E2AB75 99.83%);
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements {
+  width: 40%;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 12px 0;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements .closed {
+  opacity: 0.5;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements__section {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements__img {
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements__img img {
+  width: 80%;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements__text p {
+  margin: 0;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements__text .title {
+  font-weight: bold;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .loyality-section .loyality-block .achievements__score {
+  font-weight: bold;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .progress-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .progress-bar progress {
+  width: 80%;
+  height: 17px;
+  border-radius: 17px;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .progress-bar progress::-webkit-progress-value {
+  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+  border-radius: 17px;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .progress-bar progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 17px;
+}
+.main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .progress-bar label {
+  margin-left: 5%;
+  font-size: 1.365rem;
+}
 .main .section-header {
   font-size: 2rem;
   font-weight: bold;
@@ -1004,18 +1191,20 @@ body {
 .main .slider {
   margin-top: 0;
 }
-.ordering .main__wrapper .nav {
+.main__wrapper .nav {
   margin-top: 150px;
-  color: gray;
   width: 75%;
 }
-.ordering .main__wrapper .nav a {
-  color: gray;
+.main__wrapper .nav a {
+  color: black;
   text-decoration: none;
 }
-.ordering .main__wrapper .nav a:hover {
+.main__wrapper .nav a:hover {
   text-decoration: underline;
 }
-.ordering .main__wrapper .section-header {
+.main__wrapper .nav .active-menu-item {
+  color: gray;
+}
+.main__wrapper .section-header {
   margin-top: 0;
 }

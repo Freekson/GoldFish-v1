@@ -35,9 +35,9 @@ if (document.getElementsByClassName('cart') != null && document.getElementById('
         let amount = activeItems.length;
         counter.textContent = amount;
         if (amount == 0) {
-            counter.classList.add('anactive');
-        } else if (amount != 0 || counter.classList.contains('anactive')) {
-            counter.classList.remove('anactive');
+            counter.classList.add('inactive');
+        } else if (amount != 0 || counter.classList.contains('inactive')) {
+            counter.classList.remove('inactive');
         }
     }
     elements[1].onclick = function() {
@@ -57,9 +57,9 @@ if (document.getElementsByClassName('cart') != null && document.getElementById('
         let amount = activeItems.length;
         counter.textContent = amount;
         if (amount == 0) {
-            counter.classList.add('anactive');
-        } else if (amount != 0 || counter.classList.contains('anactive')) {
-            counter.classList.remove('anactive');
+            counter.classList.add('inactive');
+        } else if (amount != 0 || counter.classList.contains('inactive')) {
+            counter.classList.remove('inactive');
         }
     }
     elements[2].onclick = function() {
@@ -79,9 +79,9 @@ if (document.getElementsByClassName('cart') != null && document.getElementById('
         let amount = activeItems.length;
         counter.textContent = amount;
         if (amount == 0) {
-            counter.classList.add('anactive');
-        } else if (amount != 0 || counter.classList.contains('anactive')) {
-            counter.classList.remove('anactive');
+            counter.classList.add('inactive');
+        } else if (amount != 0 || counter.classList.contains('inactive')) {
+            counter.classList.remove('inactive');
         }
     }
     elements[3].onclick = function() {
@@ -101,9 +101,9 @@ if (document.getElementsByClassName('cart') != null && document.getElementById('
         let amount = activeItems.length;
         counter.textContent = amount;
         if (amount == 0) {
-            counter.classList.add('anactive');
-        } else if (amount != 0 || counter.classList.contains('anactive')) {
-            counter.classList.remove('anactive');
+            counter.classList.add('inactive');
+        } else if (amount != 0 || counter.classList.contains('inactive')) {
+            counter.classList.remove('inactive');
         }
     }
     elements[4].onclick = function() {
@@ -123,9 +123,9 @@ if (document.getElementsByClassName('cart') != null && document.getElementById('
         let amount = activeItems.length;
         counter.textContent = amount;
         if (amount == 0) {
-            counter.classList.add('anactive');
-        } else if (amount != 0 || counter.classList.contains('anactive')) {
-            counter.classList.remove('anactive');
+            counter.classList.add('inactive');
+        } else if (amount != 0 || counter.classList.contains('inactive')) {
+            counter.classList.remove('inactive');
         }
     }
     elements[5].onclick = function() {
@@ -145,9 +145,9 @@ if (document.getElementsByClassName('cart') != null && document.getElementById('
         let amount = activeItems.length;
         counter.textContent = amount;
         if (amount == 0) {
-            counter.classList.add('anactive');
-        } else if (amount != 0 || counter.classList.contains('anactive')) {
-            counter.classList.remove('anactive');
+            counter.classList.add('inactive');
+        } else if (amount != 0 || counter.classList.contains('inactive')) {
+            counter.classList.remove('inactive');
         }
     }
     elements[6].onclick = function() {
@@ -167,9 +167,9 @@ if (document.getElementsByClassName('cart') != null && document.getElementById('
         let amount = activeItems.length;
         counter.textContent = amount;
         if (amount == 0) {
-            counter.classList.add('anactive');
-        } else if (amount != 0 || counter.classList.contains('anactive')) {
-            counter.classList.remove('anactive');
+            counter.classList.add('inactive');
+        } else if (amount != 0 || counter.classList.contains('inactive')) {
+            counter.classList.remove('inactive');
         }
     }
     elements[7].onclick = function() {
@@ -189,9 +189,9 @@ if (document.getElementsByClassName('cart') != null && document.getElementById('
         let amount = activeItems.length;
         counter.textContent = amount;
         if (amount == 0) {
-            counter.classList.add('anactive');
-        } else if (amount != 0 || counter.classList.contains('anactive')) {
-            counter.classList.remove('anactive');
+            counter.classList.add('inactive');
+        } else if (amount != 0 || counter.classList.contains('inactive')) {
+            counter.classList.remove('inactive');
         }
     }
 }
@@ -258,9 +258,9 @@ if (document.getElementsByClassName('cart__item') != null) {
             document.getElementById('sum').textContent = summary + ' $';
             let items = cartItemLenght - cout
             if (items == 0) {
-                document.querySelector('.counter').classList.add('anactive');
-            } else if (items != 0 || document.querySelector('.counter').classList.contains('anactive')) {
-                document.querySelector('.counter').classList.remove('anactive');
+                document.querySelector('.counter').classList.add('inactive');
+            } else if (items != 0 || document.querySelector('.counter').classList.contains('inactive')) {
+                document.querySelector('.counter').classList.remove('inactive');
             }
             document.querySelector('.counter').textContent = items;
         }
@@ -291,3 +291,39 @@ if (document.getElementsByClassName('cart__item') != null) {
 
     }
 }
+
+
+//TODO: create register and login change 
+
+// document.body.addEventListener("click", e => {
+
+
+//     if (e.target.className == "enter-text") {
+     
+//         e.target.classList.toggle('active');
+//      //ваши действия
+//     }
+// });
+
+
+//? version 2
+
+// function activeRegister ()
+// {
+//     if(document.getElementById('register') != null || document.getElementById('login') != null){
+//         let register = document.getElementById('register') ;
+//         let login = document.getElementById('login') ;
+//         register.classList.add("active");
+//         login.classList.remove("active");
+//     }
+// }
+// function activeLogin ()
+// {
+//     if(document.getElementById('register') != null || document.getElementById('login') != null){
+//         let register = document.getElementById('register') ;
+//         let login = document.getElementById('login') ;
+//         login.classList.add("active");
+//         register.classList.remove("active");
+//     }
+// }
+// activeRegister(); 

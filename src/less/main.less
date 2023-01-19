@@ -850,7 +850,7 @@ body{
                                 &::-webkit-outer-spin-button,
                                 &::-webkit-inner-spin-button {
                                     display: none; 
-                                    -webkit-appearance: none;
+                                    appearance: none;
                                     margin: 0; 
                                 }
                                 &:focus {
@@ -1025,6 +1025,198 @@ body{
                 }
             }
         }
+        //* personal account
+        .main__personal-account{
+            margin: 5% 0;
+            width: 75%;
+            margin-top: 0;
+            .personal-account__wrapper{
+                display: flex;
+                justify-content: space-between;
+                .personal-account__menu{
+                    background-color: @background-color;
+                    box-shadow: @main-box-shadow;
+                    width: 20%;
+                    height: 240px;
+                    border-radius: 9px;
+                    ul{
+                        padding: 0;
+                        margin: 30px 0px 30px 39px;
+                        list-style: none;
+                        li{
+                            padding: 7px 0;
+                            a{
+                                display: block;
+                                text-decoration: none;
+                                color: black;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                height: 25px;
+                            }
+                            .active-item{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+                .personal-account__section{
+                    width: 78%;
+                    .user-section{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .user{
+                            img{
+                                margin-right: 25px;
+                            }
+                            display: flex;
+                            align-items: center;
+                            .user-name{
+                                font-size: 1.185rem;
+                                font-weight: bold;
+                            }
+                        }
+                        .user-status{
+                            display: flex;
+                            align-items: center;
+                            svg{
+                                border: 1px solid @active-color;
+                                border-radius: 50%;
+                                width: 38px;
+                                height: 38px;
+                                padding: 5px;
+                                box-sizing: border-box;
+                                margin-right: 25px;
+                            }
+                            .status{
+                                font-size: 1.185rem;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .loyality-section{
+                        h6{
+                            font-size: 1.365rem;
+                            margin: 20px 0;
+                        }
+                        .loyality-block{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .card{
+                                .second-layer{
+                                    width: 445px;
+                                    height: 252px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: @main-color;
+                                    border-radius: 17px;
+                                    box-shadow: @main-box-shadow;
+                                    .first-layer{
+                                        width: 431px;
+                                        height: 238px;
+                                        background: linear-gradient(287.51deg, #CD7F32 0.54%, #E2AB75 98.85%);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 16px;
+                                        .card-inside{
+                                            width: 421px;
+                                            height: 228px;
+                                            background: linear-gradient(180deg, rgba(42, 42, 42, 0.78) 0%, #2A2A2A 100%);
+                                            border-radius: 15px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                            .discount{
+                                                font-weight: bold;
+                                                font-size: 2.065rem;
+                                                color: transparent;
+                                                background-clip: text;
+                                                margin: 5px 0;
+                                                background-image: linear-gradient(288.23deg, #CD7F32 10.03%, #E2AB75 99.83%);;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .achievements{
+                                width: 40%;
+                                &__item{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    margin: 12px 0;
+                                }
+                                .closed{
+                                    opacity: .5;
+                                }
+                                &__section{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-self: center;
+                                }
+                                &__img{
+                                    width: 65px;
+                                    height: 65px;
+                                    background-color: white;
+                                    box-shadow: @main-box-shadow;
+                                    border-radius: 9px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 30px;
+                                    img{
+                                        width: 80%;
+                                    }
+                                }
+                                &__text{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    p{
+                                        margin: 0;
+                                    }
+                                    .title{
+                                        font-weight: bold;
+                                    }
+                                }
+                                &__score{
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                    .progress-bar{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 60px;
+                        progress{
+                            width: 80%;
+                            height: 17px;
+                            border-radius: 17px;
+                            box-shadow: @main-box-shadow;
+                            &::-webkit-progress-value {
+                                background: @gradient;
+                                border-radius: 17px;
+                            }
+                            &::-webkit-progress-bar{
+                                background-color: white;
+                                border-radius: 17px;
+                            }
+                        }
+                        label{
+                            margin-left: 5%;
+                            font-size: 1.365rem;
+                        }
+                    }
+                }
+            }
+        }
     }
     //repeatable styles
     .section-header{
@@ -1047,24 +1239,24 @@ body{
 }
 
 
-//?ordering page styles
+//? navigation menu 
 
-.ordering{
-    .main__wrapper{
-        .nav{
-            margin-top: 150px;
-            color: gray;
-            width: 75%;
-            a{
-                color: gray;
-                text-decoration: none;
-                &:hover{
-                    text-decoration: underline;
-                }
+.main__wrapper{
+    .nav{
+        margin-top: 150px;
+        width: 75%;
+        a{
+            color: black;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
             }
         }
-        .section-header{
-            margin-top: 0;
+        .active-menu-item{
+            color: gray;
         }
+    }
+    .section-header{
+        margin-top: 0;
     }
 }

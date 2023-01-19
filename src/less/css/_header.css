@@ -60,10 +60,6 @@
   color: #bdbdbd;
   transition: color 0.15s ease-in-out;
 }
-.header .header__wrapper .link-cart {
-  text-decoration: none;
-  position: relative;
-}
 .header .header__wrapper .header__telephone {
   display: flex;
   align-items: center;
@@ -75,6 +71,12 @@
 }
 .header .header__wrapper .header__profile-cart svg:first-child {
   margin-right: 10px;
+}
+.header .header__wrapper .header__profile-cart .header__link {
+  text-decoration: none;
+}
+.header .header__wrapper .header__profile-cart .header__link-cart {
+  position: relative;
 }
 .header .header__wrapper .header__profile-cart .counter {
   position: absolute;
@@ -91,7 +93,7 @@
   font-size: 0.875rem;
   font-weight: bold;
 }
-.header .header__wrapper .header__profile-cart .anactive {
+.header .header__wrapper .header__profile-cart .inactive {
   display: none;
 }
 .navigation {
