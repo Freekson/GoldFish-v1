@@ -1012,7 +1012,8 @@ body {
   padding: 7px 0;
 }
 .main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__menu ul li a {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
@@ -1340,12 +1341,60 @@ body {
   font-size: 1.365rem;
   margin: 20px 0;
 }
+.main .main__wrapper .main__user-orders {
+  margin: 5% 0;
+  width: 75%;
+  margin-top: 0;
+}
+.main .main__wrapper .main__user-orders .order {
+  width: 100%;
+  background-color: #E5E5E5;
+  border-radius: 9px;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  padding: 40px 0;
+}
+.main .main__wrapper .main__user-orders .order:not(:last-child) {
+  margin-bottom: 30px;
+}
+.main .main__wrapper .main__user-orders .order__number {
+  font-size: 1.375rem;
+  color: #F9A43F;
+}
+.main .main__wrapper .main__user-orders .order__date,
+.main .main__wrapper .main__user-orders .order__price,
+.main .main__wrapper .main__user-orders .order__status {
+  font-size: 1.1875rem;
+}
+.main .main__wrapper .main__user-orders .order__details a {
+  display: block;
+  border: 2px solid #F9A43F;
+  border-radius: 9px;
+  text-decoration: none;
+  color: #F9A43F;
+  padding: 10px 40px;
+  transition: 0.1s ease-in;
+}
+.main .main__wrapper .main__user-orders .order__details a:hover {
+  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+  color: #E5E5E5;
+}
 .main .section-header {
   font-size: 2rem;
   font-weight: bold;
   color: #2A2A2A;
   width: 75%;
   margin: 4rem 0 2rem 0;
+}
+.main .page-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2A2A2A;
+  margin: 10px 0 20px 0;
+  width: 75%;
 }
 .main .section-second-header {
   font-size: 1.375rem;
@@ -1370,7 +1419,4 @@ body {
 }
 .main__wrapper .nav .active-menu-item {
   color: gray;
-}
-.main__wrapper .header {
-  margin-top: 0;
 }

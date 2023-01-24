@@ -1046,7 +1046,8 @@ body{
                         li{
                             padding: 7px 0;
                             a{
-                                display: block;
+                                display: flex;
+                                align-items: center;
                                 text-decoration: none;
                                 color: black;
                                 font-size: 1.2rem;
@@ -1387,6 +1388,48 @@ body{
                 }
             }
         }
+        //* user orders
+        .main__user-orders{
+            margin: 5% 0;
+            width: 75%;
+            margin-top: 0;
+            .order{
+                width: 100%;
+                background-color: @background-color;
+                border-radius: 9px;
+                box-shadow: @main-box-shadow;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-weight: bold;
+                padding: 40px 0;
+                &:not(:last-child){
+                    margin-bottom: 30px;
+                }
+                &__number{
+                    font-size: 1.375rem;
+                    color: @active-color;
+                }
+                &__date, &__price, &__status{
+                    font-size: 1.1875rem;
+                }
+                &__details{
+                    a{
+                        display: block;
+                        border: 2px solid @active-color;
+                        border-radius: 9px;
+                        text-decoration: none;
+                        color: @active-color;
+                        padding: 10px 40px;
+                        transition: 0.1s ease-in;
+                        &:hover{
+                            background: @gradient;
+                            color: @background-color;
+                        }
+                    }
+                }
+            }
+        }
     }
     //repeatable styles
     .section-header{
@@ -1395,6 +1438,13 @@ body{
         color: @main-color;
         width: 75%;
         margin: 4rem 0 2rem 0;
+    }
+    .page-header{
+        font-size: 2rem;
+        font-weight: bold;
+        color: @main-color;
+        margin: 10px 0 20px 0;
+        width: 75%;
     }
     .section-second-header{
         font-size: 1.375rem;
@@ -1425,8 +1475,5 @@ body{
         .active-menu-item{
             color: gray;
         }
-    }
-    .header{
-        margin-top: 0;
     }
 }
