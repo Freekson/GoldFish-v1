@@ -1382,6 +1382,143 @@ body {
   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
   color: #E5E5E5;
 }
+.main .main__wrapper .main__user-settings {
+  margin: 5% 0;
+  width: 75%;
+  margin-top: 0;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-setting__menu {
+  background-color: #E5E5E5;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  width: 20%;
+  height: 240px;
+  border-radius: 9px;
+  margin-right: 30px;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-setting__menu ul {
+  padding: 0;
+  margin: 30px 0px 30px 39px;
+  list-style: none;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-setting__menu ul li {
+  padding: 7px 0;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-setting__menu ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 25px;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-setting__menu ul li .active-item {
+  font-size: 1.5rem;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section {
+  width: 55%;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .user-info__item {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 90px;
+  position: relative;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .user-info__item .user-image {
+  position: absolute;
+  top: 0;
+  left: -90px;
+  z-index: 5;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .user-info__item .change-icon {
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  z-index: 10;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .user-info__item .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .user-info__item .info p {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .user-info__item .info .name {
+  font-size: 1.375rem;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .user-info__item .change {
+  display: flex;
+  align-items: center;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .user-info__item .change svg {
+  margin-right: 10px;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .form-header {
+  font-weight: bold;
+  font-size: 1.375rem;
+  margin-top: 80px;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .info__fieldset {
+  border: none;
+  padding: 0;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .info__fieldset .info__input {
+  width: 100%;
+  height: 45px;
+  font-size: 0.9rem;
+  color: #2A2A2A;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 2% 0 4% 0;
+  border: 1px gray solid;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  box-sizing: border-box;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .info__fieldset .info__input:active,
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .info__fieldset .info__input:hover,
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .info__fieldset .info__input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .info__fieldset .info__texarea {
+  width: 100%;
+  font-size: 0.9rem;
+  color: #2A2A2A;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 2% 0 4% 0;
+  resize: none;
+  height: 100px;
+  border: 1px gray solid;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  box-sizing: border-box;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .info__fieldset .info__texarea:active,
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .info__fieldset .info__texarea:hover,
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .info__fieldset .info__texarea:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .btn {
+  width: 100%;
+  color: white;
+  height: 46px;
+  background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.main .main__wrapper .main__user-settings .user-settings__wrapper .user-orders__section .info__form .btn:hover {
+  box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
+}
 .main .section-header {
   font-size: 2rem;
   font-weight: bold;
