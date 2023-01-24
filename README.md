@@ -80,22 +80,13 @@ The site of a large online store, with all the relevant features. The project wi
 
 - [x] Create main page
   - [x] Add js to main page
-      - [x] Add js to navigation
-      - [x] Add js to slider
-      - [x] Add json processing
-      - [x] Add js to cart
-  - [x] Add adaptive to main page
-      - [x] Desktop
-      - [x] Laptop
-      - [x] Tablet
-      - [x] Mobile
 - [ ] Create side pages
     - [ ] Product page
     - [x] Cart
-    - [ ] Forms
+    - [x] Forms
     - [ ] About us
-    - [ ] Blog 
-    - [ ] Article
+    - [x] User page
+    - [x] Orderinf
     - [ ] Event page
     - [x] Order
 - [ ] Add adaptive to all pages
@@ -107,7 +98,6 @@ The site of a large online store, with all the relevant features. The project wi
     - [ ] Article
     - [ ] Event page
     - [x] Order
-- [ ] Soon.. 
 
 
 See the [open issues](https://github.com/Freekson/GoldFish/issues) for a full list of proposed features (and known issues).
