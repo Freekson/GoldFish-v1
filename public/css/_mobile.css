@@ -1,0 +1,52 @@
+/* Landscape phones and smaller */
+@media (max-width: 481px) {
+  .main .main__wrapper .main__catalog .catalog__big-block {
+    flex-basis: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .main .main__wrapper .main__catalog .catalog__big-block .image-block img {
+    height: 250px;
+  }
+  .main .main__wrapper .main__catalog div[class^=catalog] {
+    width: 100%;
+  }
+  .main .main__wrapper .main__img-block .more-btn a {
+    width: 60%;
+  }
+  .main .main__wrapper .game-center .img-block__wrapper .img-block__item {
+    width: 100%;
+  }
+  .main .main__wrapper .more-info .img-block__wrapper .img-block__item {
+    width: 100%;
+    height: 250px;
+  }
+  .main .main__wrapper .more-info .img-block__wrapper .img-block__item img {
+    height: 250px;
+  }
+  .main .main__wrapper .main__slider .slider__item {
+    width: 70%;
+  }
+  .main .main__wrapper .main__form .form__wrapper .form__section form .fieldset {
+    margin: 25px 0;
+  }
+  .main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row {
+    flex-wrap: wrap;
+  }
+  .main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row p {
+    width: 30%;
+  }
+  .main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .input-row input {
+    width: 90%;
+  }
+  .main .main__wrapper .main__form .form__wrapper .form__section form .outcome-section .btn {
+    width: 45%;
+  }
+  .main .main__wrapper .main__form .form__wrapper .form__section form .fieldset .fieldset__item {
+    margin-top: 25px;
+  }
+  .main .main__wrapper .main__form .form__wrapper .cart__counter {
+    width: 90%;
+  }
+}
+

@@ -25,8 +25,6 @@
       <a href="#about-the-project">About The Project</a>
     </li>   
     <li><a href="#installation">Installation</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -36,14 +34,22 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![project screen](build/img/chrome_qqGQdaHVXp.png)
+**Main page**
+
+![project screen](public/img/project-img-2.png)
+
+**Personal account**
+
+![project-screen1](public/img/project-img-1.png)
 
 The site of a large online store, with all the relevant features. The project will be created gradually, over a long period of time. Releases will appear at key points in the creation of the project.
 
-
+**Starting from version v1.2, the project has been rewrite for Laravel**
+ 
 <!-- GETTING STARTED -->
 
 ## Installation
+_The way to install and get started has been changed_
 
 1. Clone the repo
    ```sh
@@ -51,54 +57,32 @@ The site of a large online store, with all the relevant features. The project wi
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   npm install laravel-mix@latest --save-dev 
    ```
-3. Run gulp command
+3. Run server command
     ```sh
-   gulp
+   php artisan serve
    ```
-4. Other gulp command
+4. Other command
 
-   > gulp clean - dist directory   
-    gulp styles - convert LESS to CSS, minify it and merge it into  one   file (main.min.css)    
-    gulp scripts - convert JS to ES5 standard, minify and execute in   one file (main.min.js)  
-    gulp img - image measurements size  
-    gulp watch - launches automatic execution of styles and scripts   when they are changed  
-    gulp build is a default job  
+   > **npm run dev** - Run all Mix tasks.   
+   >
+   > **npm run production** - Run all Mix tasks and minify the output.  
+   >
+   > **npm run watch** - The npm run watch command will continue to run in the terminal and watch for any changes to your resources. When something changes, new files will be automatically compiled  
+   >
+   > **npm run watch-poll** - You may find that in certain environments Webpack doesn't update when your files change  
 
 
 
 ## Style and script directory structure:
 
->./src/styles/\*\*/\*.less   
->./src/scripts/\*\*/\*.js   
->./src/img/\*\*/\*.png/.jpg/.jpeg     
+>./resources/less/\*\*/\*.less   
+>./public/js/\*\*/\*.js   
+>./public/\*\*/\*.png/.jpg/.jpeg     
 
 
 <!-- ROADMAP -->
-## Roadmap
-
-- [x] Create main page
-  - [x] Add js to main page
-- [ ] Create side pages
-    - [ ] Product page
-    - [x] Cart
-    - [x] Forms
-    - [ ] About us
-    - [x] User page
-    - [x] Orderinf
-    - [ ] Event page
-    - [x] Order
-- [ ] Add adaptive to all pages
-    - [ ] Product page
-    - [x] Cart
-    - [ ] Forms
-    - [ ] About us
-    - [ ] Blog 
-    - [ ] Article
-    - [ ] Event page
-    - [x] Order
-
 
 See the [open issues](https://github.com/Freekson/GoldFish/issues) for a full list of proposed features (and known issues).
 Check the [releases](https://github.com/Freekson/GoldFish/releases) to see completed items 
