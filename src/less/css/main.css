@@ -124,6 +124,20 @@ body {
 .slider .slider__control[data-slide='next']::before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
+.main__wrapper .nav {
+  margin-top: 150px;
+  width: 75%;
+}
+.main__wrapper .nav a {
+  color: black;
+  text-decoration: none;
+}
+.main__wrapper .nav a:hover {
+  text-decoration: underline;
+}
+.main__wrapper .nav .active-menu__item {
+  color: gray;
+}
 .main {
   background-color: #E5E5E5;
 }
@@ -1669,18 +1683,4 @@ body {
 }
 .main .slider {
   margin-top: 0;
-}
-.main__wrapper .nav {
-  margin-top: 150px;
-  width: 75%;
-}
-.main__wrapper .nav a {
-  color: black;
-  text-decoration: none;
-}
-.main__wrapper .nav a:hover {
-  text-decoration: underline;
-}
-.main__wrapper .nav .active-menu-item {
-  color: gray;
 }
