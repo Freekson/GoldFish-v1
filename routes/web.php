@@ -13,35 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'App\Http\Controllers\MainController@index');
+Route::get('/cart', 'App\Http\Controllers\MainController@cart');
+Route::get('/ordering', 'App\Http\Controllers\MainController@ordering');
+Route::get('/personal-account', 'App\Http\Controllers\MainController@personal_account');
+Route::get('/user-orders', 'App\Http\Controllers\MainController@user_orders');
+Route::get('/user-settings', 'App\Http\Controllers\MainController@user_settings');
+//catalog and category
+Route::get('/catalog', 'App\Http\Controllers\MainController@catalog');
+Route::get('/{category}', 'App\Http\Controllers\MainController@category');
 
-Route::get('/cart.php', function () {
-    return view('cart');
-});
-
-
-Route::get('/ordering.php', function () {
-    return view('ordering');
-});
-
-Route::get('/personal-account.php', function () {
-    return view('personal-account');
-});
-
-Route::get('/user-orders.php', function () {
-    return view('user-orders');
-});
-
-Route::get('/user-settings.php', function () {
-    return view('user-settings');
-});
-
-//?test
-Route::get('hello', function () {
-    $name = 'User';
-    return view('hello_user', [
-        'name' => $name
-    ]);
-});

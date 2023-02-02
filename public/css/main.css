@@ -157,6 +157,9 @@ body {
   align-items: center;
   width: 75%;
 }
+.main .main__wrapper .main__catalog .image-block {
+  display: block;
+}
 .main .main__wrapper .main__catalog .catalog__small-block {
   max-width: 510px;
   display: flex;
@@ -179,7 +182,6 @@ body {
 .main .main__wrapper .main__catalog .catalog__small-block .image-block img {
   height: 10rem;
   width: 100%;
-  pointer-events: none;
 }
 .main .main__wrapper .main__catalog .catalog__big-block {
   flex-basis: 49%;
@@ -187,7 +189,6 @@ body {
   transition: 0.1s ease-in;
 }
 .main .main__wrapper .main__catalog .catalog__big-block .image-block {
-  pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;

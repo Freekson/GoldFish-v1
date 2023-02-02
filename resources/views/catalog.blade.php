@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="/css/_tablet.css">
     <link rel="stylesheet" href="/css/_mobile.css">
     <title>Project</title>
-
 </head>
 
 <body>
@@ -23,7 +22,7 @@
     <header class="header">
         <div class="header__wrapper">
             <div class="header__logo-image">
-                <a href="index.php">
+                <a href="/">
                     <img src="/img/logo.png" alt="not found">
                 </a>
             </div>
@@ -42,18 +41,18 @@
                 <p>+7 (495) 911-10-11</p>
             </div>
             <div class="header__profile-cart">
-                <a class="header__link" href="personal-account.php">
+                <a class="header__link" href="personal-account">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewbox="0 0 30 29" fill="none">
                         <path d="M15 0.695312C12.9545 0.695312 11.3565 1.43942 10.206 2.92765C9.0554 4.41587 8.48011 6.31827 8.48011 8.63485C8.46591 11.513 9.40341 13.7945 11.2926 15.4793C11.5341 15.7039 11.6193 15.9917 11.5483 16.3427L11.0582 17.3536C10.902 17.6906 10.6712 17.9538 10.3658 18.1433C10.0604 18.3329 9.41761 18.6031 8.4375 18.9541C8.39489 18.9682 7.49645 19.256 5.74219 19.8176C3.98793 20.3792 3.05398 20.6881 2.94034 20.7442C1.74716 21.2356 0.965909 21.7481 0.596591 22.2816C0.198864 23.1661 0 25.4055 0 28.9997H30C30 25.4055 29.8011 23.1661 29.4034 22.2816C29.0341 21.7481 28.2528 21.2356 27.0597 20.7442C26.946 20.6881 26.0121 20.3792 24.2578 19.8176C22.5036 19.256 21.6051 18.9682 21.5625 18.9541C20.5824 18.6031 19.9396 18.3329 19.6342 18.1433C19.3288 17.9538 19.098 17.6906 18.9418 17.3536L18.4517 16.3427C18.3807 15.9917 18.4659 15.7039 18.7074 15.4793C20.5966 13.7945 21.5341 11.513 21.5199 8.63485C21.5199 6.31827 20.9446 4.41587 19.794 2.92765C18.6435 1.43942 17.0455 0.695312 15 0.695312Z" fill="white"/>
                     </svg>
                 </a>
-                <a class="header__link header__link-cart" href="cart.php">
+                <a class="header__link header__link-cart" href="cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewbox="0 0 30 27" fill="none">
                     <path d="M28.741 6.20821C28.489 5.77161 28.1282 5.40778 27.6937 5.15219C27.2592 4.89661 26.7659 4.75799 26.2618 4.74988H7.59518L6.74935 1.45405C6.66389 1.13589 6.47323 0.856047 6.20842 0.660088C5.94361 0.464128 5.62025 0.363601 5.29102 0.374879H2.37435C1.98757 0.374879 1.61664 0.528524 1.34315 0.802015C1.06966 1.07551 0.916016 1.44644 0.916016 1.83321C0.916016 2.21999 1.06966 2.59092 1.34315 2.86441C1.61664 3.1379 1.98757 3.29155 2.37435 3.29155H4.18268L8.20768 18.254C8.29314 18.5722 8.4838 18.852 8.74861 19.048C9.01342 19.244 9.33678 19.3445 9.66602 19.3332H22.791C23.0603 19.3324 23.3241 19.257 23.5532 19.1154C23.7823 18.9739 23.9677 18.7716 24.0889 18.5311L28.8723 8.96446C29.0796 8.5299 29.1761 8.05077 29.1532 7.56983C29.1303 7.08889 28.9887 6.62111 28.741 6.20821Z" fill="white"/>
                     <path d="M8.9375 26.625C10.1456 26.625 11.125 25.6456 11.125 24.4375C11.125 23.2294 10.1456 22.25 8.9375 22.25C7.72938 22.25 6.75 23.2294 6.75 24.4375C6.75 25.6456 7.72938 26.625 8.9375 26.625Z" fill="white"/>
                     <path d="M23.5195 26.625C24.7277 26.625 25.707 25.6456 25.707 24.4375C25.707 23.2294 24.7277 22.25 23.5195 22.25C22.3114 22.25 21.332 23.2294 21.332 24.4375C21.332 25.6456 22.3114 26.625 23.5195 26.625Z" fill="white"/>
                     </svg>
-                    <p class="counter inactive" id="cart">0</p>
+                    <p class="counter" id="cart">0</p>
                 </a>
             </div>
         </div>
@@ -61,7 +60,7 @@
     <nav class="navigation" id="nav">
         <div class="navigation__wrapper">
             <div class="navigation__burger" id="open-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewbox = "0 0 16 14" fill="none">
                     <rect width="16" height="2" fill="#2A2A2A"/>
                     <rect y="6" width="16" height="2" fill="#2A2A2A"/>
                     <rect y="12" width="16" height="2" fill="#2A2A2A"/>
@@ -132,7 +131,7 @@
                         </svg>
                     </li>
                     <li id="item-2">
-                        <p>War&shy; ham&shy;mer 40000</p>
+                        <p>War&shy;ham&shy;mer 40000</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
@@ -169,38 +168,62 @@
                     </li>
                 </ul>
             </div>
+
             <div class="aside-content" id="content">
 
             </div>
         </div>
     </nav>
-    <main class="main user-orders">
+    <main class="main">
         <div class="main__wrapper">
-            <p class="nav"> <a href="index.php">Main</a> > <a href="personal-account.php">Personal account</a> > <a href="user-orders.php" class="active-menu__item">Orders</a> </p>
-            <h6 class="page-header">Orders</h6>
-            <section class="main__user-orders">
-                <div class="order">
-                    <div class="order__number">№ order: 8427369</div>
-                    <div class="order__date">10.10.2021</div>
-                    <div class="order__price">34 $</div>
-                    <div class="order__status">paid</div>
-                    <div class="order__details"><a href="#">More</a></div>
+            <h6 class="section-header" style="margin-top: 200px;">Catalog</h6>
+            @foreach($categories as $category)
+                <h3 style="margin:0;">{{$category->name;}}</h3>
+                {{$category->description;}}
+                <br><br>
+            @endforeach
+            <br>
+            <section class="main__catalog catalog" style="margin-bottom: 100px; ">
+                <div class="catalog__big-block">
+                    <a class="image-block" href="board_games">
+                        <img src="/img/catalog_img1.png" alt="not found">
+                        <div class="image-text">
+                            <p>Board games</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="order">
-                    <div class="order__number">№ order: 8427369</div>
-                    <div class="order__date">10.10.2021</div>
-                    <div class="order__price">34 $</div>
-                    <div class="order__status">paid</div>
-                    <div class="order__details"><a href="#">More</a></div>
-                </div>
-                <div class="order">
-                    <div class="order__number">№ order: 8427369</div>
-                    <div class="order__date">10.10.2021</div>
-                    <div class="order__price">34 $</div>
-                    <div class="order__status">paid</div>
-                    <div class="order__details"><a href="#">More</a></div>
+                <div class="catalog__small-block">
+                    <div class="catalog__first-block">
+                        <a class="image-block" href="wargames">
+                            <img src="/img/catalog_img2.png" alt="not found">
+                            <div class="image-text">
+                                <p>Wargames</p>
+                            </div>
+                        </a>
+                        <a class="image-block" href="magic">
+                            <img src="/img/catalog_img3.png" alt="not found">
+                            <div class="image-text">
+                                <p>Magic:the Cathering</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog__last-block">
+                        <a class="image-block" href="paints">
+                            <img src="/img/catalog_img4.png" alt="not found">
+                            <div class="image-text">
+                                <p>Paints</p>
+                            </div>
+                        </a>
+                        <a class="image-block">
+                            <img src="/img/catalog_img5.png" alt="not found">
+                            <div class="image-text">
+                                <p>Whole catalog</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
+            
         </div>
     </main>
     <footer class="footer">
@@ -289,9 +312,11 @@
             </div>
         </div>
     </footer>
-    <span id="next"></span> <span id="prev"></span> <span class="slider__items"></span>
 
+    <script src="/js/slider.js"></script>
     <script src="/js/nav.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/price.js"></script>
 </body>
 
 </html>

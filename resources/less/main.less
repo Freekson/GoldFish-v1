@@ -180,6 +180,9 @@ body{
             justify-content: space-between;
             align-items: center;
             width: 75%;
+            .image-block{
+                display: block;
+            }
             .catalog__small-block{
                 max-width: 510px;
                 display: flex;
@@ -197,7 +200,6 @@ body{
                     img{
                         height: 10rem;
                         width: 100%;
-                        pointer-events: none;
                     }
                 }
             }
@@ -206,7 +208,6 @@ body{
                 height: 21.5rem;
                 transition: 0.1s ease-in;
                 .image-block{
-                    pointer-events: none;
                     user-select: none;
                     img{
                         width: 100%;

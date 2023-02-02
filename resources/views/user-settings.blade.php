@@ -22,8 +22,8 @@
 
     <header class="header">
         <div class="header__wrapper">
-            <div class="header__logo-image">
-                <a href="index.php">
+            <div class="header__logo-image">    
+                <a href="/">
                     <img src="/img/logo.png" alt="not found">
                 </a>
             </div>
@@ -42,18 +42,18 @@
                 <p>+7 (495) 911-10-11</p>
             </div>
             <div class="header__profile-cart">
-                <a class="header__link" href="personal-account.php">
+                <a class="header__link" href="personal-account">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewbox="0 0 30 29" fill="none">
                         <path d="M15 0.695312C12.9545 0.695312 11.3565 1.43942 10.206 2.92765C9.0554 4.41587 8.48011 6.31827 8.48011 8.63485C8.46591 11.513 9.40341 13.7945 11.2926 15.4793C11.5341 15.7039 11.6193 15.9917 11.5483 16.3427L11.0582 17.3536C10.902 17.6906 10.6712 17.9538 10.3658 18.1433C10.0604 18.3329 9.41761 18.6031 8.4375 18.9541C8.39489 18.9682 7.49645 19.256 5.74219 19.8176C3.98793 20.3792 3.05398 20.6881 2.94034 20.7442C1.74716 21.2356 0.965909 21.7481 0.596591 22.2816C0.198864 23.1661 0 25.4055 0 28.9997H30C30 25.4055 29.8011 23.1661 29.4034 22.2816C29.0341 21.7481 28.2528 21.2356 27.0597 20.7442C26.946 20.6881 26.0121 20.3792 24.2578 19.8176C22.5036 19.256 21.6051 18.9682 21.5625 18.9541C20.5824 18.6031 19.9396 18.3329 19.6342 18.1433C19.3288 17.9538 19.098 17.6906 18.9418 17.3536L18.4517 16.3427C18.3807 15.9917 18.4659 15.7039 18.7074 15.4793C20.5966 13.7945 21.5341 11.513 21.5199 8.63485C21.5199 6.31827 20.9446 4.41587 19.794 2.92765C18.6435 1.43942 17.0455 0.695312 15 0.695312Z" fill="white"/>
                     </svg>
                 </a>
-                <a class="header__link header__link-cart" href="cart.php">
+                <a class="header__link header__link-cart" href="cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewbox="0 0 30 27" fill="none">
                     <path d="M28.741 6.20821C28.489 5.77161 28.1282 5.40778 27.6937 5.15219C27.2592 4.89661 26.7659 4.75799 26.2618 4.74988H7.59518L6.74935 1.45405C6.66389 1.13589 6.47323 0.856047 6.20842 0.660088C5.94361 0.464128 5.62025 0.363601 5.29102 0.374879H2.37435C1.98757 0.374879 1.61664 0.528524 1.34315 0.802015C1.06966 1.07551 0.916016 1.44644 0.916016 1.83321C0.916016 2.21999 1.06966 2.59092 1.34315 2.86441C1.61664 3.1379 1.98757 3.29155 2.37435 3.29155H4.18268L8.20768 18.254C8.29314 18.5722 8.4838 18.852 8.74861 19.048C9.01342 19.244 9.33678 19.3445 9.66602 19.3332H22.791C23.0603 19.3324 23.3241 19.257 23.5532 19.1154C23.7823 18.9739 23.9677 18.7716 24.0889 18.5311L28.8723 8.96446C29.0796 8.5299 29.1761 8.05077 29.1532 7.56983C29.1303 7.08889 28.9887 6.62111 28.741 6.20821Z" fill="white"/>
                     <path d="M8.9375 26.625C10.1456 26.625 11.125 25.6456 11.125 24.4375C11.125 23.2294 10.1456 22.25 8.9375 22.25C7.72938 22.25 6.75 23.2294 6.75 24.4375C6.75 25.6456 7.72938 26.625 8.9375 26.625Z" fill="white"/>
                     <path d="M23.5195 26.625C24.7277 26.625 25.707 25.6456 25.707 24.4375C25.707 23.2294 24.7277 22.25 23.5195 22.25C22.3114 22.25 21.332 23.2294 21.332 24.4375C21.332 25.6456 22.3114 26.625 23.5195 26.625Z" fill="white"/>
                     </svg>
-                    <p class="counter" id="cart">3</p>
+                    <p class="counter inactive" id="cart">0</p>
                 </a>
             </div>
         </div>
@@ -174,111 +174,172 @@
             </div>
         </div>
     </nav>
-    <main class="main ordering">
+    <main class="main user-settings">
         <div class="main__wrapper">
-            <p class="nav"> <a href="index.php">Main</a> > <a href="#" class="active-menu__item">Cart</a></p>
-            <h6 class="page-header">Cart</h6>
-            <section class="main__cart carts">
-                <div class="cart__wrapper">
-                    <section class="cart__section">
-                        <div class="cart__item">
-                            <div class="image-block">
-                                <img src="/img/product-2.png" alt="not found">
-                            </div>
-                            <p class="name">Vampire Munchkin</p>
-                            <p class="price">4$</p>
-                            <div class="quantity">
-                                <p class="minus">-</p>
-                                <p class="amount">2</p>
-                                <p class="plus">+</p>
-                            </div>
-                            <svg class="clean" xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27" fill="none">
-                                <path d="M23.875 6.5C23.875 6.80617 23.7626 7.10167 23.5591 7.33047C23.3557 7.55926 23.0753 7.70543 22.7713 7.74125L22.625 7.75H21.5688L20.03 23.4C19.9462 24.2492 19.5496 25.0369 18.9172 25.6098C18.2849 26.1828 17.4621 26.5001 16.6087 26.5H7.39125C6.53794 26.5001 5.71509 26.1828 5.08275 25.6098C4.45041 25.0369 4.05378 24.2492 3.97 23.4L2.43125 7.75H1.375C1.04348 7.75 0.725537 7.6183 0.491116 7.38388C0.256696 7.14946 0.125 6.83152 0.125 6.5C0.125 6.16848 0.256696 5.85054 0.491116 5.61612C0.725537 5.3817 1.04348 5.25 1.375 5.25H7.625C7.625 4.67547 7.73816 4.10656 7.95803 3.57576C8.17789 3.04496 8.50015 2.56266 8.90641 2.15641C9.31266 1.75015 9.79496 1.42789 10.3258 1.20803C10.8566 0.988163 11.4255 0.875 12 0.875C12.5745 0.875 13.1434 0.988163 13.6742 1.20803C14.205 1.42789 14.6873 1.75015 15.0936 2.15641C15.4998 2.56266 15.8221 3.04496 16.042 3.57576C16.2618 4.10656 16.375 4.67547 16.375 5.25H22.625C22.9565 5.25 23.2745 5.3817 23.5089 5.61612C23.7433 5.85054 23.875 6.16848 23.875 6.5ZM14.8125 10.5625C14.586 10.5625 14.3671 10.6446 14.1963 10.7935C14.0256 10.9424 13.9146 11.1481 13.8837 11.3725L13.875 11.5V20.25L13.8837 20.3775C13.9146 20.6019 14.0257 20.8075 14.1964 20.9564C14.3672 21.1052 14.586 21.1872 14.8125 21.1872C15.039 21.1872 15.2578 21.1052 15.4286 20.9564C15.5993 20.8075 15.7104 20.6019 15.7413 20.3775L15.75 20.25V11.5L15.7413 11.3725C15.7104 11.1481 15.5994 10.9424 15.4287 10.7935C15.2579 10.6446 15.039 10.5625 14.8125 10.5625ZM9.1875 10.5625C8.96095 10.5625 8.74207 10.6446 8.57134 10.7935C8.4006 10.9424 8.28956 11.1481 8.25875 11.3725L8.25 11.5V20.25L8.25875 20.3775C8.28962 20.6019 8.40069 20.8075 8.57142 20.9564C8.74215 21.1052 8.961 21.1872 9.1875 21.1872C9.414 21.1872 9.63285 21.1052 9.80358 20.9564C9.97431 20.8075 10.0854 20.6019 10.1163 20.3775L10.125 20.25V11.5L10.1163 11.3725C10.0854 11.1481 9.9744 10.9424 9.80366 10.7935C9.63293 10.6446 9.41405 10.5625 9.1875 10.5625ZM12 3.375C11.5027 3.375 11.0258 3.57254 10.6742 3.92418C10.3225 4.27581 10.125 4.75272 10.125 5.25H13.875C13.875 4.75272 13.6775 4.27581 13.3258 3.92418C12.9742 3.57254 12.4973 3.375 12 3.375Z" fill="#2A2A2A"/>
-                            </svg>
-                        </div>
-                        <div class="cart__item">
-                            <div class="image-block">
-                                <img src="/img/product-1.png" alt="not found">
-                            </div>
-                            <p class="name">Mars</p>
-                            <p class="price">10$</p>
-                            <div class="quantity">
-                                <p class="minus">-</p>
-                                <p class="amount">2</p>
-                                <p class="plus">+</p>
-                            </div>
-                            <svg class="clean" xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27" fill="none">
-                                <path d="M23.875 6.5C23.875 6.80617 23.7626 7.10167 23.5591 7.33047C23.3557 7.55926 23.0753 7.70543 22.7713 7.74125L22.625 7.75H21.5688L20.03 23.4C19.9462 24.2492 19.5496 25.0369 18.9172 25.6098C18.2849 26.1828 17.4621 26.5001 16.6087 26.5H7.39125C6.53794 26.5001 5.71509 26.1828 5.08275 25.6098C4.45041 25.0369 4.05378 24.2492 3.97 23.4L2.43125 7.75H1.375C1.04348 7.75 0.725537 7.6183 0.491116 7.38388C0.256696 7.14946 0.125 6.83152 0.125 6.5C0.125 6.16848 0.256696 5.85054 0.491116 5.61612C0.725537 5.3817 1.04348 5.25 1.375 5.25H7.625C7.625 4.67547 7.73816 4.10656 7.95803 3.57576C8.17789 3.04496 8.50015 2.56266 8.90641 2.15641C9.31266 1.75015 9.79496 1.42789 10.3258 1.20803C10.8566 0.988163 11.4255 0.875 12 0.875C12.5745 0.875 13.1434 0.988163 13.6742 1.20803C14.205 1.42789 14.6873 1.75015 15.0936 2.15641C15.4998 2.56266 15.8221 3.04496 16.042 3.57576C16.2618 4.10656 16.375 4.67547 16.375 5.25H22.625C22.9565 5.25 23.2745 5.3817 23.5089 5.61612C23.7433 5.85054 23.875 6.16848 23.875 6.5ZM14.8125 10.5625C14.586 10.5625 14.3671 10.6446 14.1963 10.7935C14.0256 10.9424 13.9146 11.1481 13.8837 11.3725L13.875 11.5V20.25L13.8837 20.3775C13.9146 20.6019 14.0257 20.8075 14.1964 20.9564C14.3672 21.1052 14.586 21.1872 14.8125 21.1872C15.039 21.1872 15.2578 21.1052 15.4286 20.9564C15.5993 20.8075 15.7104 20.6019 15.7413 20.3775L15.75 20.25V11.5L15.7413 11.3725C15.7104 11.1481 15.5994 10.9424 15.4287 10.7935C15.2579 10.6446 15.039 10.5625 14.8125 10.5625ZM9.1875 10.5625C8.96095 10.5625 8.74207 10.6446 8.57134 10.7935C8.4006 10.9424 8.28956 11.1481 8.25875 11.3725L8.25 11.5V20.25L8.25875 20.3775C8.28962 20.6019 8.40069 20.8075 8.57142 20.9564C8.74215 21.1052 8.961 21.1872 9.1875 21.1872C9.414 21.1872 9.63285 21.1052 9.80358 20.9564C9.97431 20.8075 10.0854 20.6019 10.1163 20.3775L10.125 20.25V11.5L10.1163 11.3725C10.0854 11.1481 9.9744 10.9424 9.80366 10.7935C9.63293 10.6446 9.41405 10.5625 9.1875 10.5625ZM12 3.375C11.5027 3.375 11.0258 3.57254 10.6742 3.92418C10.3225 4.27581 10.125 4.75272 10.125 5.25H13.875C13.875 4.75272 13.6775 4.27581 13.3258 3.92418C12.9742 3.57254 12.4973 3.375 12 3.375Z" fill="#2A2A2A"/>
-                            </svg>
-                        </div>
-                        <div class="cart__item">
-                            <div class="image-block">
-                                <img src="/img/product-3.png" alt="not found">
-                            </div>
-                            <p class="name">Warhammer 40,000: Craftworlds Farseer</p>
-                            <p class="price">5$</p>
-                            <div class="quantity">
-                                <p class="minus">-</p>
-                                <p class="amount">1</p>
-                                <p class="plus">+</p>
-                            </div>
-                            <svg class="clean" xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27" fill="none">
-                                <path d="M23.875 6.5C23.875 6.80617 23.7626 7.10167 23.5591 7.33047C23.3557 7.55926 23.0753 7.70543 22.7713 7.74125L22.625 7.75H21.5688L20.03 23.4C19.9462 24.2492 19.5496 25.0369 18.9172 25.6098C18.2849 26.1828 17.4621 26.5001 16.6087 26.5H7.39125C6.53794 26.5001 5.71509 26.1828 5.08275 25.6098C4.45041 25.0369 4.05378 24.2492 3.97 23.4L2.43125 7.75H1.375C1.04348 7.75 0.725537 7.6183 0.491116 7.38388C0.256696 7.14946 0.125 6.83152 0.125 6.5C0.125 6.16848 0.256696 5.85054 0.491116 5.61612C0.725537 5.3817 1.04348 5.25 1.375 5.25H7.625C7.625 4.67547 7.73816 4.10656 7.95803 3.57576C8.17789 3.04496 8.50015 2.56266 8.90641 2.15641C9.31266 1.75015 9.79496 1.42789 10.3258 1.20803C10.8566 0.988163 11.4255 0.875 12 0.875C12.5745 0.875 13.1434 0.988163 13.6742 1.20803C14.205 1.42789 14.6873 1.75015 15.0936 2.15641C15.4998 2.56266 15.8221 3.04496 16.042 3.57576C16.2618 4.10656 16.375 4.67547 16.375 5.25H22.625C22.9565 5.25 23.2745 5.3817 23.5089 5.61612C23.7433 5.85054 23.875 6.16848 23.875 6.5ZM14.8125 10.5625C14.586 10.5625 14.3671 10.6446 14.1963 10.7935C14.0256 10.9424 13.9146 11.1481 13.8837 11.3725L13.875 11.5V20.25L13.8837 20.3775C13.9146 20.6019 14.0257 20.8075 14.1964 20.9564C14.3672 21.1052 14.586 21.1872 14.8125 21.1872C15.039 21.1872 15.2578 21.1052 15.4286 20.9564C15.5993 20.8075 15.7104 20.6019 15.7413 20.3775L15.75 20.25V11.5L15.7413 11.3725C15.7104 11.1481 15.5994 10.9424 15.4287 10.7935C15.2579 10.6446 15.039 10.5625 14.8125 10.5625ZM9.1875 10.5625C8.96095 10.5625 8.74207 10.6446 8.57134 10.7935C8.4006 10.9424 8.28956 11.1481 8.25875 11.3725L8.25 11.5V20.25L8.25875 20.3775C8.28962 20.6019 8.40069 20.8075 8.57142 20.9564C8.74215 21.1052 8.961 21.1872 9.1875 21.1872C9.414 21.1872 9.63285 21.1052 9.80358 20.9564C9.97431 20.8075 10.0854 20.6019 10.1163 20.3775L10.125 20.25V11.5L10.1163 11.3725C10.0854 11.1481 9.9744 10.9424 9.80366 10.7935C9.63293 10.6446 9.41405 10.5625 9.1875 10.5625ZM12 3.375C11.5027 3.375 11.0258 3.57254 10.6742 3.92418C10.3225 4.27581 10.125 4.75272 10.125 5.25H13.875C13.875 4.75272 13.6775 4.27581 13.3258 3.92418C12.9742 3.57254 12.4973 3.375 12 3.375Z" fill="#2A2A2A"/>
-                            </svg>
-                        </div>
-                    </section>
-                    <aside class="cart__counter">
-                        <div class="cart__sum">
-                            <span class="sum">Sum: </span><span class="price" id="sum">0$</span>
-                        </div>
-                        <div class="cart__promocode">
-                            <p>Promocode:</p>
-                            <fieldset class="fieldset">
-                                <input type="text" class="input">
-                                <button type="button" class="btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13" fill="none">
-                                    <path d="M1.16699 6.5L5.91699 11.25L13.8337 1.75" stroke="#2A2A2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                            </fieldset>
-                        </div>
-                        <div class="cart__promocode_active">
-                            <p class="promo"></p>
-                        </div>
-                        <details class="order-btn">
-                            <summary>
-                              <div class="button">
-                                Checkout
-                              </div>
-                              <div class="details__modal-overlay"></div>
-                            </summary>
-                            <div class="details__modal">
-                              <div class="details__modal-title">
-                                <h1>Login or Register</h1>
-                              </div>
-                              <div class="details__modal-content">
-                                <div class="modal__enter">
-                                    <div class="enter-text active" id="login">Login</div>
-                                    <div class="enter-text" id="register">Register</div>
-                                </div>
-                                <form action="main.php" method="post">
-                                    <fieldset class="fieldset">
-                                        <div class="input-row">
-                                            <p>Login</p>
-                                            <input type="text" id="login" placeholder="Login" required>
-                                        </div>
-                                        <div class="input-row">
-                                            <p>Password</p>
-                                            <input type="password" id="password" placeholder="Password" required>
-                                        </div>
-                                        <div class="forget-password-btn">Forgot your password?</div>
-                                    </fieldset>
-                                    <input type="submit" value="Login" class="submit-btn">
-                                </form>
-                              </div>
-                            </div>
-                        </details>
+            <p class="nav"> <a href="/">Main</a> > <a href="personal-account">Personal account</a> > <a href="personal-account" class="active-menu__item">User Settings</a> </p>
+            <h6 class="page-header">Settings</h6>
+            <section class="main__user-settings">
+                <div class="user-settings__wrapper">
+                    <aside class="user-setting__menu">
+                        <ul>
+                            <li><a href="personal-account">Profile</a></li>
+                            <li><a href="user-orders">Orders</a></li>
+                            <li><a href="user-events">Events</a></li>
+                            <li><a href="user-settings" class="active-item">Settings</a></li>
+                        </ul>
                     </aside>
+                    <article class="user-orders__section user info">
+                        <div class="user-info__item">
+                            <div class="info">
+                                <img class="user-image" src="/img/user-image-1.png" alt="user-image">
+                                <div class="change">
+                                    <details class="change-btn">
+                                        <summary>
+                                      <div class="button">
+                                        <svg class="change-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                                            <path d="M3.375 3.5V0.125H5.625V3.5H9V5.75H5.625V9.125H3.375V5.75H0V3.5H3.375ZM6.75 10.25V6.875H10.125V3.5H18L20.0588 5.75H23.625C24.8625 5.75 25.875 6.7625 25.875 8V21.5C25.875 22.7375 24.8625 23.75 23.625 23.75H5.625C4.3875 23.75 3.375 22.7375 3.375 21.5V10.25H6.75ZM14.625 20.375C17.73 20.375 20.25 17.855 20.25 14.75C20.25 11.645 17.73 9.125 14.625 9.125C11.52 9.125 9 11.645 9 14.75C9 17.855 11.52 20.375 14.625 20.375ZM11.025 14.75C11.025 16.7412 12.6337 18.35 14.625 18.35C16.6162 18.35 18.225 16.7412 18.225 14.75C18.225 12.7587 16.6162 11.15 14.625 11.15C12.6337 11.15 11.025 12.7587 11.025 14.75Z" fill="#2A2A2A"/>
+                                        </svg>
+                                      </div>
+                                      <div class="details__modal-overlay"></div>
+                                    </summary>
+                                    <div class="details__modal details__modal_large">
+                                      <div class="details__modal-title">
+                                        <h1>Change image</h1>
+                                      </div>
+                                      <div class="details__modal-content">
+                                        <form action="main" method="post">
+                                            <fieldset class="fieldset">
+                                                <div class="input-row">
+                                                    <p>New image</p>
+                                                    <input type="file" id="img" accept="image/*" required>
+                                                </div>                                           
+                                            </fieldset>
+                                            <input type="submit" value="Change" class="submit-btn">
+                                        </form>
+                                      </div>
+                                        </div>
+                                    </details>
+                                </div>
+                                <div class="info"><p class="bold-text name">William Harris</p>
+                                </div>
+                            </div>
+                            <div class="change">
+                                <details class="change-btn">
+                                    <summary>
+                                      <div class="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                            <path d="M16.5469 5.05019V7.35249C15.7248 7.38948 14.9464 7.73334 14.3654 8.31619L8.81087 13.8695C8.34052 14.341 8.00587 14.931 7.84487 15.5773L7.60222 16.549H3.32422C2.56172 16.549 1.83045 16.2461 1.29129 15.707C0.75212 15.1678 0.449219 14.4365 0.449219 13.674V5.04904H16.5469V5.05019ZM13.6719 0.450195C14.4344 0.450195 15.1657 0.753096 15.7048 1.29226C16.244 1.83143 16.5469 2.5627 16.5469 3.32519V3.90019H0.449219V3.32519C0.449219 2.5627 0.75212 1.83143 1.29129 1.29226C1.83045 0.753096 2.56172 0.450195 3.32422 0.450195H13.6731H13.6719ZM9.62392 14.6826L15.1784 9.12809C15.5819 8.72488 16.1291 8.49849 16.6995 8.4987C17.27 8.49892 17.817 8.72573 18.2202 9.12924C18.6234 9.53276 18.8498 10.0799 18.8496 10.6504C18.8493 11.2208 18.6225 11.7678 18.219 12.171L12.6657 17.7232C12.3421 18.0469 11.9367 18.2767 11.4927 18.3879L9.76997 18.8191C9.59863 18.8617 9.41921 18.8592 9.24913 18.8119C9.07906 18.7646 8.92411 18.6741 8.79934 18.5492C8.67457 18.4243 8.58422 18.2693 8.53707 18.0991C8.48992 17.929 8.48758 17.7496 8.53027 17.5783L8.96037 15.8556C9.07192 15.4117 9.30077 15.0057 9.62507 14.6826H9.62392Z" fill="#2A2A2A"/>
+                                            </svg> 
+                                        change
+                                      </div>
+                                      <div class="details__modal-overlay"></div>
+                                    </summary>
+                                    <div class="details__modal">
+                                      <div class="details__modal-title">
+                                        <h1>Change name</h1>
+                                      </div>
+                                      <div class="details__modal-content">
+                                        <form action="main" method="post">
+                                            <fieldset class="fieldset">
+                                                <div class="input-row">
+                                                    <p>New name</p>
+                                                    <input type="text" id="name" placeholder="Name" required>
+                                                </div>
+                                                <div class="input-row">
+                                                    <p>New surname</p>
+                                                    <input type="text" id="surname" placeholder="Surname" required>
+                                                </div>                                            
+                                            </fieldset>
+                                            <input type="submit" value="Change" class="submit-btn">
+                                        </form>
+                                      </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="user-info__item">
+                            <div class="info"><p class="bold-text">Phone:  </p>+7 903 5084301</div>
+                            <div class="change">
+                                <details class="change-btn">
+                                    <summary>
+                                      <div class="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                            <path d="M16.5469 5.05019V7.35249C15.7248 7.38948 14.9464 7.73334 14.3654 8.31619L8.81087 13.8695C8.34052 14.341 8.00587 14.931 7.84487 15.5773L7.60222 16.549H3.32422C2.56172 16.549 1.83045 16.2461 1.29129 15.707C0.75212 15.1678 0.449219 14.4365 0.449219 13.674V5.04904H16.5469V5.05019ZM13.6719 0.450195C14.4344 0.450195 15.1657 0.753096 15.7048 1.29226C16.244 1.83143 16.5469 2.5627 16.5469 3.32519V3.90019H0.449219V3.32519C0.449219 2.5627 0.75212 1.83143 1.29129 1.29226C1.83045 0.753096 2.56172 0.450195 3.32422 0.450195H13.6731H13.6719ZM9.62392 14.6826L15.1784 9.12809C15.5819 8.72488 16.1291 8.49849 16.6995 8.4987C17.27 8.49892 17.817 8.72573 18.2202 9.12924C18.6234 9.53276 18.8498 10.0799 18.8496 10.6504C18.8493 11.2208 18.6225 11.7678 18.219 12.171L12.6657 17.7232C12.3421 18.0469 11.9367 18.2767 11.4927 18.3879L9.76997 18.8191C9.59863 18.8617 9.41921 18.8592 9.24913 18.8119C9.07906 18.7646 8.92411 18.6741 8.79934 18.5492C8.67457 18.4243 8.58422 18.2693 8.53707 18.0991C8.48992 17.929 8.48758 17.7496 8.53027 17.5783L8.96037 15.8556C9.07192 15.4117 9.30077 15.0057 9.62507 14.6826H9.62392Z" fill="#2A2A2A"/>
+                                            </svg> 
+                                        change
+                                      </div>
+                                      <div class="details__modal-overlay"></div>
+                                    </summary>
+                                    <div class="details__modal">
+                                      <div class="details__modal-title">
+                                        <h1>Change phone</h1>
+                                      </div>
+                                      <div class="details__modal-content">
+                                        <form action="main" method="post">
+                                            <fieldset class="fieldset">
+                                                <div class="input-row">
+                                                    <p>New Phone</p>
+                                                    <input type="number" id="phone" placeholder="Phone" required>
+                                                </div>                                           
+                                            </fieldset>
+                                            <input type="submit" value="Change" class="submit-btn">
+                                        </form>
+                                      </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="user-info__item">
+                            <div class="info"><p class="bold-text">E-mail:  </p>  ivanov@gmail.com</div>
+                            <div class="change">
+                                <details class="change-btn">
+                                    <summary>
+                                      <div class="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                            <path d="M16.5469 5.05019V7.35249C15.7248 7.38948 14.9464 7.73334 14.3654 8.31619L8.81087 13.8695C8.34052 14.341 8.00587 14.931 7.84487 15.5773L7.60222 16.549H3.32422C2.56172 16.549 1.83045 16.2461 1.29129 15.707C0.75212 15.1678 0.449219 14.4365 0.449219 13.674V5.04904H16.5469V5.05019ZM13.6719 0.450195C14.4344 0.450195 15.1657 0.753096 15.7048 1.29226C16.244 1.83143 16.5469 2.5627 16.5469 3.32519V3.90019H0.449219V3.32519C0.449219 2.5627 0.75212 1.83143 1.29129 1.29226C1.83045 0.753096 2.56172 0.450195 3.32422 0.450195H13.6731H13.6719ZM9.62392 14.6826L15.1784 9.12809C15.5819 8.72488 16.1291 8.49849 16.6995 8.4987C17.27 8.49892 17.817 8.72573 18.2202 9.12924C18.6234 9.53276 18.8498 10.0799 18.8496 10.6504C18.8493 11.2208 18.6225 11.7678 18.219 12.171L12.6657 17.7232C12.3421 18.0469 11.9367 18.2767 11.4927 18.3879L9.76997 18.8191C9.59863 18.8617 9.41921 18.8592 9.24913 18.8119C9.07906 18.7646 8.92411 18.6741 8.79934 18.5492C8.67457 18.4243 8.58422 18.2693 8.53707 18.0991C8.48992 17.929 8.48758 17.7496 8.53027 17.5783L8.96037 15.8556C9.07192 15.4117 9.30077 15.0057 9.62507 14.6826H9.62392Z" fill="#2A2A2A"/>
+                                            </svg> 
+                                        change
+                                      </div>
+                                      <div class="details__modal-overlay"></div>
+                                    </summary>
+                                    <div class="details__modal">
+                                      <div class="details__modal-title">
+                                        <h1>Change e-mail</h1>
+                                      </div>
+                                      <div class="details__modal-content">
+                                        <form action="main" method="post">
+                                            <fieldset class="fieldset">
+                                                <div class="input-row">
+                                                    <p>New email</p>
+                                                    <input type="email" id="email" placeholder="Email" required>
+                                                </div>                                           
+                                            </fieldset>
+                                            <input type="submit" value="Change" class="submit-btn">
+                                        </form>
+                                      </div>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        <p class="bold-text form-header">
+                            Do you have any questions?
+                        </p>
+                        <form action="/handling-form-page" method="post" class="info__form">
+                            <fieldset class="info__fieldset">
+                                <label for="name" class="info__label">Your name:</label> <br>
+                                <input class="info__input" type="text" id="name" name="user_name" placeholder="Name" required/>
+                            </fieldset>
+                            <fieldset class="info__fieldset">
+                                <label for="telephone">Telephone:</label> <br>
+                                <input class="info__input" type="tel" id="telephone" name="user_telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="___-___-____" required/>
+                            </fieldset>
+                            <fieldset class="info__fieldset">
+                                <label for="comment">Your comment:</label> <br>
+                                <textarea class="info__texarea" id="comment" name="user_comment" rows="4" cols="50" placeholder="Comment"></textarea>
+                            </fieldset>
+                            <input class="btn" type="submit" value="Request a call" formmethod="post" />
+                        </form>
+                    </article>
                 </div>
             </section>
         </div>
@@ -370,6 +431,7 @@
         </div>
     </footer>
     <span id="next"></span> <span id="prev"></span> <span class="slider__items"></span>
+
     <script src="/js/nav.js"></script>
 </body>
 
