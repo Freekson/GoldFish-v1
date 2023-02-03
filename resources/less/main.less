@@ -1753,4 +1753,114 @@ body{
     .slider{
         margin-top: 0;
     }
+    .all-products{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .slider__item{
+        height: 409px;
+        width: 22%;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: @main-box-shadow;
+        position: relative;
+        margin-top: 30px;
+        user-select: none;   
+        transition: all .2s; 
+        img{
+            height: 145px;
+            pointer-events: none;
+        }
+        .offer{
+            position: absolute;
+            top: 0;
+            right: 30px;
+            background-color: @active-color;
+            width: 69px;
+            height: 29px;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            color: white;
+        }
+        .slider__item_text{
+            padding: 0 10%;
+            text-align: center;
+            width: 80%;
+            height: 150px;
+            user-select: all;
+            .other-info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 10px;
+                .people, .time {
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .description{
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+        .slider__buttons-block{
+            position: absolute;
+            bottom: 20px;
+            width: 80%;
+            a{
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                text-decoration: none;
+                height: 34px;
+                border-radius: 10px;
+                box-sizing: border-box;
+                transition: all 0.2s;
+            }
+            .cart{
+                background: @gradient;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                    box-shadow: @main-box-shadow;
+                }
+            }
+            .active-cart{
+                background: white;
+                border: 2px @active-color solid;
+                box-sizing: border-box;
+                color: @active-color;
+            }
+            .buy{
+                color: @active-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px @active-color solid;
+                margin-top: 10px;
+                &:hover{
+                    box-shadow: @main-box-shadow;
+                }
+            }
+        }
+    }
 }

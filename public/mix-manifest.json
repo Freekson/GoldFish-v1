@@ -1,10 +1,9 @@
 {
-    "/js/app.js": "/js/app.js",
+    "/css/_tablet.css": "/css/_tablet.css",
     "/css/_laptop.css": "/css/_laptop.css",
     "/css/_desktop.css": "/css/_desktop.css",
     "/css/_footer.css": "/css/_footer.css",
     "/css/_header.css": "/css/_header.css",
     "/css/main.css": "/css/main.css",
-    "/css/_mobile.css": "/css/_mobile.css",
-    "/css/_tablet.css": "/css/_tablet.css"
+    "/css/_mobile.css": "/css/_mobile.css"
 }
