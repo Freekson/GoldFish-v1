@@ -12,14 +12,9 @@ class MainController extends Controller
         $products = Product::get();
         return view('index', compact('products'));
     }
-    public function cart(){
-        return view('cart');
-    }
-    public function ordering(){
-        return view('ordering');
-    }
     public function personal_account(){
-        return view('personal-account');
+        $products = Product::get();
+        return view('personal-account', compact('products'));
     }
     public function user_orders(){
         return view('user-orders');

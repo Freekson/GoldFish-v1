@@ -22,7 +22,6 @@
                         </p>
                     </div>
                     <p class="price old-price">4350 ₽</p>
-                    <p class="new-price">3657 ₽</p>
                     <div class="slider__buttons-block">
                         <a class="cart">
                             Add to cart 

@@ -128,8 +128,8 @@
                 </div>
             </section>
             <h6 class="section-header">Hurry up to buy</h6>
-            <!-- <section class="main__slider slider hurry-up">
-            {{$i = 0}}
+             <section class="main__slider slider hurry-up">
+            <!-- {{$i = 0}}
                 @foreach($products as $product)
                     @include('card', compact('product'))
                     @if ($i>2)
@@ -137,8 +137,11 @@
                     @endif
                     {{$i++}}
                 @endforeach -->
-                $product = $products[1]
-                @include('card', compact('product'))
+                @include('card', compact('products'))
+                @include('card', compact('products'))
+                @include('card', compact('products'))
+                @include('card', compact('products'))
+                
             </section>
             <h6 class="section-header">Special offer</h6>
             <section class="main__slider slider special-offer">

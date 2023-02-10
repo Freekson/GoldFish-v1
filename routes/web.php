@@ -14,11 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\MainController@index')->name('index');
-Route::get('/cart', 'App\Http\Controllers\MainController@cart')->name('cart');
-Route::get('/ordering', 'App\Http\Controllers\MainController@ordering')->name('ordering');
 Route::get('/personal-account', 'App\Http\Controllers\MainController@personal_account')->name('profile');
 Route::get('/user-orders', 'App\Http\Controllers\MainController@user_orders')->name('user-orders'); 
 Route::get('/user-settings', 'App\Http\Controllers\MainController@user_settings')->name('user-settings'); 
+//cart and ordering
+Route::get('/cart', 'App\Http\Controllers\CartController@cart')->name('cart');
+Route::get('/ordering', 'App\Http\Controllers\CartController@ordering')->name('ordering');
+Route::post('/cart/add/{id}', 'App\Http\Controllers\CartController@cartAdd')->name('cart-add');
+
 //catalog and category
 Route::get('/catalog', 'App\Http\Controllers\MainController@catalog')->name('catalog');
 Route::get('/catalog/{category}', 'App\Http\Controllers\MainController@category')->name('category');

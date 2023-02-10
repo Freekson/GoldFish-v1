@@ -125,7 +125,7 @@
                         <section class="user-recomended">
                             <h6>Recommended for you</h6>
                             <div class="user__items">
-                            @include('card')
+                            @include('card-offered')
                             </div>
                         </section>
                     </article>
