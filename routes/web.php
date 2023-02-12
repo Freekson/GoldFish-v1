@@ -21,6 +21,9 @@ Route::get('/user-settings', 'App\Http\Controllers\MainController@user_settings'
 Route::get('/cart', 'App\Http\Controllers\CartController@cart')->name('cart');
 Route::get('/ordering', 'App\Http\Controllers\CartController@ordering')->name('ordering');
 Route::post('/cart/add/{id}', 'App\Http\Controllers\CartController@cartAdd')->name('cart-add');
+Route::post('/cart/remove/{id}', 'App\Http\Controllers\CartController@cartRemove')->name('cart-remove');
+Route::post('/cart/delete/{id}', 'App\Http\Controllers\CartController@cartDelete')->name('cart-delete');
+
 
 //catalog and category
 Route::get('/catalog', 'App\Http\Controllers\MainController@catalog')->name('catalog');

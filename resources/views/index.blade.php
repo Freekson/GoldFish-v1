@@ -118,12 +118,12 @@
                                 <p>Paints</p>
                             </div>
                         </div>
-                        <div class="image-block">
+                        <a href="{{Route('catalog')}}" class="image-block">
                             <img src="/img/catalog_img5.png" alt="not found">
                             <div class="image-text">
                                 <p>Whole catalog</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
