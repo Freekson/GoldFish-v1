@@ -6,6 +6,9 @@
     <main class="main ordering">
         <div class="main__wrapper">
             <p class="nav"> <a href="{{route('index')}}">Main</a> > <a href="#" class="active-menu__item">Cart</a></p>
+            @if (session()->has('success') )
+            <p class="alert">{{session()->get('success')}}</p>        
+        @endif
             <h6 class="page-header">Cart</h6>
             <section class="main__cart carts">
                 <div class="cart__wrapper">
@@ -44,7 +47,7 @@
                         <div class="cart__sum">
                             <span class="sum">Sum: </span><span class="price" id="sum">{{$order->getFullPrice()}}$</span>
                         </div>
-                        <div class="cart__promocode">
+                        <!-- <div class="cart__promocode">
                             <p>Promocode:</p>
                             <fieldset class="fieldset">
                                 <input type="text" class="input">
@@ -57,40 +60,14 @@
                         </div>
                         <div class="cart__promocode_active">
                             <p class="promo"></p>
-                        </div>
-                        <details class="order-btn">
-                            <summary>
-                              <div class="button">
+                        </div> -->
+                        <div class="order-btn">
+                              <a href="{{route('ordering')}}" class="button">
                                 Checkout
-                              </div>
+                              </a>
                               <div class="details__modal-overlay"></div>
-                            </summary>
-                            <div class="details__modal">
-                              <div class="details__modal-title">
-                                <h1>Login or Register</h1>
-                              </div>
-                              <div class="details__modal-content">
-                                <div class="modal__enter">
-                                    <div class="enter-text active" id="login">Login</div>
-                                    <div class="enter-text" id="register">Register</div>
-                                </div>
-                                <form action="main" method="post">
-                                    <fieldset class="fieldset">
-                                        <div class="input-row">
-                                            <p>Login</p>
-                                            <input type="text" id="login" placeholder="Login" required>
-                                        </div>
-                                        <div class="input-row">
-                                            <p>Password</p>
-                                            <input type="password" id="password" placeholder="Password" required>
-                                        </div>
-                                        <div class="forget-password-btn">Forgot your password?</div>
-                                    </fieldset>
-                                    <input type="submit" value="Login" class="submit-btn">
-                                </form>
-                              </div>
-                            </div>
-                        </details>
+
+                        </div>
                     </aside>
                 </div>
             </section>

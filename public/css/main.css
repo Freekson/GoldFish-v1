@@ -778,6 +778,11 @@ body {
   font-size: 1.375rem;
   margin: 3% 0;
 }
+.main .main__wrapper .carts .cart__wrapper .cart__section .cart__item button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
 .main .main__wrapper .carts .cart__wrapper .cart__section .cart__item .image-block {
   width: 95px;
   height: 95px;
@@ -820,6 +825,9 @@ body {
   padding: 2rem;
   box-sizing: border-box;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .main .main__wrapper .carts .cart__wrapper .cart__counter .cart__sum {
   font-weight: bold;
@@ -904,8 +912,9 @@ body {
 .main .main__wrapper .carts .cart__wrapper .cart__counter .order-btn summary::-webkit-details-marker {
   display: none;
 }
-.main .main__wrapper .carts .cart__wrapper .cart__counter .order-btn summary .button {
+.main .main__wrapper .carts .cart__wrapper .cart__counter .order-btn .button {
   height: 100%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -913,14 +922,19 @@ body {
   color: white;
   font-weight: bold;
   font-size: 1.4rem;
-  border-radius: 9px;
   transition: 0.2s ease-out;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   cursor: pointer;
+  background: linear-gradient(184.53deg, #f9a43f 5.27%, #fb791b 91.78%);
+  height: 49px;
+  border-radius: 9px;
+  transition: 0.2s;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-.main .main__wrapper .carts .cart__wrapper .cart__counter .order-btn summary .button:hover {
+.main .main__wrapper .carts .cart__wrapper .cart__counter .order-btn .button:hover {
   box-shadow: 5px 6px 15px rgba(251, 121, 27, 0.63);
 }
 .main .main__wrapper .carts .cart__wrapper .cart__counter .order-btn .details__modal {
@@ -1833,5 +1847,15 @@ body {
 }
 .main .slider__item .slider__buttons-block .buy:hover {
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+}
+.main .alert {
+  width: 70%;
+  padding: 20px;
+  margin: 20px 10px;
+  background-color: #F9A43F;
+  color: white;
+  font-weight: bold;
+  box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+  border-radius: 10px;
 }
 

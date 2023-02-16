@@ -86,6 +86,9 @@
     </section>
     <main class="main">
         <div class="main__wrapper">
+        @if (session()->has('success') )
+            <p class="alert">{{session()->get('success')}}</p>        
+        @endif
             <h6 class="section-header">Catalog</h6>
             <section class="main__catalog catalog">
                 <div class="catalog__big-block">

@@ -23,6 +23,7 @@ Route::get('/ordering', 'App\Http\Controllers\CartController@ordering')->name('o
 Route::post('/cart/add/{id}', 'App\Http\Controllers\CartController@cartAdd')->name('cart-add');
 Route::post('/cart/remove/{id}', 'App\Http\Controllers\CartController@cartRemove')->name('cart-remove');
 Route::post('/cart/delete/{id}', 'App\Http\Controllers\CartController@cartDelete')->name('cart-delete');
+Route::post('/ordering', 'App\Http\Controllers\CartController@cartConfirm')->name('cart-confirm');
 
 
 //catalog and category

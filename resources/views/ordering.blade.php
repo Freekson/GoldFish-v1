@@ -10,7 +10,7 @@
             <section class="main__form form">
                 <div class="form__wrapper">
                     <section class="form__section">
-                        <form action="index" autocomplete="on" method="post">
+                        <form action="{{route('cart-confirm')}}" autocomplete="on" method="post">
                             <h6 class="section-second-header">Delivery address</h6>
                             <fieldset class="fieldset address">
                                 <div class="input-row">
@@ -130,7 +130,7 @@
                                 </div>
                                 <div class="input-row">
                                     <p>Name *</p>
-                                    <input type="text" id="name" placeholder="Name" required>
+                                    <input type="text" name="name" id="name" placeholder="Name" required>
                                 </div>
                                 <div class="input-row">
                                     <p>E-mail *</p>
@@ -138,7 +138,7 @@
                                 </div>
                                 <div class="input-row">
                                     <p>Phone *</p>
-                                    <input class="info__input" type="tel" id="telephone" name="user_telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="___-___-____" required/>
+                                    <input class="info__input" type="tel" id="telephone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="___-___-____" required/>
                                 </div>
                                 <p class="under-text">* Mandatory fields</p>
                             </fieldset>
@@ -159,13 +159,14 @@
                                 <p>Already registered? <a href="#">Login </a></p>
                             </fieldset>
                             <h6 class="section-second-header">Outcome</h6>
-                            <p class="outcome"><span class="price">Order price</span><span class="amount">264$</span></p>
+                            <p class="outcome"><span class="price">Order price</span><span class="amount">{{$order->getFullPrice()}} $</span></p>
                             <p class="outcome"><span class="price">Delivery price</span><span class="amount">22$</span></p>
                             <p class="outcome"><span class="price">Amount of discount</span><span class="amount">0$</span></p>
-                            <p class="outcome outcome-sum"><span class="price">Amount to be paid</span><span class="amount">286$</span></p>
+                            <p class="outcome outcome-sum"><span class="price">Amount to be paid</span><span class="amount">{{$order->getFullPrice()}} $</span></p>
                             <div class="outcome-section">
-                                <input class="btn" type="submit" value="Pay" id="send" formmethod="post" />
+                                <button class="btn" type="submit" id="send">Order</button>
                             </div>
+                            @csrf
                         </form>
                     </section>
                     <aside class="cart__counter">
