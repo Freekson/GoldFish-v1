@@ -31,3 +31,11 @@ Route::get('/catalog', 'App\Http\Controllers\MainController@catalog')->name('cat
 Route::get('/catalog/{category}', 'App\Http\Controllers\MainController@category')->name('category');
 Route::get('/category/product', 'App\Http\Controllers\MainController@product')->name('product');
 Route::get('/all-products', 'App\Http\Controllers\MainController@all_products')->name('all-products');
+
+//auth
+Auth::routes([
+    'reset' => false,
+    'confirm' => false,
+    'verify' => false,
+]);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
