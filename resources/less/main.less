@@ -1894,3 +1894,32 @@ body{
             border-radius: 10px;
         }
 }
+
+//!admin orders page
+
+.orders__wrapper{
+    width: 80%;
+    margin: 0 auto;
+    .order{
+        display: flex;
+        &__item:not(:last-child){
+            width: 20%;
+        }
+        &__item:not(:first-child){
+            width: 20%;
+        }
+        &__item:last-child{
+            width: 5%;
+        }
+        &__item:first-child{
+            width: 5%;
+        }
+    }
+    .top{
+        font-weight: bold;
+    }
+}
+.orders__title{
+    font-size: 2rem;
+    font-weight: bold;
+}

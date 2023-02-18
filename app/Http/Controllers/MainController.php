@@ -19,6 +19,9 @@ class MainController extends Controller
     public function user_orders(){
         return view('user-orders');
     }
+    public function orders(){
+        return view('orders');
+    }
     public function user_settings(){
         return view('user-settings');
     }

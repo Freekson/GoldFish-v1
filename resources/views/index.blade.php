@@ -89,6 +89,9 @@
         @if (session()->has('success') )
             <p class="alert">{{session()->get('success')}}</p>        
         @endif
+        @if (session()->has('warning') )
+            <p class="alert">{{session()->get('warning')}}</p>        
+        @endif
             <h6 class="section-header">Catalog</h6>
             <section class="main__catalog catalog">
                 <div class="catalog__big-block">

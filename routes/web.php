@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,12 +20,23 @@ Route::get('/personal-account', 'App\Http\Controllers\MainController@personal_ac
 Route::get('/user-orders', 'App\Http\Controllers\MainController@user_orders')->name('user-orders'); 
 Route::get('/user-settings', 'App\Http\Controllers\MainController@user_settings')->name('user-settings'); 
 //cart and ordering
-Route::get('/cart', 'App\Http\Controllers\CartController@cart')->name('cart');
-Route::get('/ordering', 'App\Http\Controllers\CartController@ordering')->name('ordering');
-Route::post('/cart/add/{id}', 'App\Http\Controllers\CartController@cartAdd')->name('cart-add');
-Route::post('/cart/remove/{id}', 'App\Http\Controllers\CartController@cartRemove')->name('cart-remove');
-Route::post('/cart/delete/{id}', 'App\Http\Controllers\CartController@cartDelete')->name('cart-delete');
-Route::post('/ordering', 'App\Http\Controllers\CartController@cartConfirm')->name('cart-confirm');
+Route::group([
+    'prefix' => 'cart'
+], function() {
+
+    Route::post('/add/{id}', 'App\Http\Controllers\CartController@cartAdd')->name('cart-add');
+
+    Route::group([
+        'middleware' => 'basket_not_empty',
+        'prefix' => 'cart'
+    ], function() {
+        Route::get('/', 'App\Http\Controllers\CartController@cart')->name('cart');
+        Route::get('/ordering', 'App\Http\Controllers\CartController@ordering')->name('ordering');
+        Route::post('/remove/{id}', 'App\Http\Controllers\CartController@cartRemove')->name('cart-remove');
+        Route::post('/delete/{id}', 'App\Http\Controllers\CartController@cartDelete')->name('cart-delete');
+        Route::post('/ordering', 'App\Http\Controllers\CartController@cartConfirm')->name('cart-confirm');
+    });
+});
 
 
 //catalog and category
@@ -33,9 +46,15 @@ Route::get('/category/product', 'App\Http\Controllers\MainController@product')->
 Route::get('/all-products', 'App\Http\Controllers\MainController@all_products')->name('all-products');
 
 //auth
+Route::group(['middleware' => 'auth'
+], function(){
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::group(['middleware' => 'is_admin'], function(){
+        Route::get('/orders', [App\Http\Controllers\HomeController::class, 'orders'])->name('orders');
+    });
+});
 Auth::routes([
     'reset' => false,
     'confirm' => false,
     'verify' => false,
 ]);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
