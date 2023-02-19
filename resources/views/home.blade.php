@@ -1,5 +1,5 @@
-@extends('layouts.app')
 
+@extends('layouts.app')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -16,6 +16,8 @@
 
                     {{ __('You are logged in!') }}
                     <a href="{{route('orders')}}">Orders</a>
+                    <a href="{{route('categories.index')}}">Category</a>
+
                 </div>
             </div>
         </div>

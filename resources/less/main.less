@@ -1900,26 +1900,43 @@ body{
 .orders__wrapper{
     width: 80%;
     margin: 0 auto;
+    margin-top: 150px;
     .order{
         display: flex;
-        &__item:not(:last-child){
+        justify-content: space-between;
+        }
+        .order__item:not(:last-child){
             width: 20%;
         }
-        &__item:not(:first-child){
+        .order__item:not(:first-child){
             width: 20%;
         }
-        &__item:last-child{
+        .order__item:last-child{
             width: 5%;
         }
-        &__item:first-child{
+        .order__item:first-child{
             width: 5%;
         }
+        .top{
+            font-weight: bold;
+        }
+
     }
-    .top{
-        font-weight: bold;
-    }
-}
-.orders__title{
+    .orders__title{
     font-size: 2rem;
     font-weight: bold;
+}
+.show .order__item:last-child{
+    width: 45%;
+}
+.show .order__item:first-child{
+    width: 45%;
+}
+.categories{
+    .order__item{
+        width: 25% !important;
+    }
+}
+#app{
+    margin: 200px 10px;
 }

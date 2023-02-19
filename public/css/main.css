@@ -1858,4 +1858,44 @@ body {
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
   border-radius: 10px;
 }
+.orders__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.orders__wrapper .order {
+  display: flex;
+  justify-content: space-between;
+}
+.orders__wrapper .order__item:not(:last-child) {
+  width: 20%;
+}
+.orders__wrapper .order__item:not(:first-child) {
+  width: 20%;
+}
+.orders__wrapper .order__item:last-child {
+  width: 5%;
+}
+.orders__wrapper .order__item:first-child {
+  width: 5%;
+}
+.orders__wrapper .top {
+  font-weight: bold;
+}
+.orders__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.show .order__item:last-child {
+  width: 45%;
+}
+.show .order__item:first-child {
+  width: 45%;
+}
+.categories .order__item {
+  width: 25% !important;
+}
+#app {
+  margin: 200px 10px;
+}
 

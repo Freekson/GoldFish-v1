@@ -14,3 +14,10 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css');
+mix.less('resources/less/main.less', 'public/css')
+    .less('resources/less/_header.less', 'public/css')
+    .less('resources/less/_footer.less', 'public/css')
+    .less('resources/less/_desktop.less', 'public/css')
+    .less('resources/less/_laptop.less', 'public/css')
+    .less('resources/less/_tablet.less', 'public/css')
+    .less('resources/less/_mobile.less', 'public/css');

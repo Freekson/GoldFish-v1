@@ -1,10 +1,10 @@
 @extends("master");
 
+@section('title', 'Orders')
 @section('content')
 
-@extends('layouts.app')
 
-<div class="orders__wrapper">
+<div class="orders__wrapper" style="margin-bottom: 50px;">
     <p class="orders__title">Orders</p>
     <hr>
     <div class="order top">

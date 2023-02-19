@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\CategoryController;
 
 
 /*
@@ -19,6 +20,7 @@ Route::get('/', 'App\Http\Controllers\MainController@index')->name('index');
 Route::get('/personal-account', 'App\Http\Controllers\MainController@personal_account')->name('profile');
 Route::get('/user-orders', 'App\Http\Controllers\MainController@user_orders')->name('user-orders'); 
 Route::get('/user-settings', 'App\Http\Controllers\MainController@user_settings')->name('user-settings'); 
+
 //cart and ordering
 Route::group([
     'prefix' => 'cart'
@@ -27,8 +29,7 @@ Route::group([
     Route::post('/add/{id}', 'App\Http\Controllers\CartController@cartAdd')->name('cart-add');
 
     Route::group([
-        'middleware' => 'basket_not_empty',
-        'prefix' => 'cart'
+        'middleware' => 'basket_not_empty'
     ], function() {
         Route::get('/', 'App\Http\Controllers\CartController@cart')->name('cart');
         Route::get('/ordering', 'App\Http\Controllers\CartController@ordering')->name('ordering');
@@ -46,11 +47,14 @@ Route::get('/category/product', 'App\Http\Controllers\MainController@product')->
 Route::get('/all-products', 'App\Http\Controllers\MainController@all_products')->name('all-products');
 
 //auth
-Route::group(['middleware' => 'auth'
+Route::group([
+    'middleware' => 'auth',
+    'prefix' => 'admin'
 ], function(){
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::group(['middleware' => 'is_admin'], function(){
         Route::get('/orders', [App\Http\Controllers\HomeController::class, 'orders'])->name('orders');
+        Route::resource('categories', App\Http\Controllers\CategoryController::class);
     });
 });
 Auth::routes([
