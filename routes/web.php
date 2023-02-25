@@ -47,11 +47,11 @@ Route::get('/category/product', 'App\Http\Controllers\MainController@product')->
 Route::get('/all-products', 'App\Http\Controllers\MainController@all_products')->name('all-products');
 
 //auth
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::group([
     'middleware' => 'auth',
     'prefix' => 'admin'
 ], function(){
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::group(['middleware' => 'is_admin'], function(){
         Route::get('/orders', [App\Http\Controllers\HomeController::class, 'orders'])->name('orders');
         Route::resource('categories', App\Http\Controllers\CategoryController::class);
