@@ -1,4 +1,4 @@
-@extends("master")
+@extends("layouts.master")
 
 @section('title', 'Catalog')
 
@@ -9,7 +9,7 @@
             <h6 class="section-header" style="margin-top: 200px;">All products</h6>
             <div class="all-products">
                 @foreach($products as $product)
-                    @include('card', compact('product'))
+                    @include('layouts.card', compact('product'))
                 @endforeach
             </div>        
         </div>

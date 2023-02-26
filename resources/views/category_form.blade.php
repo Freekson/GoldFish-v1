@@ -1,4 +1,4 @@
-@extends("master");
+@extends("layouts.master");
 
 @isset($category)
     @section('title', 'Category edit')

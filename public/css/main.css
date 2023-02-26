@@ -1896,6 +1896,24 @@ body {
   width: 25% !important;
 }
 #app {
-  margin: 200px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 200px auto;
+}
+#app .card-header {
+  text-align: center;
+}
+.auth-section {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+.auth-section .nav-item .nav-link {
+  text-decoration: none;
+  color: #2A2A2A;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 

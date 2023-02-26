@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('title', 'GoldFish')
 
@@ -135,23 +135,16 @@
             </section>
             <h6 class="section-header">Hurry up to buy</h6>
              <section class="main__slider slider hurry-up">
-            <!-- {{$i = 0}}
                 @foreach($products as $product)
-                    @include('card', compact('product'))
-                    @if ($i>2)
-                        @break
+                    @if($loop->iteration < 4)
+                        @include('layouts.card', compact('product'))
                     @endif
-                    {{$i++}}
-                @endforeach -->
-                @include('card', compact('products'))
-                @include('card', compact('products'))
-                @include('card', compact('products'))
-                @include('card', compact('products'))
-                
+                @endforeach
+                @include('layouts.card', compact('products'))
             </section>
             <h6 class="section-header">Special offer</h6>
             <section class="main__slider slider special-offer">
-            @include('card-offered')
+            @include('layouts.card-offered')
             </section>
             <h6 class="section-header">Upcoming events</h6>
             <section class="main__img-block events">

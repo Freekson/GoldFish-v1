@@ -1,4 +1,4 @@
-@extends("master");
+@extends("layouts.master");
 
 @section('title', 'Ordering')
 
@@ -156,7 +156,7 @@
                                     <input type="checkbox">
                                     <p>I agree <u>to the processing of personal data</u></p>
                                 </div>
-                                <p>Already registered? <a href="#">Login </a></p>
+                                <p>Already registered? <a href="{{route('login')}}">Login </a></p>
                             </fieldset>
                             <h6 class="section-second-header">Outcome</h6>
                             <p class="outcome"><span class="price">Order price</span><span class="amount">{{$order->getFullPrice()}} $</span></p>

@@ -24,6 +24,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
     </li>   
+     <li><a href="#features">Aviable features</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -42,10 +43,26 @@
 
 ![project-screen1](public/img/project-img-1.png)
 
-The site of a large online store, with all the relevant features. The project will be created gradually, over a long period of time. Releases will appear at key points in the creation of the project.
+The site of a large online store, with all the relevant features. The project will be created gradually, over a long period of time. Releases will appear at key points in the creation of the project.  
+_The site may contain unfinished pages or elements without design or functionality._
 
 **Starting from version v1.2, the project has been rewrite for Laravel**
  
+ <div id="features"></div>
+
+## Сurrently available features on the site:
+>see all products;  
+see all categories;  
+view the category and all products associated with it;  
+view a specific product;  
+add a product to the cart;  
+in the basket, you can add, remove the quantity of goods, as well as remove it from the basket;  
+place an order, if the user is authorized, the order will have a user_id   field;  
+register on the site or log in  
+the site has accounts with the admin field;  
+admins can view all orders from all users;  
+admins can view categories, edit them, delete and create new ones 
+
 <!-- GETTING STARTED -->
 
 ## Installation

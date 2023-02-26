@@ -161,8 +161,8 @@
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>
                     </li>
-                    <li id="item-7">
-                        <p>Acce&shy;ssories for mode&shy;ling</p>
+                    <li>
+                        <a href="{{route('all-products')}}" style="text-decoration: none; color:black">All products</a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
                             <path d="M0 12L5 7L0 2L1 0L8 7L1 14L0 12Z" fill="#2A2A2A"/>
                         </svg>

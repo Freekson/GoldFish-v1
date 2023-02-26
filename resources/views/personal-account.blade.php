@@ -1,4 +1,4 @@
-@extends("master");
+@extends("layouts.master");
 
 @section('title', 'Profile')
 
@@ -125,7 +125,7 @@
                         <section class="user-recomended">
                             <h6>Recommended for you</h6>
                             <div class="user__items">
-                            @include('card-offered')
+                            @include('layouts.card-offered')
                             </div>
                         </section>
                     </article>
