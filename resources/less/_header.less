@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     top: 0;
     width: 100%;
     .header__wrapper{
@@ -84,33 +84,78 @@
                 font-weight: bold;
             }
         }
-        .header__profile-cart{
-            svg:first-child{
-                margin-right: 10px;
-            }
-            .header__link{
-                text-decoration: none;
-            }
-            .header__link-cart{
-                position: relative;
-            }
-            .counter{
-                position: absolute;
-                width: 18px;
-                height: 18px;
-                bottom: 5px;
-                right: 0;
-                color: white;
-                background-color: @active-color;
-                border-radius: 100%;
+        .header__list{
+            width: 6%;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            .list__item{
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
                 align-items: center;
-                font-size: 0.875rem;
-                font-weight: bold;
+                justify-content: center;
+                position: relative;
+                cursor: pointer;
+                .header__sublist{
+                    text-align: center;
+                    opacity: 0;
+                    position: absolute;
+                    top: 35px ;
+                    right: -30px;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    z-index: 99;
+                    background-color: @background-color;
+                    box-shadow: @main-box-shadow;
+                    border-radius: 10px;
+                    transition: all 0.2s;
+                    li{
+                        padding: 7.5px 10px;
+                    }
+                    li:first-child{
+                        padding-top: 10px;
+                    }
+                    li:nth-child(3){
+                        display: none;
+                    }
+                    .nav-link{
+                        text-decoration: none;
+                        color: @main-color;
+                        font-weight: bold;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
-            .inactive{
-                display: none;
+            .list__item:hover{
+                .header__sublist{
+                    opacity: 1;
+                }
+            }
+            .link{
+                position: relative;
+                &__counter{
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    bottom: 5px;
+                    right: -8px;
+                    color: white;
+                    background-color: @active-color;
+                    border-radius: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                }
+                .inactive{
+                    display: none;
+                }
             }
         }
     }
@@ -120,7 +165,7 @@
 .navigation{
     display: flex;
     position: fixed;
-    z-index: 100;
+    z-index: 9;
     top: 82px;
     justify-content: center;
     font-weight: bold;
@@ -168,7 +213,7 @@
     width: 100%;
     height: 52px;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     top: 82px;
     font-weight: bold;
     background-color: @background-color;
@@ -190,7 +235,7 @@
             justify-content: center;
             border: 2px solid rgba(42, 42, 42, 0.26);
             position: absolute;
-            z-index: 99;
+            z-index: 9;
             top: 0;
             left: 0;
             background-color: @background-color;
@@ -246,7 +291,7 @@
         .aside-content{
             width: 70%;
             position: absolute;
-            z-index: 99;
+            z-index: 9;
             top: 0;
             right: 0;
             height: 400px;

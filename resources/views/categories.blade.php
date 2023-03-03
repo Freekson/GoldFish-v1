@@ -1,10 +1,14 @@
-@extends("layouts.master");
+@extends("layouts.master")
 
 @section('title', 'Categories')
 @section('content')
 
+<main class="main">
+    <div class="main__wrapper">
 
 <div class="orders__wrapper categories"  style="margin-bottom: 50px;">
+<p class="nav"> <a href="{{route('index')}}">Main</a> > <a href="{{route('home')}}">Personal account</a> > <a href="{{route('orders')}}" class="active-menu__item">Orders</a> </p>
+
     <p class="orders__title">Categories</p>
     <hr>
     <div class="order top">
@@ -35,3 +39,5 @@
         <a href="{{route('categories.create')}}">Create category</a>
     </div>
 </div>
+</div>
+</main>

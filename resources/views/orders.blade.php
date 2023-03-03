@@ -1,10 +1,12 @@
-@extends("layouts.master");
+@extends("layouts.master")
 
 @section('title', 'Orders')
 @section('content')
 
-
-<div class="orders__wrapper" style="margin-bottom: 50px;">
+<main class="main personal-account">
+<div class="main__wrapper">
+<div class="orders__wrapper">
+<p class="nav"> <a href="{{route('index')}}">Main</a> > <a href="{{route('home')}}">Personal account</a> > <a href="{{route('orders')}}" class="active-menu__item">Orders</a> </p>
     <p class="orders__title">Orders</p>
     <hr>
     <div class="order top">
@@ -28,3 +30,5 @@
     <hr>
     @endforeach
 </div>
+</div>
+</main>

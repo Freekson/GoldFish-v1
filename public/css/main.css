@@ -1046,7 +1046,7 @@ body {
   background-color: #E5E5E5;
   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
   width: 20%;
-  height: 240px;
+  height: 100%;
   border-radius: 9px;
 }
 .main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__menu ul {
@@ -1090,6 +1090,7 @@ body {
 .main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .user-information .user-section .user .user-name {
   font-size: 1.185rem;
   font-weight: bold;
+  margin-right: 10px;
 }
 .main .main__wrapper .main__personal-account .personal-account__wrapper .personal-account__section .user-information .user-section .user-status {
   display: flex;
@@ -1859,9 +1860,9 @@ body {
   border-radius: 10px;
 }
 .orders__wrapper {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-bottom: 50px;
 }
 .orders__wrapper .order {
   display: flex;
@@ -1906,7 +1907,7 @@ body {
   text-align: center;
 }
 .auth-section {
-  width: 35%;
+  width: 25%;
   display: flex;
   justify-content: space-around;
 }

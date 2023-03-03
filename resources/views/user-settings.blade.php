@@ -5,13 +5,13 @@
 @section('content')
     <main class="main user-settings">
         <div class="main__wrapper">
-            <p class="nav"> <a href="{{route('index')}}">Main</a> > <a href="{{route('profile')}}">Personal account</a> > <a href="{{route('profile')}}" class="active-menu__item">User Settings</a> </p>
+            <p class="nav"> <a href="{{route('index')}}">Main</a> > <a href="{{route('home')}}">Personal account</a> > <a href="{{route('home')}}" class="active-menu__item">User Settings</a> </p>
             <h6 class="page-header">Settings</h6>
             <section class="main__user-settings">
                 <div class="user-settings__wrapper">
                     <aside class="user-setting__menu">
                         <ul>
-                            <li><a href="{{route('profile')}}">Profile</a></li>
+                            <li><a href="{{route('home')}}">Profile</a></li>
                             <li><a href="{{route('user-orders')}}">Orders</a></li>
                             <li><a href="user-events">Events</a></li>
                             <li><a href="{{route('user-settings')}}" class="active-item">Settings</a></li>
