@@ -1066,33 +1066,6 @@ body{
             .personal-account__wrapper{
                 display: flex;
                 justify-content: space-between;
-                .personal-account__menu{
-                    background-color: @background-color;
-                    box-shadow: @main-box-shadow;
-                    width: 20%;
-                    height: 100%;
-                    border-radius: 9px;
-                    ul{
-                        padding: 0;
-                        margin: 30px 0px 30px 39px;
-                        list-style: none;
-                        li{
-                            padding: 7px 0;
-                            a{
-                                display: flex;
-                                align-items: center;
-                                text-decoration: none;
-                                color: black;
-                                font-size: 1.2rem;
-                                font-weight: bold;
-                                height: 25px;
-                            }
-                            .active-item{
-                                font-size: 1.5rem;
-                            }
-                        }
-                    }
-                }
                 .personal-account__section{
                     width: 78%;
                     .user-information{
@@ -1123,10 +1096,10 @@ body{
                                     height: 38px;
                                     padding: 5px;
                                     box-sizing: border-box;
-                                    margin-right: 25px;
+                                    margin-right: 15px;
                                 }
                                 .status{
-                                    font-size: 1.185rem;
+                                    font-size: 1.1rem;
                                     font-weight: bold;
                                 }
                             }
@@ -1472,37 +1445,10 @@ body{
             margin-top: 0;
             .user-settings__wrapper{
                 display: flex;
-                justify-content: flex-start;
-                .user-setting__menu{
-                    background-color: @background-color;
-                    box-shadow: @main-box-shadow;
-                    width: 20%;
-                    height: 240px;
-                    border-radius: 9px;
-                    margin-right: 30px;
-                    ul{
-                        padding: 0;
-                        margin: 30px 0px 30px 39px;
-                        list-style: none;
-                        li{
-                            padding: 7px 0;
-                            a{
-                                display: flex;
-                                align-items: center;
-                                text-decoration: none;
-                                color: black;
-                                font-size: 1.2rem;
-                                font-weight: bold;
-                                height: 25px;
-                            }
-                            .active-item{
-                                font-size: 1.5rem;
-                            }
-                        }
-                    }
-                }
+                justify-content: space-between;
                 .user-orders__section{
-                    width: 55%;
+                    width: 65%;
+                    margin: 0 auto;
                     .user-info__item{
                         display: flex;
                         justify-content: space-between;
@@ -1894,8 +1840,8 @@ body{
         }
 }
 
-//!admin orders page
-
+//!admin orders page styles
+//TODO rewrite this 
 .orders__wrapper{
     width: 75%;
     margin: 0 auto;
@@ -1936,26 +1882,108 @@ body{
         width: 25% !important;
     }
 }
-#app{
+
+
+.personal-account__menu{
+    background-color: @background-color;
+    box-shadow: @main-box-shadow;
+    width: 20%;
+    height: 100%;
+    border-radius: 9px;
+    ul{
+        padding: 0;
+        margin: 30px 20px;
+        list-style: none;
+        li{
+            padding: 10px 0;
+            a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                font-size: 1.2rem;
+                font-weight: bold;
+                height: 25px;
+            }
+        }
+    }
+}
+
+//? login and register 
+.auth-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin: 200px auto;
+    width: 75%;
+    margin: 200px auto 10px;
     .card-header{
         text-align: center;
     }
-}
-.auth-section{
-    width: 25%;
-    display: flex;
-    justify-content: space-around;
     .nav-item{
-        .nav-link{
-            text-decoration: none;
+        .nav-link, span{
             color: @main-color;
             font-weight: bold;
             font-size: 1.4rem;
+        }
+        .nav-link{
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.blade-content{
+    width: 75%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    form{
+        width: 30%;
+    }
+    .form__header{
+        font-weight: bold;
+        margin: 0;
+    }
+    .form__submit{
+        display: flex;
+        justify-content: center;
+    }
+    .form__checkbox{
+        margin-top: 10px;
+    }
+    .form__item{
+        display: flex;
+        flex-direction: column;
+        label{
+            margin: 10px 0 5px;
+        }
+        input{
+            box-sizing: border-box;
+            border: 1px solid rgba(42, 42, 42, 0.38);
+            color: gray;
+            padding: 13px;
+            border-radius: 9px;
+            &:active, &:focus{
+                outline: none;
+            }
+        }
+    }
+    .form__btn{
+        width: 90%;
+        margin: 20px auto;
+        background: @gradient;
+        box-shadow: @main-box-shadow;
+        transition: all .2s;
+        border: none;
+        border-radius: 9px;
+        color: white;
+        font-weight: bold;
+        padding: 12px 0;
+        &:hover{
+            box-shadow: @active-box-shadow;
         }
     }
 }

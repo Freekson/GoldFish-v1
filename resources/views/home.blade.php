@@ -8,13 +8,13 @@
                 <div class="personal-account__wrapper">
                     <aside class="personal-account__menu">
                         <ul>
-                            <li><a href="{{route('home')}}" class="active-item">Profile</a></li>
+                            <li><a href="{{route('home')}}">Profile</a></li>
                             <li><a href="{{route('user-orders')}}">Orders</a></li>
                             <li><a href="user-events">Events</a></li>
                             <li><a href="{{route('user-settings')}}">Settings</a></li>
                             @if (Auth::user()->is_admin == 1)
-                                <li><a href="{{route('orders')}}">Order all</a></li>
-                                <li><a href="{{route('categories.index')}}">Category</a></li>
+                                <li><a href="{{route('orders')}}">Orders management</a></li>
+                                <li><a href="{{route('categories.index')}}">Сategory management</a></li>
                             @endif
                         </ul>
                     </aside>
@@ -37,7 +37,13 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
                                         <path d="M1.5 8.5L8.25 15.25L19.5 1.75" stroke="#F9A43F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <p class="status">Newbie</p></div>
+                                    <p class="status">Your status: 
+                                    @if (Auth::user()->is_admin == 1)
+                                            Admin
+                                    @else
+                                        Newbie
+                                    @endif
+                                    </p></div>
                             </div>
                             <h6>Loyality card</h6>
                             <div class="loyality-section">

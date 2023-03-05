@@ -103,10 +103,10 @@
   transition: all 0.2s;
 }
 .header .header__wrapper .header__list .list__item .header__sublist li {
-  padding: 7.5px 10px;
+  padding: 20px 10px;
 }
 .header .header__wrapper .header__list .list__item .header__sublist li:first-child {
-  padding-top: 10px;
+  padding-bottom: 0;
 }
 .header .header__wrapper .header__list .list__item .header__sublist li:nth-child(3) {
   display: none;

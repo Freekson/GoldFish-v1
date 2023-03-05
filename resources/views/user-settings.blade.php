@@ -9,12 +9,16 @@
             <h6 class="page-header">Settings</h6>
             <section class="main__user-settings">
                 <div class="user-settings__wrapper">
-                    <aside class="user-setting__menu">
+                    <aside class="personal-account__menu">
                         <ul>
                             <li><a href="{{route('home')}}">Profile</a></li>
                             <li><a href="{{route('user-orders')}}">Orders</a></li>
                             <li><a href="user-events">Events</a></li>
-                            <li><a href="{{route('user-settings')}}" class="active-item">Settings</a></li>
+                            <li><a href="{{route('user-settings')}}">Settings</a></li>
+                            @if (Auth::user()->is_admin == 1)
+                                <li><a href="{{route('orders')}}">Orders management</a></li>
+                                <li><a href="{{route('categories.index')}}">Сategory management</a></li>
+                            @endif
                         </ul>
                     </aside>
                     <article class="user-orders__section user info">

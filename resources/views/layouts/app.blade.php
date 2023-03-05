@@ -207,50 +207,26 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="aside-content" id="content">
-
-            </div>
         </div>
     </nav>
     <div id="app">
+        <!--for login and Register pages-->
         <div class="auth-section">
         @guest
             @if (Route::has('login'))
                 <div class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                </div>
-            @endif
-            @if (Route::has('register'))
-                <div class="nav-item">
+                    <span> or </span>
                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                 </div>
             @endif
-        @else
-            <div class="nav-item dropdown">
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{route('home')}}" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{ Auth::user()->name }}
-                </a>
-
-                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}"
-                       onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
-                    </a>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
-                </div>
-            </div>
         @endguest
        
         </div>
-
-        <main class="py-4">
+        <main class="blade-content">
             @yield('content')
         </main>
+        <!--for login and Register pages-->
     </div>
      <footer class="footer">
         <div class="footer__wrapper">
@@ -312,12 +288,6 @@
                     <a href="#">Privacy Policy</a>
                 </div>
                 <div class="section__column">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="59" height="17" viewBox="0 0 59 17" fill="none">
-                            <path d="M12.8335 2.40038L10.655 9.94721H10.2823L8.1037 2.40038C7.73098 1.12332 6.56136 0.244141 5.22467 0.244141H0V16.6726H5.23109V6.96312H5.60384L8.59855 16.6726H12.3387L15.327 6.96312H15.6997V16.6726H20.9309V0.244141H15.7062C14.3759 0.244141 13.2063 1.12332 12.8335 2.40038ZM41.7973 16.6726H47.0606V11.8147H52.3561C55.1258 11.8147 57.4844 10.2488 58.3968 8.04767H41.7973V16.6726ZM32.4727 1.97683L28.7904 9.95364H28.4176V0.244141H23.1865V16.6726H27.6272C28.7968 16.6726 29.857 15.9924 30.3455 14.9399L34.0278 6.96955H34.4007V16.6726H39.6317V0.244141H35.191C34.0213 0.244141 32.9611 0.924382 32.4727 1.97683Z" fill="#929292"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M52.8761 0.244141C54.3863 0.244141 55.7551 0.821704 56.7898 1.77148C57.9465 2.82393 58.6727 4.33844 58.6727 6.0262C58.6727 6.37273 58.6342 6.71285 58.5763 7.04656H48.8596C45.5692 7.04656 42.7802 4.89032 41.8419 1.91266C41.8291 1.88057 41.8226 1.84207 41.8098 1.80356C41.7841 1.71372 41.7648 1.61746 41.7391 1.52762C41.6427 1.11048 41.5784 0.686938 41.5527 0.244141H52.8761Z" fill="#929292"/>
-                        </svg>
-                    </a>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="16" viewBox="0 0 45 16" fill="none">
                             <path d="M22.2485 0.483502L19.2304 14.9649H15.5933L18.65 0.483502H22.2485ZM37.5709 9.81861L39.4669 4.39308L40.5503 9.8585H37.5709V9.81861ZM41.6337 14.9649H45L42.0593 0.483502H38.9639C38.2674 0.483502 37.687 0.882438 37.4162 1.56063L31.9604 14.9649H35.7911L36.5262 12.8106H41.1694L41.6337 14.9649ZM32.1539 10.2175C32.1926 6.38776 27.0077 6.18829 27.0464 4.47286C27.0464 3.95425 27.5107 3.39574 28.5942 3.27606C29.1359 3.19627 30.5675 3.15637 32.1926 3.91435L32.8117 0.882438C31.9218 0.523396 30.7997 0.244141 29.4067 0.244141C25.8083 0.244141 23.2932 2.19893 23.2545 5.03137C23.2158 7.10584 25.0731 8.30265 26.4273 8.98084C27.8203 9.69893 28.3233 10.1777 28.3233 10.7761C28.3233 11.7734 27.1625 12.1723 26.1565 12.2122C24.3379 12.2521 23.2545 11.6936 22.4033 11.2947L21.7455 14.4862C22.5967 14.8851 24.1445 15.2441 25.7696 15.2441C29.6389 15.2042 32.1152 13.2495 32.1539 10.2175ZM17.1023 0.483502L11.1823 14.9649H7.35168L4.41101 3.39574C4.25623 2.67765 4.10146 2.43829 3.59845 2.11914C2.70851 1.64042 1.27687 1.16169 0 0.882438L0.0773861 0.483502H6.26827C7.08083 0.483502 7.73861 1.04201 7.93207 1.95957L9.47979 10.3372L13.2717 0.483502H17.1023Z" fill="#929292"/>
